@@ -38,7 +38,7 @@ void DriveTrain::SetLeft(float speed)
 }
 void DriveTrain::SetRight(float speed)
 {
-	frontRightMotor->Set(speed);
-	centerRightMotor->Set(speed);
-	rearRightMotor->Set(speed);
+	frontRightMotor->Set(-speed);
+	centerRightMotor->Set(-speed);
+	rearRightMotor->Set(-speed);
 }	
