@@ -1,7 +1,7 @@
  \
- CommandBassedRobotTemplate_partialImage/Debug/Objects/2014_BigBallBot/Commands/AutonomousCommand.o:  \
- C:/WindRiver/workspace/2014_BigBallBot/Commands/AutonomousCommand.cpp \
-  C:/WindRiver/workspace/2014_BigBallBot/Commands/AutonomousCommand.h \
+ CommandBasedRobotTemplate/Debug/Objects/2014_BigBallBot/Commands/ShiftLow.o:  \
+ C:/WindRiver/workspace/2014_BigBallBot/Commands/ShiftLow.cpp \
+  C:/WindRiver/workspace/2014_BigBallBot/Commands/ShiftLow.h \
   C:/WindRiver/vxworks-6.3/target/h/WPILib/Commands/Subsystem.h \
   C:/WindRiver/vxworks-6.3/target/h/WPILib/ErrorBase.h \
   C:/WindRiver/vxworks-6.3/target/h/WPILib/Base.h \
@@ -389,12 +389,19 @@
   C:/WindRiver/workspace/2014_BigBallBot/Commands/../RobotMap.h \
   C:/WindRiver/vxworks-6.3/target/h/WPILib/LiveWindow/LiveWindow.h \
   C:/WindRiver/workspace/2014_BigBallBot/Commands/../Commands/AutonomousCommand.h \
-  C:/WindRiver/workspace/2014_BigBallBot/Commands/../Subsystems/DriveTrain.h \
+  C:/WindRiver/vxworks-6.3/target/h/WPILib/Commands/Subsystem.h \
+  C:/WindRiver/workspace/2014_BigBallBot/Commands/../Commands/../Robot.h \
+  C:/WindRiver/workspace/2014_BigBallBot/Commands/../Subsystems/AirCompressor.h \
   C:/WindRiver/vxworks-6.3/target/h/WPILib/Commands/Subsystem.h \
   C:/WindRiver/vxworks-6.3/target/h/WPILib/WPILib.h \
+  C:/WindRiver/workspace/2014_BigBallBot/Commands/../Subsystems/../Commands/CompressorRun.h \
+  C:/WindRiver/vxworks-6.3/target/h/WPILib/Commands/Subsystem.h \
+  C:/WindRiver/workspace/2014_BigBallBot/Commands/../Subsystems/../Commands/../Robot.h \
+  C:/WindRiver/workspace/2014_BigBallBot/Commands/../Subsystems/DriveTrain.h \
+  C:/WindRiver/workspace/2014_BigBallBot/Commands/../Subsystems/Shifter.h \
   C:/WindRiver/workspace/2014_BigBallBot/Commands/../OI.h
 
-C:/WindRiver/workspace/2014_BigBallBot/Commands/AutonomousCommand.h:
+C:/WindRiver/workspace/2014_BigBallBot/Commands/ShiftLow.h:
 
 C:/WindRiver/vxworks-6.3/target/h/WPILib/Commands/Subsystem.h:
 
@@ -1170,10 +1177,24 @@ C:/WindRiver/vxworks-6.3/target/h/WPILib/LiveWindow/LiveWindow.h:
 
 C:/WindRiver/workspace/2014_BigBallBot/Commands/../Commands/AutonomousCommand.h:
 
-C:/WindRiver/workspace/2014_BigBallBot/Commands/../Subsystems/DriveTrain.h:
+C:/WindRiver/vxworks-6.3/target/h/WPILib/Commands/Subsystem.h:
+
+C:/WindRiver/workspace/2014_BigBallBot/Commands/../Commands/../Robot.h:
+
+C:/WindRiver/workspace/2014_BigBallBot/Commands/../Subsystems/AirCompressor.h:
 
 C:/WindRiver/vxworks-6.3/target/h/WPILib/Commands/Subsystem.h:
 
 C:/WindRiver/vxworks-6.3/target/h/WPILib/WPILib.h:
+
+C:/WindRiver/workspace/2014_BigBallBot/Commands/../Subsystems/../Commands/CompressorRun.h:
+
+C:/WindRiver/vxworks-6.3/target/h/WPILib/Commands/Subsystem.h:
+
+C:/WindRiver/workspace/2014_BigBallBot/Commands/../Subsystems/../Commands/../Robot.h:
+
+C:/WindRiver/workspace/2014_BigBallBot/Commands/../Subsystems/DriveTrain.h:
+
+C:/WindRiver/workspace/2014_BigBallBot/Commands/../Subsystems/Shifter.h:
 
 C:/WindRiver/workspace/2014_BigBallBot/Commands/../OI.h:

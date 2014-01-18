@@ -121,7 +121,19 @@ CommandBasedRobotTemplate/$(MODE_DIR)/Objects/2014_BigBallBot/Commands/Autonomou
 	$(TRACE_FLAG)if [ ! -d "`dirname "$@"`" ]; then mkdir -p "`dirname "$@"`"; fi;echo "building $@"; $(TOOL_PATH)ccppc $(DEBUGFLAGS_C++-Compiler) $(CC_ARCH_SPEC) -ansi -Wall  -MD -MP -mlongcall $(ADDED_C++FLAGS) $(IDE_INCLUDES) $(ADDED_INCLUDES) -DCPU=$(CPU) -DTOOL_FAMILY=$(TOOL_FAMILY) -DTOOL=$(TOOL) -D_WRS_KERNEL   $(DEFINES) -o "$@" -c "$<"
 
 
+CommandBasedRobotTemplate/$(MODE_DIR)/Objects/2014_BigBallBot/Commands/CompressorRun.o : $(PRJ_ROOT_DIR)/Commands/CompressorRun.cpp $(FORCE_FILE_BUILD)
+	$(TRACE_FLAG)if [ ! -d "`dirname "$@"`" ]; then mkdir -p "`dirname "$@"`"; fi;echo "building $@"; $(TOOL_PATH)ccppc $(DEBUGFLAGS_C++-Compiler) $(CC_ARCH_SPEC) -ansi -Wall  -MD -MP -mlongcall $(ADDED_C++FLAGS) $(IDE_INCLUDES) $(ADDED_INCLUDES) -DCPU=$(CPU) -DTOOL_FAMILY=$(TOOL_FAMILY) -DTOOL=$(TOOL) -D_WRS_KERNEL   $(DEFINES) -o "$@" -c "$<"
+
+
 CommandBasedRobotTemplate/$(MODE_DIR)/Objects/2014_BigBallBot/Commands/Drive.o : $(PRJ_ROOT_DIR)/Commands/Drive.cpp $(FORCE_FILE_BUILD)
+	$(TRACE_FLAG)if [ ! -d "`dirname "$@"`" ]; then mkdir -p "`dirname "$@"`"; fi;echo "building $@"; $(TOOL_PATH)ccppc $(DEBUGFLAGS_C++-Compiler) $(CC_ARCH_SPEC) -ansi -Wall  -MD -MP -mlongcall $(ADDED_C++FLAGS) $(IDE_INCLUDES) $(ADDED_INCLUDES) -DCPU=$(CPU) -DTOOL_FAMILY=$(TOOL_FAMILY) -DTOOL=$(TOOL) -D_WRS_KERNEL   $(DEFINES) -o "$@" -c "$<"
+
+
+CommandBasedRobotTemplate/$(MODE_DIR)/Objects/2014_BigBallBot/Commands/ShiftHigh.o : $(PRJ_ROOT_DIR)/Commands/ShiftHigh.cpp $(FORCE_FILE_BUILD)
+	$(TRACE_FLAG)if [ ! -d "`dirname "$@"`" ]; then mkdir -p "`dirname "$@"`"; fi;echo "building $@"; $(TOOL_PATH)ccppc $(DEBUGFLAGS_C++-Compiler) $(CC_ARCH_SPEC) -ansi -Wall  -MD -MP -mlongcall $(ADDED_C++FLAGS) $(IDE_INCLUDES) $(ADDED_INCLUDES) -DCPU=$(CPU) -DTOOL_FAMILY=$(TOOL_FAMILY) -DTOOL=$(TOOL) -D_WRS_KERNEL   $(DEFINES) -o "$@" -c "$<"
+
+
+CommandBasedRobotTemplate/$(MODE_DIR)/Objects/2014_BigBallBot/Commands/ShiftLow.o : $(PRJ_ROOT_DIR)/Commands/ShiftLow.cpp $(FORCE_FILE_BUILD)
 	$(TRACE_FLAG)if [ ! -d "`dirname "$@"`" ]; then mkdir -p "`dirname "$@"`"; fi;echo "building $@"; $(TOOL_PATH)ccppc $(DEBUGFLAGS_C++-Compiler) $(CC_ARCH_SPEC) -ansi -Wall  -MD -MP -mlongcall $(ADDED_C++FLAGS) $(IDE_INCLUDES) $(ADDED_INCLUDES) -DCPU=$(CPU) -DTOOL_FAMILY=$(TOOL_FAMILY) -DTOOL=$(TOOL) -D_WRS_KERNEL   $(DEFINES) -o "$@" -c "$<"
 
 
@@ -137,16 +149,29 @@ CommandBasedRobotTemplate/$(MODE_DIR)/Objects/2014_BigBallBot/RobotMap.o : $(PRJ
 	$(TRACE_FLAG)if [ ! -d "`dirname "$@"`" ]; then mkdir -p "`dirname "$@"`"; fi;echo "building $@"; $(TOOL_PATH)ccppc $(DEBUGFLAGS_C++-Compiler) $(CC_ARCH_SPEC) -ansi -Wall  -MD -MP -mlongcall $(ADDED_C++FLAGS) $(IDE_INCLUDES) $(ADDED_INCLUDES) -DCPU=$(CPU) -DTOOL_FAMILY=$(TOOL_FAMILY) -DTOOL=$(TOOL) -D_WRS_KERNEL   $(DEFINES) -o "$@" -c "$<"
 
 
+CommandBasedRobotTemplate/$(MODE_DIR)/Objects/2014_BigBallBot/Subsystems/AirCompressor.o : $(PRJ_ROOT_DIR)/Subsystems/AirCompressor.cpp $(FORCE_FILE_BUILD)
+	$(TRACE_FLAG)if [ ! -d "`dirname "$@"`" ]; then mkdir -p "`dirname "$@"`"; fi;echo "building $@"; $(TOOL_PATH)ccppc $(DEBUGFLAGS_C++-Compiler) $(CC_ARCH_SPEC) -ansi -Wall  -MD -MP -mlongcall $(ADDED_C++FLAGS) $(IDE_INCLUDES) $(ADDED_INCLUDES) -DCPU=$(CPU) -DTOOL_FAMILY=$(TOOL_FAMILY) -DTOOL=$(TOOL) -D_WRS_KERNEL   $(DEFINES) -o "$@" -c "$<"
+
+
 CommandBasedRobotTemplate/$(MODE_DIR)/Objects/2014_BigBallBot/Subsystems/DriveTrain.o : $(PRJ_ROOT_DIR)/Subsystems/DriveTrain.cpp $(FORCE_FILE_BUILD)
 	$(TRACE_FLAG)if [ ! -d "`dirname "$@"`" ]; then mkdir -p "`dirname "$@"`"; fi;echo "building $@"; $(TOOL_PATH)ccppc $(DEBUGFLAGS_C++-Compiler) $(CC_ARCH_SPEC) -ansi -Wall  -MD -MP -mlongcall $(ADDED_C++FLAGS) $(IDE_INCLUDES) $(ADDED_INCLUDES) -DCPU=$(CPU) -DTOOL_FAMILY=$(TOOL_FAMILY) -DTOOL=$(TOOL) -D_WRS_KERNEL   $(DEFINES) -o "$@" -c "$<"
 
 
+CommandBasedRobotTemplate/$(MODE_DIR)/Objects/2014_BigBallBot/Subsystems/Shifter.o : $(PRJ_ROOT_DIR)/Subsystems/Shifter.cpp $(FORCE_FILE_BUILD)
+	$(TRACE_FLAG)if [ ! -d "`dirname "$@"`" ]; then mkdir -p "`dirname "$@"`"; fi;echo "building $@"; $(TOOL_PATH)ccppc $(DEBUGFLAGS_C++-Compiler) $(CC_ARCH_SPEC) -ansi -Wall  -MD -MP -mlongcall $(ADDED_C++FLAGS) $(IDE_INCLUDES) $(ADDED_INCLUDES) -DCPU=$(CPU) -DTOOL_FAMILY=$(TOOL_FAMILY) -DTOOL=$(TOOL) -D_WRS_KERNEL   $(DEFINES) -o "$@" -c "$<"
+
+
 OBJECTS_CommandBasedRobotTemplate = CommandBasedRobotTemplate/$(MODE_DIR)/Objects/2014_BigBallBot/Commands/AutonomousCommand.o \
+	 CommandBasedRobotTemplate/$(MODE_DIR)/Objects/2014_BigBallBot/Commands/CompressorRun.o \
 	 CommandBasedRobotTemplate/$(MODE_DIR)/Objects/2014_BigBallBot/Commands/Drive.o \
+	 CommandBasedRobotTemplate/$(MODE_DIR)/Objects/2014_BigBallBot/Commands/ShiftHigh.o \
+	 CommandBasedRobotTemplate/$(MODE_DIR)/Objects/2014_BigBallBot/Commands/ShiftLow.o \
 	 CommandBasedRobotTemplate/$(MODE_DIR)/Objects/2014_BigBallBot/OI.o \
 	 CommandBasedRobotTemplate/$(MODE_DIR)/Objects/2014_BigBallBot/Robot.o \
 	 CommandBasedRobotTemplate/$(MODE_DIR)/Objects/2014_BigBallBot/RobotMap.o \
-	 CommandBasedRobotTemplate/$(MODE_DIR)/Objects/2014_BigBallBot/Subsystems/DriveTrain.o
+	 CommandBasedRobotTemplate/$(MODE_DIR)/Objects/2014_BigBallBot/Subsystems/AirCompressor.o \
+	 CommandBasedRobotTemplate/$(MODE_DIR)/Objects/2014_BigBallBot/Subsystems/DriveTrain.o \
+	 CommandBasedRobotTemplate/$(MODE_DIR)/Objects/2014_BigBallBot/Subsystems/Shifter.o
 
 CommandBasedRobotTemplate/$(MODE_DIR)/CommandBasedRobotTemplate.out : $(OBJECTS_CommandBasedRobotTemplate)
 	$(TRACE_FLAG)if [ ! -d "`dirname "$@"`" ]; then mkdir -p "`dirname "$@"`"; fi;echo "building $@";rm -f "$@";nmppc $(OBJECTS_CommandBasedRobotTemplate) $(IDE_LIBRARIES) | tclsh $(WIND_BASE)/host/resource/hutils/tcl/munch.tcl -c ppc > $(OBJ_DIR)/ctdt.c; $(TOOL_PATH)ccppc $(DEBUGFLAGS_Linker) $(CC_ARCH_SPEC) -fdollars-in-identifiers -Wall $(ADDED_CFLAGS) $(IDE_INCLUDES) $(ADDED_INCLUDES) -DCPU=$(CPU) -DTOOL_FAMILY=$(TOOL_FAMILY) -DTOOL=$(TOOL) -D_WRS_KERNEL   $(DEFINES)  -o $(OBJ_DIR)/ctdt.o -c $(OBJ_DIR)/ctdt.c; $(TOOL_PATH)ccppc -r -nostdlib -Wl,-X -T $(WIND_BASE)/target/h/tool/gnu/ldscripts/link.OUT -o "$@" $(OBJ_DIR)/ctdt.o $(OBJECTS_CommandBasedRobotTemplate) $(IDE_LIBRARIES) $(LIBPATH) $(LIBS)  $(ADDED_LIBPATH) $(ADDED_LIBS) && if [ "$(EXPAND_DBG)" = "1" ]; then plink "$@";fi
@@ -195,7 +220,19 @@ CommandBassedRobotTemplate_partialImage/$(MODE_DIR)/Objects/2014_BigBallBot/Comm
 	$(TRACE_FLAG)if [ ! -d "`dirname "$@"`" ]; then mkdir -p "`dirname "$@"`"; fi;echo "building $@"; $(TOOL_PATH)ccppc $(DEBUGFLAGS_C++-Compiler) $(CC_ARCH_SPEC) -ansi -Wall  -MD -MP -mlongcall $(ADDED_C++FLAGS) $(IDE_INCLUDES) $(ADDED_INCLUDES) -DCPU=$(CPU) -DTOOL_FAMILY=$(TOOL_FAMILY) -DTOOL=$(TOOL) -D_WRS_KERNEL   $(DEFINES) -o "$@" -c "$<"
 
 
+CommandBassedRobotTemplate_partialImage/$(MODE_DIR)/Objects/2014_BigBallBot/Commands/CompressorRun.o : $(PRJ_ROOT_DIR)/Commands/CompressorRun.cpp $(FORCE_FILE_BUILD)
+	$(TRACE_FLAG)if [ ! -d "`dirname "$@"`" ]; then mkdir -p "`dirname "$@"`"; fi;echo "building $@"; $(TOOL_PATH)ccppc $(DEBUGFLAGS_C++-Compiler) $(CC_ARCH_SPEC) -ansi -Wall  -MD -MP -mlongcall $(ADDED_C++FLAGS) $(IDE_INCLUDES) $(ADDED_INCLUDES) -DCPU=$(CPU) -DTOOL_FAMILY=$(TOOL_FAMILY) -DTOOL=$(TOOL) -D_WRS_KERNEL   $(DEFINES) -o "$@" -c "$<"
+
+
 CommandBassedRobotTemplate_partialImage/$(MODE_DIR)/Objects/2014_BigBallBot/Commands/Drive.o : $(PRJ_ROOT_DIR)/Commands/Drive.cpp $(FORCE_FILE_BUILD)
+	$(TRACE_FLAG)if [ ! -d "`dirname "$@"`" ]; then mkdir -p "`dirname "$@"`"; fi;echo "building $@"; $(TOOL_PATH)ccppc $(DEBUGFLAGS_C++-Compiler) $(CC_ARCH_SPEC) -ansi -Wall  -MD -MP -mlongcall $(ADDED_C++FLAGS) $(IDE_INCLUDES) $(ADDED_INCLUDES) -DCPU=$(CPU) -DTOOL_FAMILY=$(TOOL_FAMILY) -DTOOL=$(TOOL) -D_WRS_KERNEL   $(DEFINES) -o "$@" -c "$<"
+
+
+CommandBassedRobotTemplate_partialImage/$(MODE_DIR)/Objects/2014_BigBallBot/Commands/ShiftHigh.o : $(PRJ_ROOT_DIR)/Commands/ShiftHigh.cpp $(FORCE_FILE_BUILD)
+	$(TRACE_FLAG)if [ ! -d "`dirname "$@"`" ]; then mkdir -p "`dirname "$@"`"; fi;echo "building $@"; $(TOOL_PATH)ccppc $(DEBUGFLAGS_C++-Compiler) $(CC_ARCH_SPEC) -ansi -Wall  -MD -MP -mlongcall $(ADDED_C++FLAGS) $(IDE_INCLUDES) $(ADDED_INCLUDES) -DCPU=$(CPU) -DTOOL_FAMILY=$(TOOL_FAMILY) -DTOOL=$(TOOL) -D_WRS_KERNEL   $(DEFINES) -o "$@" -c "$<"
+
+
+CommandBassedRobotTemplate_partialImage/$(MODE_DIR)/Objects/2014_BigBallBot/Commands/ShiftLow.o : $(PRJ_ROOT_DIR)/Commands/ShiftLow.cpp $(FORCE_FILE_BUILD)
 	$(TRACE_FLAG)if [ ! -d "`dirname "$@"`" ]; then mkdir -p "`dirname "$@"`"; fi;echo "building $@"; $(TOOL_PATH)ccppc $(DEBUGFLAGS_C++-Compiler) $(CC_ARCH_SPEC) -ansi -Wall  -MD -MP -mlongcall $(ADDED_C++FLAGS) $(IDE_INCLUDES) $(ADDED_INCLUDES) -DCPU=$(CPU) -DTOOL_FAMILY=$(TOOL_FAMILY) -DTOOL=$(TOOL) -D_WRS_KERNEL   $(DEFINES) -o "$@" -c "$<"
 
 
@@ -211,16 +248,29 @@ CommandBassedRobotTemplate_partialImage/$(MODE_DIR)/Objects/2014_BigBallBot/Robo
 	$(TRACE_FLAG)if [ ! -d "`dirname "$@"`" ]; then mkdir -p "`dirname "$@"`"; fi;echo "building $@"; $(TOOL_PATH)ccppc $(DEBUGFLAGS_C++-Compiler) $(CC_ARCH_SPEC) -ansi -Wall  -MD -MP -mlongcall $(ADDED_C++FLAGS) $(IDE_INCLUDES) $(ADDED_INCLUDES) -DCPU=$(CPU) -DTOOL_FAMILY=$(TOOL_FAMILY) -DTOOL=$(TOOL) -D_WRS_KERNEL   $(DEFINES) -o "$@" -c "$<"
 
 
+CommandBassedRobotTemplate_partialImage/$(MODE_DIR)/Objects/2014_BigBallBot/Subsystems/AirCompressor.o : $(PRJ_ROOT_DIR)/Subsystems/AirCompressor.cpp $(FORCE_FILE_BUILD)
+	$(TRACE_FLAG)if [ ! -d "`dirname "$@"`" ]; then mkdir -p "`dirname "$@"`"; fi;echo "building $@"; $(TOOL_PATH)ccppc $(DEBUGFLAGS_C++-Compiler) $(CC_ARCH_SPEC) -ansi -Wall  -MD -MP -mlongcall $(ADDED_C++FLAGS) $(IDE_INCLUDES) $(ADDED_INCLUDES) -DCPU=$(CPU) -DTOOL_FAMILY=$(TOOL_FAMILY) -DTOOL=$(TOOL) -D_WRS_KERNEL   $(DEFINES) -o "$@" -c "$<"
+
+
 CommandBassedRobotTemplate_partialImage/$(MODE_DIR)/Objects/2014_BigBallBot/Subsystems/DriveTrain.o : $(PRJ_ROOT_DIR)/Subsystems/DriveTrain.cpp $(FORCE_FILE_BUILD)
 	$(TRACE_FLAG)if [ ! -d "`dirname "$@"`" ]; then mkdir -p "`dirname "$@"`"; fi;echo "building $@"; $(TOOL_PATH)ccppc $(DEBUGFLAGS_C++-Compiler) $(CC_ARCH_SPEC) -ansi -Wall  -MD -MP -mlongcall $(ADDED_C++FLAGS) $(IDE_INCLUDES) $(ADDED_INCLUDES) -DCPU=$(CPU) -DTOOL_FAMILY=$(TOOL_FAMILY) -DTOOL=$(TOOL) -D_WRS_KERNEL   $(DEFINES) -o "$@" -c "$<"
 
 
+CommandBassedRobotTemplate_partialImage/$(MODE_DIR)/Objects/2014_BigBallBot/Subsystems/Shifter.o : $(PRJ_ROOT_DIR)/Subsystems/Shifter.cpp $(FORCE_FILE_BUILD)
+	$(TRACE_FLAG)if [ ! -d "`dirname "$@"`" ]; then mkdir -p "`dirname "$@"`"; fi;echo "building $@"; $(TOOL_PATH)ccppc $(DEBUGFLAGS_C++-Compiler) $(CC_ARCH_SPEC) -ansi -Wall  -MD -MP -mlongcall $(ADDED_C++FLAGS) $(IDE_INCLUDES) $(ADDED_INCLUDES) -DCPU=$(CPU) -DTOOL_FAMILY=$(TOOL_FAMILY) -DTOOL=$(TOOL) -D_WRS_KERNEL   $(DEFINES) -o "$@" -c "$<"
+
+
 OBJECTS_CommandBassedRobotTemplate_partialImage = CommandBassedRobotTemplate_partialImage/$(MODE_DIR)/Objects/2014_BigBallBot/Commands/AutonomousCommand.o \
+	 CommandBassedRobotTemplate_partialImage/$(MODE_DIR)/Objects/2014_BigBallBot/Commands/CompressorRun.o \
 	 CommandBassedRobotTemplate_partialImage/$(MODE_DIR)/Objects/2014_BigBallBot/Commands/Drive.o \
+	 CommandBassedRobotTemplate_partialImage/$(MODE_DIR)/Objects/2014_BigBallBot/Commands/ShiftHigh.o \
+	 CommandBassedRobotTemplate_partialImage/$(MODE_DIR)/Objects/2014_BigBallBot/Commands/ShiftLow.o \
 	 CommandBassedRobotTemplate_partialImage/$(MODE_DIR)/Objects/2014_BigBallBot/OI.o \
 	 CommandBassedRobotTemplate_partialImage/$(MODE_DIR)/Objects/2014_BigBallBot/Robot.o \
 	 CommandBassedRobotTemplate_partialImage/$(MODE_DIR)/Objects/2014_BigBallBot/RobotMap.o \
-	 CommandBassedRobotTemplate_partialImage/$(MODE_DIR)/Objects/2014_BigBallBot/Subsystems/DriveTrain.o
+	 CommandBassedRobotTemplate_partialImage/$(MODE_DIR)/Objects/2014_BigBallBot/Subsystems/AirCompressor.o \
+	 CommandBassedRobotTemplate_partialImage/$(MODE_DIR)/Objects/2014_BigBallBot/Subsystems/DriveTrain.o \
+	 CommandBassedRobotTemplate_partialImage/$(MODE_DIR)/Objects/2014_BigBallBot/Subsystems/Shifter.o
 
 CommandBassedRobotTemplate_partialImage/$(MODE_DIR)/CommandBassedRobotTemplate_partialImage.o : $(OBJECTS_CommandBassedRobotTemplate_partialImage)
 	$(TRACE_FLAG)if [ ! -d "`dirname "$@"`" ]; then mkdir -p "`dirname "$@"`"; fi;echo "building $@"; $(TOOL_PATH)ccppc -r -nostdlib -Wl,-X  -o "$@" $(OBJECTS_CommandBassedRobotTemplate_partialImage) $(LIBPATH) $(LIBS) $(ADDED_LIBPATH) $(ADDED_LIBS)  && if [ "$(EXPAND_DBG)" = "1" ]; then plink "$@";fi
@@ -234,10 +284,14 @@ CommandBassedRobotTemplate_partialImage/$(MODE_DIR)/CommandBassedRobotTemplate_p
 
 force : 
 
-DEP_FILES := CommandBasedRobotTemplate/$(MODE_DIR)/Objects/2014_BigBallBot/Commands/AutonomousCommand.d CommandBasedRobotTemplate/$(MODE_DIR)/Objects/2014_BigBallBot/Commands/Drive.d CommandBasedRobotTemplate/$(MODE_DIR)/Objects/2014_BigBallBot/OI.d \
-	 CommandBasedRobotTemplate/$(MODE_DIR)/Objects/2014_BigBallBot/Robot.d CommandBasedRobotTemplate/$(MODE_DIR)/Objects/2014_BigBallBot/RobotMap.d CommandBasedRobotTemplate/$(MODE_DIR)/Objects/2014_BigBallBot/Subsystems/DriveTrain.d \
-	 CommandBassedRobotTemplate_partialImage/$(MODE_DIR)/Objects/2014_BigBallBot/Commands/AutonomousCommand.d CommandBassedRobotTemplate_partialImage/$(MODE_DIR)/Objects/2014_BigBallBot/Commands/Drive.d CommandBassedRobotTemplate_partialImage/$(MODE_DIR)/Objects/2014_BigBallBot/OI.d \
-	 CommandBassedRobotTemplate_partialImage/$(MODE_DIR)/Objects/2014_BigBallBot/Robot.d CommandBassedRobotTemplate_partialImage/$(MODE_DIR)/Objects/2014_BigBallBot/RobotMap.d CommandBassedRobotTemplate_partialImage/$(MODE_DIR)/Objects/2014_BigBallBot/Subsystems/DriveTrain.d
+DEP_FILES := CommandBasedRobotTemplate/$(MODE_DIR)/Objects/2014_BigBallBot/Commands/AutonomousCommand.d CommandBasedRobotTemplate/$(MODE_DIR)/Objects/2014_BigBallBot/Commands/CompressorRun.d CommandBasedRobotTemplate/$(MODE_DIR)/Objects/2014_BigBallBot/Commands/Drive.d \
+	 CommandBasedRobotTemplate/$(MODE_DIR)/Objects/2014_BigBallBot/Commands/ShiftHigh.d CommandBasedRobotTemplate/$(MODE_DIR)/Objects/2014_BigBallBot/Commands/ShiftLow.d CommandBasedRobotTemplate/$(MODE_DIR)/Objects/2014_BigBallBot/OI.d \
+	 CommandBasedRobotTemplate/$(MODE_DIR)/Objects/2014_BigBallBot/Robot.d CommandBasedRobotTemplate/$(MODE_DIR)/Objects/2014_BigBallBot/RobotMap.d CommandBasedRobotTemplate/$(MODE_DIR)/Objects/2014_BigBallBot/Subsystems/AirCompressor.d \
+	 CommandBasedRobotTemplate/$(MODE_DIR)/Objects/2014_BigBallBot/Subsystems/DriveTrain.d CommandBasedRobotTemplate/$(MODE_DIR)/Objects/2014_BigBallBot/Subsystems/Shifter.d CommandBassedRobotTemplate_partialImage/$(MODE_DIR)/Objects/2014_BigBallBot/Commands/AutonomousCommand.d \
+	 CommandBassedRobotTemplate_partialImage/$(MODE_DIR)/Objects/2014_BigBallBot/Commands/CompressorRun.d CommandBassedRobotTemplate_partialImage/$(MODE_DIR)/Objects/2014_BigBallBot/Commands/Drive.d CommandBassedRobotTemplate_partialImage/$(MODE_DIR)/Objects/2014_BigBallBot/Commands/ShiftHigh.d \
+	 CommandBassedRobotTemplate_partialImage/$(MODE_DIR)/Objects/2014_BigBallBot/Commands/ShiftLow.d CommandBassedRobotTemplate_partialImage/$(MODE_DIR)/Objects/2014_BigBallBot/OI.d CommandBassedRobotTemplate_partialImage/$(MODE_DIR)/Objects/2014_BigBallBot/Robot.d \
+	 CommandBassedRobotTemplate_partialImage/$(MODE_DIR)/Objects/2014_BigBallBot/RobotMap.d CommandBassedRobotTemplate_partialImage/$(MODE_DIR)/Objects/2014_BigBallBot/Subsystems/AirCompressor.d CommandBassedRobotTemplate_partialImage/$(MODE_DIR)/Objects/2014_BigBallBot/Subsystems/DriveTrain.d \
+	 CommandBassedRobotTemplate_partialImage/$(MODE_DIR)/Objects/2014_BigBallBot/Subsystems/Shifter.d
 -include $(DEP_FILES)
 
 

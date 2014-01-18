@@ -390,9 +390,14 @@ CommandBasedRobotTemplate/Debug/Objects/2014_BigBallBot/Robot.o:  \
   C:/WindRiver/workspace/2014_BigBallBot/Commands/AutonomousCommand.h \
   C:/WindRiver/vxworks-6.3/target/h/WPILib/Commands/Subsystem.h \
   C:/WindRiver/workspace/2014_BigBallBot/Commands/../Robot.h \
-  C:/WindRiver/workspace/2014_BigBallBot/Subsystems/DriveTrain.h \
+  C:/WindRiver/workspace/2014_BigBallBot/Subsystems/AirCompressor.h \
   C:/WindRiver/vxworks-6.3/target/h/WPILib/Commands/Subsystem.h \
   C:/WindRiver/vxworks-6.3/target/h/WPILib/WPILib.h \
+  C:/WindRiver/workspace/2014_BigBallBot/Subsystems/../Commands/CompressorRun.h \
+  C:/WindRiver/vxworks-6.3/target/h/WPILib/Commands/Subsystem.h \
+  C:/WindRiver/workspace/2014_BigBallBot/Subsystems/../Commands/../Robot.h \
+  C:/WindRiver/workspace/2014_BigBallBot/Subsystems/DriveTrain.h \
+  C:/WindRiver/workspace/2014_BigBallBot/Subsystems/Shifter.h \
   C:/WindRiver/workspace/2014_BigBallBot/OI.h
 
 C:/WindRiver/workspace/2014_BigBallBot/Robot.h:
@@ -1175,10 +1180,20 @@ C:/WindRiver/vxworks-6.3/target/h/WPILib/Commands/Subsystem.h:
 
 C:/WindRiver/workspace/2014_BigBallBot/Commands/../Robot.h:
 
-C:/WindRiver/workspace/2014_BigBallBot/Subsystems/DriveTrain.h:
+C:/WindRiver/workspace/2014_BigBallBot/Subsystems/AirCompressor.h:
 
 C:/WindRiver/vxworks-6.3/target/h/WPILib/Commands/Subsystem.h:
 
 C:/WindRiver/vxworks-6.3/target/h/WPILib/WPILib.h:
+
+C:/WindRiver/workspace/2014_BigBallBot/Subsystems/../Commands/CompressorRun.h:
+
+C:/WindRiver/vxworks-6.3/target/h/WPILib/Commands/Subsystem.h:
+
+C:/WindRiver/workspace/2014_BigBallBot/Subsystems/../Commands/../Robot.h:
+
+C:/WindRiver/workspace/2014_BigBallBot/Subsystems/DriveTrain.h:
+
+C:/WindRiver/workspace/2014_BigBallBot/Subsystems/Shifter.h:
 
 C:/WindRiver/workspace/2014_BigBallBot/OI.h:
