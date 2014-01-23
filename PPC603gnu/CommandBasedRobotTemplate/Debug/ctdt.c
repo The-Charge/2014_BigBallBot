@@ -11,6 +11,10 @@ void _GLOBAL__I__ZN17AutonomousCommandC2Ev();
 
 void _GLOBAL__I__ZN5DriveC2Ev();
 
+void _GLOBAL__I__ZN11ShifterHighC2Ev();
+
+void _GLOBAL__I__ZN10ShifterLowC2Ev();
+
 void _GLOBAL__I__ZN2OIC2Ev();
 
 void _GLOBAL__I__ZN5Robot10driveTrainE();
@@ -18,6 +22,8 @@ void _GLOBAL__I__ZN5Robot10driveTrainE();
 void _GLOBAL__I__ZN8RobotMap24driveTrainFrontLeftMotorE();
 
 void _GLOBAL__I__ZN10DriveTrainC2Ev();
+
+void _GLOBAL__I__ZN7ShifterC2Ev();
 
 void _GLOBAL__I__ZN12PrintCommandC2EPKc();
 
@@ -76,10 +82,13 @@ void (*_ctors[])() =
     {
     _GLOBAL__I__ZN17AutonomousCommandC2Ev,
     _GLOBAL__I__ZN5DriveC2Ev,
+    _GLOBAL__I__ZN11ShifterHighC2Ev,
+    _GLOBAL__I__ZN10ShifterLowC2Ev,
     _GLOBAL__I__ZN2OIC2Ev,
     _GLOBAL__I__ZN5Robot10driveTrainE,
     _GLOBAL__I__ZN8RobotMap24driveTrainFrontLeftMotorE,
     _GLOBAL__I__ZN10DriveTrainC2Ev,
+    _GLOBAL__I__ZN7ShifterC2Ev,
     _GLOBAL__I__ZN12PrintCommandC2EPKc,
     _GLOBAL__I__ZN9Scheduler9_instanceE,
     _GLOBAL__I__ZN11WaitCommandC2Ed,
@@ -113,6 +122,10 @@ void _GLOBAL__D__ZN17AutonomousCommandC2Ev();
 
 void _GLOBAL__D__ZN5DriveC2Ev();
 
+void _GLOBAL__D__ZN11ShifterHighC2Ev();
+
+void _GLOBAL__D__ZN10ShifterLowC2Ev();
+
 void _GLOBAL__D__ZN2OIC2Ev();
 
 void _GLOBAL__D__ZN5Robot10driveTrainE();
@@ -120,6 +133,8 @@ void _GLOBAL__D__ZN5Robot10driveTrainE();
 void _GLOBAL__D__ZN8RobotMap24driveTrainFrontLeftMotorE();
 
 void _GLOBAL__D__ZN10DriveTrainC2Ev();
+
+void _GLOBAL__D__ZN7ShifterC2Ev();
 
 void _GLOBAL__D__ZN9Scheduler9_instanceE();
 
@@ -168,10 +183,13 @@ void (*_dtors[])() =
     {
     _GLOBAL__D__ZN17AutonomousCommandC2Ev,
     _GLOBAL__D__ZN5DriveC2Ev,
+    _GLOBAL__D__ZN11ShifterHighC2Ev,
+    _GLOBAL__D__ZN10ShifterLowC2Ev,
     _GLOBAL__D__ZN2OIC2Ev,
     _GLOBAL__D__ZN5Robot10driveTrainE,
     _GLOBAL__D__ZN8RobotMap24driveTrainFrontLeftMotorE,
     _GLOBAL__D__ZN10DriveTrainC2Ev,
+    _GLOBAL__D__ZN7ShifterC2Ev,
     _GLOBAL__D__ZN9Scheduler9_instanceE,
     _GLOBAL__D_wpi_error_s_ModuleIndexOutOfRange,
     _GLOBAL__D__ZN17MotorSafetyHelper12m_headHelperE,
