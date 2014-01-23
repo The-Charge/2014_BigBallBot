@@ -34,4 +34,13 @@ void Shifter::InitDefaultCommand() {
 
 // Put methods for controlling this subsystem
 // here. Call these from Commands.
-
+void Shifter::ShiftHigh()
+{
+	shifterLeft->Set(DoubleSolenoid::kForward);
+	shifterRight->Set(DoubleSolenoid::kForward);
+}
+void Shifter::ShiftLow()
+{
+	shifterLeft->Set(DoubleSolenoid::kReverse);
+	shifterRight->Set(DoubleSolenoid::kReverse);
+}
