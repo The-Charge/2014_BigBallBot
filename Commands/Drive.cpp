@@ -8,6 +8,7 @@
 // update. Deleting the comments indicating the section will prevent
 // it from being updated in th future.
 #include "Drive.h"
+
 Drive::Drive() {
 	// Use requires() here to declare subsystem dependencies
 	// eg. requires(chassis);
@@ -22,8 +23,12 @@ void Drive::Initialize() {
 }
 // Called repeatedly when this Command is scheduled to run
 void Drive::Execute() {
-	float leftSpeed = Robot::oi->getLeftJoystick()->GetY();
-	float rightSpeed = Robot::oi->getRightJoystick()->GetY();
+//	float leftSpeed = Robot::oi->getLeftJoystick()->GetY();
+//	float rightSpeed = Robot::oi->getRightJoystick()->GetY();
+	
+	float leftSpeed  = m_ControllerDrive->GetLeftY() ;
+	float rightSpeed = m_ControllerDrive->GetRightY();
+	
 	Robot::driveTrain->SetLeft(leftSpeed);
 	Robot::driveTrain->SetRight(rightSpeed);
 	}
