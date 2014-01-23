@@ -22,8 +22,13 @@ void Drive::Initialize() {
 }
 // Called repeatedly when this Command is scheduled to run
 void Drive::Execute() {
-	float leftSpeed = Robot::oi->getLeftJoystick()->GetY();
-	float rightSpeed = Robot::oi->getRightJoystick()->GetY();
+//	float leftSpeed = Robot::oi->getLeftJoystick()->GetY();
+//	float rightSpeed = Robot::oi->getRightJoystick()->GetY();
+	
+	Object360 * xbox = dynamic_cast<Object360*>(Robot::oi->getLeftJoystick());
+	float leftSpeed  = xbox->GetLeftY() ;
+	float rightSpeed = xbox->GetRightY();
+	
 	Robot::driveTrain->SetLeft(leftSpeed);
 	Robot::driveTrain->SetRight(rightSpeed);
 	}
