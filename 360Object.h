@@ -20,25 +20,18 @@ const short TriggerAxis = 3;
 const short RightXAxis = 4;
 const short RightYAxis = 5;
 
-class Object360
+class Object360 : public Joystick
 {
-private: Joystick *m_Controller360;
+//private: Joystick *m_Controller360;
 	
-	public: Object360(int port)
+	public: Object360(int port):Joystick(port,6,12)
 	{
 		/* Makes an instance of a new joystick that our
 		 * 360 controller will use. Is in USB port 1.
 		 * Has 6 axiseses and has 12 buttons (only 10
 		 * buttons are actually on the 360 controller) */
-		m_Controller360 = new Joystick(port,6,12);
 	}
 	
-	public: bool GetRawButton(int button)
-	{
-		/*Gets the raw button state from the joystick class.
-		true is press, false is unpressified */
-		return m_Controller360->GetRawButton(button);
-	}
 	
 	
 	/* Easy functions to call to get the value of stuff. */
@@ -72,7 +65,7 @@ private: Joystick *m_Controller360;
 		/*get the axis state from the joystick class
 		negative on x is left, positive is right
 		negative on y is up, positive is down */
-		return m_Controller360->GetRawAxis(axis);
+		return GetRawAxis(axis);
 	}
 	
 

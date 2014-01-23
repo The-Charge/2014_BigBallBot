@@ -26,8 +26,9 @@ void Drive::Execute() {
 //	float leftSpeed = Robot::oi->getLeftJoystick()->GetY();
 //	float rightSpeed = Robot::oi->getRightJoystick()->GetY();
 	
-	float leftSpeed  = m_ControllerDrive->GetLeftY() ;
-	float rightSpeed = m_ControllerDrive->GetRightY();
+	Object360 * xbox = dynamic_cast<Object360*>(Robot::oi->getLeftJoystick());
+	float leftSpeed  = xbox->GetLeftY() ;
+	float rightSpeed = xbox->GetRightY();
 	
 	Robot::driveTrain->SetLeft(leftSpeed);
 	Robot::driveTrain->SetRight(rightSpeed);
