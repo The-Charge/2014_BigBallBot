@@ -21,6 +21,8 @@ void _GLOBAL__I__ZN5Robot10driveTrainE();
 
 void _GLOBAL__I__ZN8RobotMap24driveTrainFrontLeftMotorE();
 
+void _GLOBAL__I__ZN13AirCompressorC2Ev();
+
 void _GLOBAL__I__ZN10DriveTrainC2Ev();
 
 void _GLOBAL__I__ZN7ShifterC2Ev();
@@ -87,6 +89,7 @@ void (*_ctors[])() =
     _GLOBAL__I__ZN2OIC2Ev,
     _GLOBAL__I__ZN5Robot10driveTrainE,
     _GLOBAL__I__ZN8RobotMap24driveTrainFrontLeftMotorE,
+    _GLOBAL__I__ZN13AirCompressorC2Ev,
     _GLOBAL__I__ZN10DriveTrainC2Ev,
     _GLOBAL__I__ZN7ShifterC2Ev,
     _GLOBAL__I__ZN12PrintCommandC2EPKc,
@@ -131,6 +134,8 @@ void _GLOBAL__D__ZN2OIC2Ev();
 void _GLOBAL__D__ZN5Robot10driveTrainE();
 
 void _GLOBAL__D__ZN8RobotMap24driveTrainFrontLeftMotorE();
+
+void _GLOBAL__D__ZN13AirCompressorC2Ev();
 
 void _GLOBAL__D__ZN10DriveTrainC2Ev();
 
@@ -188,6 +193,7 @@ void (*_dtors[])() =
     _GLOBAL__D__ZN2OIC2Ev,
     _GLOBAL__D__ZN5Robot10driveTrainE,
     _GLOBAL__D__ZN8RobotMap24driveTrainFrontLeftMotorE,
+    _GLOBAL__D__ZN13AirCompressorC2Ev,
     _GLOBAL__D__ZN10DriveTrainC2Ev,
     _GLOBAL__D__ZN7ShifterC2Ev,
     _GLOBAL__D__ZN9Scheduler9_instanceE,
