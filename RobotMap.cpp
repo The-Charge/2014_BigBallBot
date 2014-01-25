@@ -65,10 +65,10 @@ void RobotMap::init() {
 	// CAN Jaguar ID assignments to run code in Fisbee Bot
 
 	driveTrainFrontLeftMotor = new CANJaguar(6);
-	driveTrainCenterLeftMotor = new CANJaguar(14);	//3
+	driveTrainCenterLeftMotor = new CANJaguar(14);	// set to non-existant Jag
 	driveTrainRearLeftMotor = new CANJaguar(18);
 	driveTrainFrontRightMotor = new CANJaguar(11);
-	driveTrainCenterRightMotor = new CANJaguar(15);	//7
+	driveTrainCenterRightMotor = new CANJaguar(15);	// set to non-existant Jag
 	driveTrainRearRightMotor = new CANJaguar(5);
 }
 
