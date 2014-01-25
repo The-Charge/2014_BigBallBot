@@ -56,9 +56,11 @@ void RobotMap::init() {
 	
 	driveTrainFrontLeftMotor = new CANJaguar(6);
 	driveTrainCenterLeftMotor = new CANJaguar(3);   // Front shooter motor
-	driveTrainRearLeftMotor = new CANJaguar(4);
+	driveTrainRearLeftMotor = new CANJaguar(18);
 	driveTrainFrontRightMotor = new CANJaguar(11);
 	driveTrainCenterRightMotor = new CANJaguar(7);	// Rear shooter motor
 	driveTrainRearRightMotor = new CANJaguar(5);
 	
+	
 }
+
