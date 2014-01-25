@@ -34,14 +34,14 @@ void Shifter::ShiftHigh()
 {
 	if (!shifterIsHigh)
 	{
-		shiftTimer->Start();
-		shifterLeft->Set(DoubleSolenoid::kForward);
-		shifterRight->Set(DoubleSolenoid::kForward);
 		if (!timing)
 		{
+			shiftTimer->Start();
 			shiftTimer->Reset();
 			timing = true;
 		}
+		shifterLeft->Set(DoubleSolenoid::kForward);
+		shifterRight->Set(DoubleSolenoid::kForward);
 		if (shiftTimer->HasPeriodPassed(2))
 		{
 			shifterIsHigh = true;
@@ -54,14 +54,14 @@ void Shifter::ShiftLow()
 {
 	if (shifterIsHigh)
 	{
-		shiftTimer->Start();
-		shifterLeft->Set(DoubleSolenoid::kReverse);
-		shifterRight->Set(DoubleSolenoid::kReverse);
 		if (!timing)
 		{		
+			shiftTimer->Start();
 			shiftTimer->Reset();
 			timing=true;
 		}
+		shifterLeft->Set(DoubleSolenoid::kReverse);
+		shifterRight->Set(DoubleSolenoid::kReverse);
 		if (shiftTimer->HasPeriodPassed(2))
 		{
 				shifterIsHigh = false;
