@@ -9,8 +9,8 @@
 // it from being updated in th future.
 
 
-#ifndef SHIFTERHIGH_H
-#define SHIFTERHIGH_H
+#ifndef SHIFTERLOWCMD_H
+#define SHIFTERLOWCMD_H
 
 
 #include "Commands/Subsystem.h"
@@ -21,9 +21,9 @@
  *
  * @author ExampleAuthor
  */
-class ShifterHigh: public Command {
+class ShifterLowCmd: public Command {
 public:
-	ShifterHigh();
+	ShifterLowCmd();
 	virtual void Initialize();
 	virtual void Execute();
 	virtual bool IsFinished();

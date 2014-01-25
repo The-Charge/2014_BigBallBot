@@ -73,7 +73,7 @@ Children:
           value: '7'
     Properties:
       Default Command: !!robotbuilder.data.properties.TypeSelectionProperty {default: None,
-        name: Default Command, type: Command, validators: null, value: Drive}
+        name: Default Command, type: Command, validators: null, value: None}
   - Name: Shifter
     Base: Subsystem
     Children:
@@ -135,7 +135,7 @@ Children:
           value: '4'
     Properties:
       Default Command: !!robotbuilder.data.properties.TypeSelectionProperty {default: None,
-        name: Default Command, type: Command, validators: null, value: ShifterHigh}
+        name: Default Command, type: Command, validators: null, value: None}
   - Name: AirCompressor
     Base: Subsystem
     Children:
@@ -157,7 +157,7 @@ Children:
           value: '1'
     Properties:
       Default Command: !!robotbuilder.data.properties.TypeSelectionProperty {default: None,
-        name: Default Command, type: Command, validators: null, value: CompressorRun}
+        name: Default Command, type: Command, validators: null, value: None}
   Properties: {}
 - Name: Operator Interface
   Base: OI
@@ -174,7 +174,7 @@ Children:
           name: Command
           type: Command
           validators: &id011 [TypeDropdownSelected]
-          value: ShifterHigh
+          value: ShifterHighCmd
         Button: !!robotbuilder.data.properties.ChoicesProperty
           choices: &id012 ['1', '2', '3', '4', '5', '6', '7', '8', '9', '10', '11',
             '12']
@@ -209,7 +209,7 @@ Children:
           name: Command
           type: Command
           validators: *id011
-          value: ShifterLow
+          value: ShifterLowCmd
         Button: !!robotbuilder.data.properties.ChoicesProperty
           choices: *id012
           default: '1'
@@ -243,7 +243,7 @@ Children:
         name: Requires, type: Subsystem, validators: null, value: None}
       Button on SmartDashboard: !!robotbuilder.data.properties.BooleanProperty {default: true,
         name: Button on SmartDashboard, validators: null, value: true}
-  - Name: Drive
+  - Name: DriveCmd
     Base: Command
     Children: []
     Properties:
@@ -251,7 +251,7 @@ Children:
         name: Requires, type: Subsystem, validators: null, value: DriveTrain}
       Button on SmartDashboard: !!robotbuilder.data.properties.BooleanProperty {default: true,
         name: Button on SmartDashboard, validators: null, value: true}
-  - Name: ShifterHigh
+  - Name: ShifterHighCmd
     Base: Command
     Children: []
     Properties:
@@ -259,7 +259,7 @@ Children:
         name: Requires, type: Subsystem, validators: null, value: Shifter}
       Button on SmartDashboard: !!robotbuilder.data.properties.BooleanProperty {default: true,
         name: Button on SmartDashboard, validators: null, value: true}
-  - Name: ShifterLow
+  - Name: ShifterLowCmd
     Base: Command
     Children: []
     Properties:
@@ -267,7 +267,7 @@ Children:
         name: Requires, type: Subsystem, validators: null, value: Shifter}
       Button on SmartDashboard: !!robotbuilder.data.properties.BooleanProperty {default: true,
         name: Button on SmartDashboard, validators: null, value: true}
-  - Name: CompressorRun
+  - Name: CompressorRunCmd
     Base: Command
     Children: []
     Properties:

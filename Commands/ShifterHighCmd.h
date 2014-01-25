@@ -9,8 +9,8 @@
 // it from being updated in th future.
 
 
-#ifndef DRIVE_H
-#define DRIVE_H
+#ifndef SHIFTERHIGHCMD_H
+#define SHIFTERHIGHCMD_H
 
 
 #include "Commands/Subsystem.h"
@@ -21,9 +21,9 @@
  *
  * @author ExampleAuthor
  */
-class Drive: public Command {
+class ShifterHighCmd: public Command {
 public:
-	Drive();
+	ShifterHighCmd();
 	virtual void Initialize();
 	virtual void Execute();
 	virtual bool IsFinished();

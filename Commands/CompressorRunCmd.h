@@ -9,8 +9,8 @@
 // it from being updated in th future.
 
 
-#ifndef COMPRESSORRUN_H
-#define COMPRESSORRUN_H
+#ifndef COMPRESSORRUNCMD_H
+#define COMPRESSORRUNCMD_H
 
 
 #include "Commands/Subsystem.h"
@@ -21,9 +21,9 @@
  *
  * @author ExampleAuthor
  */
-class CompressorRun: public Command {
+class CompressorRunCmd: public Command {
 public:
-	CompressorRun();
+	CompressorRunCmd();
 	virtual void Initialize();
 	virtual void Execute();
 	virtual bool IsFinished();

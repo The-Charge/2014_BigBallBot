@@ -9,8 +9,8 @@
 // it from being updated in th future.
 
 
-#ifndef SHIFTERLOW_H
-#define SHIFTERLOW_H
+#ifndef DRIVECMD_H
+#define DRIVECMD_H
 
 
 #include "Commands/Subsystem.h"
@@ -21,9 +21,9 @@
  *
  * @author ExampleAuthor
  */
-class ShifterLow: public Command {
+class DriveCmd: public Command {
 public:
-	ShifterLow();
+	DriveCmd();
 	virtual void Initialize();
 	virtual void Execute();
 	virtual bool IsFinished();
