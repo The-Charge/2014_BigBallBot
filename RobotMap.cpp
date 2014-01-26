@@ -55,12 +55,29 @@ void RobotMap::init() {
 	// Overwrite CAN Jaguar ID assignments to run code in Fisbee Bot.
 	
 	driveTrainFrontLeftMotor = new CANJaguar(6);
-	driveTrainCenterLeftMotor = new CANJaguar(3);   // Front shooter motor
+	driveTrainCenterLeftMotor = new CANJaguar(14);		// non-existant CAN ID
 	driveTrainRearLeftMotor = new CANJaguar(18);
 	driveTrainFrontRightMotor = new CANJaguar(11);
-	driveTrainCenterRightMotor = new CANJaguar(7);	// Rear shooter motor
+	driveTrainCenterRightMotor = new CANJaguar(15);		// non-existant CAN ID
 	driveTrainRearRightMotor = new CANJaguar(5);
 	
+/* Other systems on Fisbee Bot:
+
+	//elevator
+	const int ELEVATOR_MOTOR_ID = 4;
+	const int ELEVATOR_MOTOR2_ID = 8;
+
+	//shooter
+	const int FRONT_SHOOTER_ID = 3;
+	const int BACK_SHOOTER_ID = 7;
+
+	//PWM ID'S USED
+	const int LEFT_SHIFTER_ID = 1;
+	const int RIGHT_SHIFTER_ID = 2;
+
+	const int LEFT_FINGER_ID = 3;
+	const int RIGHT_FINGER_ID = 4;
+*/	
 	
 }
 
