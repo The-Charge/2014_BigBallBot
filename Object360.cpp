@@ -11,10 +11,10 @@ const short BUTTON_LEFT_CLICK_ID = 9;
 const short BUTTON_RIGHT_CLICK_ID = 10;
 
 const short AXIS_LEFT_X_ID = 1;
-const short AXIS_LEFT_Y_ID = 2;
+const short AXIS_LEFT_Y_ID = 5;
 const short AXIS_TRIGGER_ID = 3;
 const short AXIS_RIGHT_X_ID = 4;
-const short AXIS_RIGHT_Y_ID = 5;
+const short AXIS_RIGHT_Y_ID = 2;
 
 Object360::Object360(int port):Joystick(port,6,12)
 {
