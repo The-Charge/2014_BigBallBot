@@ -20,7 +20,7 @@ Children:
           default: '2'
           name: CAN ID
           validators: &id002 [CANID]
-          value: '2'
+          value: '16'
     - Name: Center Left Motor
       Base: CAN Jaguar
       Children: []
@@ -30,7 +30,7 @@ Children:
           default: '2'
           name: CAN ID
           validators: *id002
-          value: '3'
+          value: '9'
     - Name: Rear Left Motor
       Base: CAN Jaguar
       Children: []
@@ -40,7 +40,7 @@ Children:
           default: '2'
           name: CAN ID
           validators: *id002
-          value: '4'
+          value: '8'
     - Name: Front Right Motor
       Base: CAN Jaguar
       Children: []
@@ -50,7 +50,7 @@ Children:
           default: '2'
           name: CAN ID
           validators: *id002
-          value: '5'
+          value: '12'
     - Name: Center Right Motor
       Base: CAN Jaguar
       Children: []
@@ -60,7 +60,7 @@ Children:
           default: '2'
           name: CAN ID
           validators: *id002
-          value: '6'
+          value: '2'
     - Name: Rear Right Motor
       Base: CAN Jaguar
       Children: []
@@ -70,7 +70,7 @@ Children:
           default: '2'
           name: CAN ID
           validators: *id002
-          value: '7'
+          value: '10'
     Properties:
       Default Command: !!robotbuilder.data.properties.TypeSelectionProperty {default: None,
         name: Default Command, type: Command, validators: null, value: Drive}
@@ -294,6 +294,6 @@ Properties:
     validators: null, value: 2619}
   Export Commands: !!robotbuilder.data.properties.BooleanProperty {default: true,
     name: Export Commands, validators: null, value: true}
-  Java Project Directory: !!robotbuilder.data.properties.FileProperty {default: 'C:\Users\Robotics\NetBeansProjects',
+  Java Project Directory: !!robotbuilder.data.properties.FileProperty {default: 'C:\Users\abcurrie\NetBeansProjects',
     extension: null, folder: true, name: Java Project Directory, validators: null,
     value: 'C:\Users\abcurrie\NetBeansProjects'}
