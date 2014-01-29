@@ -26,7 +26,7 @@ void Drive::Execute()
 	//Get the main drive controller (left)
 	Object360* driveController = Robot::oi->getLeftController();
 	//Grab the speeds from the drive controller.
-	float leftSpeed  = driveController->GetLeftY() ;
+	float leftSpeed  = driveController->GetLeftY();
 	float rightSpeed = driveController->GetRightY();
 	//Send the speeds to the drive-train.
 	Robot::driveTrain->SetLeft(leftSpeed);
