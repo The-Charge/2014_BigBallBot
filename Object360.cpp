@@ -4,17 +4,17 @@ const short BUTTON_B_ID = 2;
 const short BUTTON_X_ID = 3;
 const short BUTTON_Y_ID = 4;
 const short BUTTON_LEFT_BUMPER_ID = 5;
-const short BUTTON_RIGHT_BUTTON_ID = 6;
+const short BUTTON_RIGHT_BUMPER_ID = 6;
 const short BUTTON_SELECT_ID = 7;
 const short BUTTON_START_ID = 8;
 const short BUTTON_LEFT_CLICK_ID = 9;
 const short BUTTON_RIGHT_CLICK_ID = 10;
 
 const short AXIS_LEFT_X_ID = 1;
-const short AXIS_LEFT_Y_ID = 5;
+const short AXIS_LEFT_Y_ID = 2;     // This is just WRONG... should be "2"
 const short AXIS_TRIGGER_ID = 3;
 const short AXIS_RIGHT_X_ID = 4;
-const short AXIS_RIGHT_Y_ID = 2;
+const short AXIS_RIGHT_Y_ID = 5;	// And this should be "5"
 
 Object360::Object360(int port):Joystick(port,6,12)
 {
@@ -39,7 +39,7 @@ bool Object360::GetY()
 }
 bool Object360::GetRightBumper()
 { 
-	return GetRawButton(BUTTON_RIGHT_BUTTON_ID); 
+	return GetRawButton(BUTTON_RIGHT_BUMPER_ID); 
 }
 bool Object360::GetLeftBumper()
 { 
