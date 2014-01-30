@@ -26,19 +26,19 @@ void RobotMap::init() {
 	driveTrainFrontLeftMotor = new CANJaguar(2);
 	
 	
-	driveTrainCenterLeftMotor = new CANJaguar(3);
+	driveTrainCenterLeftMotor = new CANJaguar(10);
 	
 	
-	driveTrainRearLeftMotor = new CANJaguar(4);
+	driveTrainRearLeftMotor = new CANJaguar(12);
 	
 	
-	driveTrainFrontRightMotor = new CANJaguar(5);
+	driveTrainFrontRightMotor = new CANJaguar(8);
 	
 	
-	driveTrainCenterRightMotor = new CANJaguar(6);
+	driveTrainCenterRightMotor = new CANJaguar(9);
 	
 	
-	driveTrainRearRightMotor = new CANJaguar(7);
+	driveTrainRearRightMotor = new CANJaguar(16);
 	
 	
 	shifterShifterLeft = new DoubleSolenoid(1, 1, 2);      
