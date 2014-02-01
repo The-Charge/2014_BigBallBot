@@ -35,10 +35,12 @@ void DriveTrain::SetLeft(float speed)
 	frontLeftMotor->Set(speed);
 	centerLeftMotor->Set(speed);
 	rearLeftMotor->Set(speed);
+	SmartDashboard::PutNumber("Left Speed", speed);
 }
 void DriveTrain::SetRight(float speed)
 {
 	frontRightMotor->Set(-speed);
 	centerRightMotor->Set(-speed);
 	rearRightMotor->Set(-speed);
+	SmartDashboard::PutNumber("Right Speed", speed);
 }	
