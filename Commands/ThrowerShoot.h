@@ -16,6 +16,9 @@
 #include "Commands/Subsystem.h"
 #include "../Robot.h"
 
+const double LEFT_BOUND_COCK = .7;
+const double RIGHT_BOUND_COCK = 1;
+
 /**
  *
  *
