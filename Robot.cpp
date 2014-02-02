@@ -13,7 +13,6 @@ Clocksprings* Robot::clocksprings = 0;
 DriveTrain* Robot::driveTrain = 0;
 Shifter* Robot::shifter = 0;
 AirCompressor* Robot::airCompressor = 0;
-PickupWheels* Robot::pickupWheels = 0;
 PickupArms* Robot::pickupArms = 0;
 Thrower* Robot::thrower = 0;
 Camera* Robot::camera = 0;
@@ -26,7 +25,6 @@ void Robot::RobotInit() {
 	driveTrain = new DriveTrain();
 	shifter = new Shifter();
 	airCompressor = new AirCompressor();
-	pickupWheels = new PickupWheels();
 	pickupArms = new PickupArms();
 	thrower = new Thrower();
 	camera = new Camera();

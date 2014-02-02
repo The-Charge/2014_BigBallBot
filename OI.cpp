@@ -19,10 +19,6 @@
 #include "Commands/PickupArmsMidwayHi.h"
 #include "Commands/PickupArmsMidwayLo.h"
 #include "Commands/PickupArmsRetract.h"
-#include "Commands/PickupWheelsForward.h"
-#include "Commands/PickupWheelsOff.h"
-#include "Commands/PickupWheelsReverseFast.h"
-#include "Commands/PickupWheelsReverseSlow.h"
 #include "Commands/ShifterHigh.h"
 #include "Commands/ShifterLow.h"
 #include "Commands/ThrowerShoot.h"
@@ -46,10 +42,6 @@ OI::OI() {
 	SmartDashboard::PutData("ShifterHigh", new ShifterHigh());
 	SmartDashboard::PutData("ShifterLow", new ShifterLow());
 	SmartDashboard::PutData("CompressorRun", new CompressorRun());
-	SmartDashboard::PutData("PickupWheelsOff", new PickupWheelsOff());
-	SmartDashboard::PutData("PickupWheelsForward", new PickupWheelsForward());
-	SmartDashboard::PutData("PickupWheelsReverseSlow", new PickupWheelsReverseSlow());
-	SmartDashboard::PutData("PickupWheelsReverseFast", new PickupWheelsReverseFast());
 	SmartDashboard::PutData("ClockspringsTensionLow", new ClockspringsTensionLow());
 	SmartDashboard::PutData("ClockspringsTensionHigh", new ClockspringsTensionHigh());
 	SmartDashboard::PutData("Pickup Arms Extend", new PickupArmsExtend());

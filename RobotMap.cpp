@@ -21,8 +21,6 @@ CANJaguar* RobotMap::driveTrainRearRightMotor = NULL;
 DoubleSolenoid* RobotMap::shifterShifterLeft = NULL;
 DoubleSolenoid* RobotMap::shifterShifterRight = NULL;
 Relay* RobotMap::airCompressorCompressorSpike = NULL;
-CANJaguar* RobotMap::pickupWheelsLeftPickupMotor = NULL;
-CANJaguar* RobotMap::pickupWheelsRightPickupMotor = NULL;
 DoubleSolenoid* RobotMap::pickupArmsLeftLongCylinder = NULL;
 DoubleSolenoid* RobotMap::pickupArmsRightShortCylinder = NULL;
 DoubleSolenoid* RobotMap::pickupArmsRigthLongCylinder = NULL;
@@ -67,12 +65,6 @@ void RobotMap::init() {
 	
 	airCompressorCompressorSpike = new Relay(1, 1);
 	lw->AddActuator("AirCompressor", "CompressorSpike", airCompressorCompressorSpike);
-	
-	pickupWheelsLeftPickupMotor = new CANJaguar(8);
-	
-	
-	pickupWheelsRightPickupMotor = new CANJaguar(9);
-	
 	
 	pickupArmsLeftLongCylinder = new DoubleSolenoid(1, 5, 6);      
 	

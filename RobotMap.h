@@ -31,8 +31,6 @@ public:
 	static DoubleSolenoid* shifterShifterLeft;
 	static DoubleSolenoid* shifterShifterRight;
 	static Relay* airCompressorCompressorSpike;
-	static CANJaguar* pickupWheelsLeftPickupMotor;
-	static CANJaguar* pickupWheelsRightPickupMotor;
 	static DoubleSolenoid* pickupArmsLeftLongCylinder;
 	static DoubleSolenoid* pickupArmsRightShortCylinder;
 	static DoubleSolenoid* pickupArmsRigthLongCylinder;
