@@ -581,7 +581,7 @@ Children:
         name: Requires, type: Subsystem, validators: null, value: PickupWheels}
       Button on SmartDashboard: !!robotbuilder.data.properties.BooleanProperty {default: true,
         name: Button on SmartDashboard, validators: null, value: true}
-  - Name: PickWheelsReverseFast
+  - Name: PickupWheelsReverseFast
     Base: Command
     Children: []
     Properties:

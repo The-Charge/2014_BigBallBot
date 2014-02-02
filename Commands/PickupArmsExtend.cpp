@@ -27,7 +27,6 @@ void PickupArmsExtend::Execute() {
 // Make this return true when this Command no longer needs to run execute()
 bool PickupArmsExtend::IsFinished() {
 	return IsTimedOut();
-
 }
 // Called once after isFinished returns true
 void PickupArmsExtend::End() {
@@ -37,5 +36,4 @@ void PickupArmsExtend::End() {
 // subsystems is scheduled to run
 void PickupArmsExtend::Interrupted() {
 	End();
-
 }

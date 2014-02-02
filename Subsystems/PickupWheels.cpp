@@ -24,3 +24,9 @@ void PickupWheels::InitDefaultCommand() {
 }
 // Put methods for controlling this subsystem
 // here. Call these from Commands.
+void PickupWheels::SetSpeed(float speed)
+{
+	leftPickupMotor->Set(speed);
+	rightPickupMotor->Set(speed);
+}
+	
