@@ -25,6 +25,14 @@ void _GLOBAL__I__ZN18PickupArmsMidwayLoC2Ev();
 
 void _GLOBAL__I__ZN17PickupArmsRetractC2Ev();
 
+void _GLOBAL__I__ZN19PickupWheelsForwardC2Ev();
+
+void _GLOBAL__I__ZN15PickupWheelsOffC2Ev();
+
+void _GLOBAL__I__ZN23PickupWheelsReverseFastC2Ev();
+
+void _GLOBAL__I__ZN23PickupWheelsReverseSlowC2Ev();
+
 void _GLOBAL__I__ZN11ShifterHighC2Ev();
 
 void _GLOBAL__I__ZN10ShifterLowC2Ev();
@@ -48,6 +56,8 @@ void _GLOBAL__I__ZN12ClockspringsC2Ev();
 void _GLOBAL__I__ZN10DriveTrainC2Ev();
 
 void _GLOBAL__I__ZN10PickupArmsC2Ev();
+
+void _GLOBAL__I__ZN12PickupWheelsC2Ev();
 
 void _GLOBAL__I_shifterIsHigh();
 
@@ -117,6 +127,10 @@ void (*_ctors[])() =
     _GLOBAL__I__ZN18PickupArmsMidwayHiC2Ev,
     _GLOBAL__I__ZN18PickupArmsMidwayLoC2Ev,
     _GLOBAL__I__ZN17PickupArmsRetractC2Ev,
+    _GLOBAL__I__ZN19PickupWheelsForwardC2Ev,
+    _GLOBAL__I__ZN15PickupWheelsOffC2Ev,
+    _GLOBAL__I__ZN23PickupWheelsReverseFastC2Ev,
+    _GLOBAL__I__ZN23PickupWheelsReverseSlowC2Ev,
     _GLOBAL__I__ZN11ShifterHighC2Ev,
     _GLOBAL__I__ZN10ShifterLowC2Ev,
     _GLOBAL__I__ZN12ThrowerShootC2Ev,
@@ -129,6 +143,7 @@ void (*_ctors[])() =
     _GLOBAL__I__ZN12ClockspringsC2Ev,
     _GLOBAL__I__ZN10DriveTrainC2Ev,
     _GLOBAL__I__ZN10PickupArmsC2Ev,
+    _GLOBAL__I__ZN12PickupWheelsC2Ev,
     _GLOBAL__I_shifterIsHigh,
     _GLOBAL__I__ZN7ThrowerC2Ev,
     _GLOBAL__I__ZN12PrintCommandC2EPKc,
@@ -178,6 +193,14 @@ void _GLOBAL__D__ZN18PickupArmsMidwayLoC2Ev();
 
 void _GLOBAL__D__ZN17PickupArmsRetractC2Ev();
 
+void _GLOBAL__D__ZN19PickupWheelsForwardC2Ev();
+
+void _GLOBAL__D__ZN15PickupWheelsOffC2Ev();
+
+void _GLOBAL__D__ZN23PickupWheelsReverseFastC2Ev();
+
+void _GLOBAL__D__ZN23PickupWheelsReverseSlowC2Ev();
+
 void _GLOBAL__D__ZN11ShifterHighC2Ev();
 
 void _GLOBAL__D__ZN10ShifterLowC2Ev();
@@ -201,6 +224,8 @@ void _GLOBAL__D__ZN12ClockspringsC2Ev();
 void _GLOBAL__D__ZN10DriveTrainC2Ev();
 
 void _GLOBAL__D__ZN10PickupArmsC2Ev();
+
+void _GLOBAL__D__ZN12PickupWheelsC2Ev();
 
 void _GLOBAL__D_shifterIsHigh();
 
@@ -260,6 +285,10 @@ void (*_dtors[])() =
     _GLOBAL__D__ZN18PickupArmsMidwayHiC2Ev,
     _GLOBAL__D__ZN18PickupArmsMidwayLoC2Ev,
     _GLOBAL__D__ZN17PickupArmsRetractC2Ev,
+    _GLOBAL__D__ZN19PickupWheelsForwardC2Ev,
+    _GLOBAL__D__ZN15PickupWheelsOffC2Ev,
+    _GLOBAL__D__ZN23PickupWheelsReverseFastC2Ev,
+    _GLOBAL__D__ZN23PickupWheelsReverseSlowC2Ev,
     _GLOBAL__D__ZN11ShifterHighC2Ev,
     _GLOBAL__D__ZN10ShifterLowC2Ev,
     _GLOBAL__D__ZN12ThrowerShootC2Ev,
@@ -272,6 +301,7 @@ void (*_dtors[])() =
     _GLOBAL__D__ZN12ClockspringsC2Ev,
     _GLOBAL__D__ZN10DriveTrainC2Ev,
     _GLOBAL__D__ZN10PickupArmsC2Ev,
+    _GLOBAL__D__ZN12PickupWheelsC2Ev,
     _GLOBAL__D_shifterIsHigh,
     _GLOBAL__D__ZN7ThrowerC2Ev,
     _GLOBAL__D__ZN9Scheduler9_instanceE,

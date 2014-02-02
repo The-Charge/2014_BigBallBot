@@ -19,6 +19,10 @@
 #include "Commands/PickupArmsMidwayHi.h"
 #include "Commands/PickupArmsMidwayLo.h"
 #include "Commands/PickupArmsRetract.h"
+#include "Commands/PickupWheelsForward.h"
+#include "Commands/PickupWheelsOff.h"
+#include "Commands/PickupWheelsReverseFast.h"
+#include "Commands/PickupWheelsReverseSlow.h"
 #include "Commands/ShifterHigh.h"
 #include "Commands/ShifterLow.h"
 #include "Commands/ThrowerShoot.h"
@@ -37,6 +41,10 @@ OI::OI() {
 	shiftHighButton->WhenPressed(new ShifterHigh());
      
         // SmartDashboard Buttons
+	SmartDashboard::PutData("Pickup Wheels Off", new PickupWheelsOff());
+	SmartDashboard::PutData("Pickup Wheels Forward", new PickupWheelsForward());
+	SmartDashboard::PutData("Pickup Wheels Reverse Slow", new PickupWheelsReverseSlow());
+	SmartDashboard::PutData("Pickup Wheels Reverse Fast", new PickupWheelsReverseFast());
 	SmartDashboard::PutData("Autonomous Command", new AutonomousCommand());
 	SmartDashboard::PutData("Drive", new Drive());
 	SmartDashboard::PutData("ShifterHigh", new ShifterHigh());
