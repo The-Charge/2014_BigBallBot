@@ -23,12 +23,9 @@ void Drive::Initialize() {
 // Called repeatedly when this Command is scheduled to run
 void Drive::Execute() 
 {
-	//Get the main drive controller (left)
-	Object360* driveController = Robot::oi->getLeftController();
-	//Grab the speeds from the drive controller.
-	float leftSpeed  = driveController->GetLeftY() ;
-	float rightSpeed = driveController->GetRightY();
 	//Send the speeds to the drive-train.
+	float leftSpeed = Robot::oi->getLeftJoystick()->GetY();
+	float rightSpeed = Robot::oi->getRightJoystick()->GetY();
 	Robot::driveTrain->SetLeft(leftSpeed);
 	Robot::driveTrain->SetRight(rightSpeed);
 }
