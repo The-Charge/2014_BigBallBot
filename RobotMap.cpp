@@ -62,6 +62,13 @@ void RobotMap::init() {
 	driveTrainCenterRightMotor = new CANJaguar(9);		// non-existant CAN ID
 	driveTrainRearRightMotor = new CANJaguar(16);
 	
+	driveTrainFrontLeftMotor->ConfigNeutralMode(CANJaguar::kNeutralMode_Coast);		// set Jag to "coast" when output = 0.0
+	driveTrainCenterLeftMotor->ConfigNeutralMode(CANJaguar::kNeutralMode_Coast);		// set Jag to "coast" when output = 0.0
+	driveTrainRearLeftMotor->ConfigNeutralMode(CANJaguar::kNeutralMode_Coast);		// set Jag to "coast" when output = 0.0
+	driveTrainFrontRightMotor->ConfigNeutralMode(CANJaguar::kNeutralMode_Coast);		// set Jag to "coast" when output = 0.0
+	driveTrainCenterRightMotor->ConfigNeutralMode(CANJaguar::kNeutralMode_Coast);		// set Jag to "coast" when output = 0.0
+	driveTrainRearRightMotor->ConfigNeutralMode(CANJaguar::kNeutralMode_Coast);		// set Jag to "coast" when output = 0.0
+	
 /* Other systems on Fisbee Bot:
 
 	//elevator
