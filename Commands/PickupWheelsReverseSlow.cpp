@@ -26,7 +26,7 @@ void PickupWheelsReverseSlow::Initialize() {
 
 // Called repeatedly when this Command is scheduled to run
 void PickupWheelsReverseSlow::Execute() {
-	
+	Robot::pickupWheels->SetReverseSlow();
 }
 
 // Make this return true when this Command no longer needs to run execute()
