@@ -22,22 +22,18 @@ void ThrowerShoot::Initialize() {
 // Called repeatedly when this Command is scheduled to run
 void ThrowerShoot::Execute() {
 	Robot::thrower->Shoot();
-
 }
 // Make this return true when this Command no longer needs to run execute()
 bool ThrowerShoot::IsFinished() {
 	float position = Robot::thrower->GetPosition();
 	return (IsTimedOut() && ( position > LEFT_BOUND_COCK && position < RIGHT_BOUND_COCK ));
-
 }
 // Called once after isFinished returns true
 void ThrowerShoot::End() {
 	Robot::thrower->Stop();
-
 }
 // Called when another command which requires one or more of the same
 // subsystems is scheduled to run
 void ThrowerShoot::Interrupted() {
 	Robot::thrower->Stop();
-
 }

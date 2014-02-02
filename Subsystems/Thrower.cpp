@@ -24,17 +24,14 @@ void Thrower::InitDefaultCommand() {
 }
 // Put methods for controlling this subsystem
 // here. Call these from Commands.
-
 void Thrower::Shoot()
 {
 	throwerMotor->Set(-1);
 }
-
 void Thrower::Stop()
 {
 	throwerMotor->Set(0);
 }
-
 float Thrower::GetPosition()
 {
 	return throwerEncoder->GetVoltage();
