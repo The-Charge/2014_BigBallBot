@@ -24,8 +24,8 @@ void Drive::Initialize() {
 void Drive::Execute() 
 {
 	//Send the speeds to the drive-train.
-	float leftSpeed   = (Robot::oi->getLeftJoystick()->GetY()) + (Robot::oi->getLeftJoystick()->GetThrottle());
-	float rightSpeed  = (Robot::oi->getLeftJoystick()->GetY()) - (Robot::oi->getLeftJoystick()->GetThrottle());
+	float leftSpeed   = (Robot::oi->getDriverJoystick()->GetY()) + (Robot::oi->getDriverJoystick()->GetThrottle());
+	float rightSpeed  = (Robot::oi->getDriverJoystick()->GetY()) - (Robot::oi->getDriverJoystick()->GetThrottle());
 	
 	Robot::driveTrain->SetLeft(leftSpeed);
 	Robot::driveTrain->SetRight(rightSpeed);
