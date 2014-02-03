@@ -36,11 +36,13 @@ bool Drive::IsFinished() {
 }
 // Called once after isFinished returns true
 void Drive::End() {
-	Robot::driveTrain->SetLeft(0);
+	Robot::driveTrain->SetLeft(0);		// Stop the drive motors
 	Robot::driveTrain->SetRight(0);	
 }
 // Called when another command which requires one or more of the same
 // subsystems is scheduled to run
 void Drive::Interrupted() {
+	Robot::driveTrain->SetLeft(0);		// All engines STOP!
+	Robot::driveTrain->SetRight(0);	
 	End();
 }
