@@ -16,6 +16,7 @@ CANJaguar* RobotMap::driveTrainRearLeftMotor = NULL;
 CANJaguar* RobotMap::driveTrainFrontRightMotor = NULL;
 CANJaguar* RobotMap::driveTrainCenterRightMotor = NULL;
 CANJaguar* RobotMap::driveTrainRearRightMotor = NULL;
+Gyro* RobotMap::driveTrainGyro = NULL;
 DoubleSolenoid* RobotMap::shifterShifterLeft = NULL;
 DoubleSolenoid* RobotMap::shifterShifterRight = NULL;
 Relay* RobotMap::airCompressorCompressorSpike = NULL;
@@ -41,6 +42,9 @@ void RobotMap::init() {
 	driveTrainRearRightMotor = new CANJaguar(7);
 	
 	
+	driveTrainGyro = new Gyro(1, 1);
+	lw->AddSensor("DriveTrain", "Gyro", driveTrainGyro);
+	driveTrainGyro->SetSensitivity(0.0070);
 	shifterShifterLeft = new DoubleSolenoid(1, 1, 2);      
 	
 	
@@ -54,10 +58,10 @@ void RobotMap::init() {
 	// Overwrite CAN Jaguar ID assignments to run code in Frisbee Bot.
 	
 	driveTrainFrontLeftMotor = new CANJaguar(2);
-	driveTrainCenterLeftMotor = new CANJaguar(10);		// non-existant CAN ID
+	driveTrainCenterLeftMotor = new CANJaguar(10);		
 	driveTrainRearLeftMotor = new CANJaguar(12);
 	driveTrainFrontRightMotor = new CANJaguar(8);
-	driveTrainCenterRightMotor = new CANJaguar(9);		// non-existant CAN ID
+	driveTrainCenterRightMotor = new CANJaguar(9);		
 	driveTrainRearRightMotor = new CANJaguar(16);
 	
 	driveTrainFrontLeftMotor->ConfigNeutralMode(CANJaguar::kNeutralMode_Coast);		// set Jag to "coast" when output = 0.0
@@ -66,19 +70,5 @@ void RobotMap::init() {
 	driveTrainFrontRightMotor->ConfigNeutralMode(CANJaguar::kNeutralMode_Coast);		// set Jag to "coast" when output = 0.0
 	driveTrainCenterRightMotor->ConfigNeutralMode(CANJaguar::kNeutralMode_Coast);		// set Jag to "coast" when output = 0.0
 	driveTrainRearRightMotor->ConfigNeutralMode(CANJaguar::kNeutralMode_Coast);		// set Jag to "coast" when output = 0.0
-	
-/* Other systems on Fisbee Bot:
-	//elevator
-	const int ELEVATOR_MOTOR_ID = 4;
-	const int ELEVATOR_MOTOR2_ID = 8;
-	//shooter
-	const int FRONT_SHOOTER_ID = 3;
-	const int BACK_SHOOTER_ID = 7;
-	//PWM ID'S USED
-	const int LEFT_SHIFTER_ID = 1;
-	const int RIGHT_SHIFTER_ID = 2;
-	const int LEFT_FINGER_ID = 3;
-	const int RIGHT_FINGER_ID = 4;
-*/	
 	
 }

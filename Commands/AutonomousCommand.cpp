@@ -8,6 +8,7 @@
 // update. Deleting the comments indicating the section will prevent
 // it from being updated in th future.
 #include "AutonomousCommand.h"
+
 AutonomousCommand::AutonomousCommand() {
 	// Use requires() here to declare subsystem dependencies
 	// eg. requires(chassis);
@@ -16,21 +17,32 @@ AutonomousCommand::AutonomousCommand() {
 }
 // Called just before this Command runs the first time
 void AutonomousCommand::Initialize() {
-	
+	Robot::driveTrain->SetLeft(0);
+	Robot::driveTrain->SetRight(0);	
+	SetTimeout(1);
+	Robot::driveTrain->gyro->Reset();
 }
 // Called repeatedly when this Command is scheduled to run
 void AutonomousCommand::Execute() {
-	
+	float angle = Robot::driveTrain->gyro->GetAngle();	// 0 to +/- x degrees from straight
+	angle = 0;		// Set this to zero until the robot really has a gyro
+// note: The angle is the error from the setpoint of 0 degrees.
+	Robot::driveTrain->SetLeft(.2 - angle/100);		// simple P only controller
+	Robot::driveTrain->SetRight(.2 - angle/100);	// major desensitized
+	Wait(0.004);
 }
 // Make this return true when this Command no longer needs to run execute()
 bool AutonomousCommand::IsFinished() {
-	return false;
+	return IsTimedOut();			// Will be TRUE after 1 second from Init
 }
 // Called once after isFinished returns true
 void AutonomousCommand::End() {
-	
+	Robot::driveTrain->SetLeft(0);
+	Robot::driveTrain->SetRight(0);		
 }
 // Called when another command which requires one or more of the same
 // subsystems is scheduled to run
 void AutonomousCommand::Interrupted() {
+	Robot::driveTrain->SetLeft(0);
+	Robot::driveTrain->SetRight(0);	
 }

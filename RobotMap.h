@@ -26,6 +26,7 @@ public:
 	static CANJaguar* driveTrainFrontRightMotor;
 	static CANJaguar* driveTrainCenterRightMotor;
 	static CANJaguar* driveTrainRearRightMotor;
+	static Gyro* driveTrainGyro;
 	static DoubleSolenoid* shifterShifterLeft;
 	static DoubleSolenoid* shifterShifterRight;
 	static Relay* airCompressorCompressorSpike;

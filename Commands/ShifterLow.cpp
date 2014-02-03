@@ -25,7 +25,7 @@ void ShifterLow::Execute() {
 }
 // Make this return true when this Command no longer needs to run execute()
 bool ShifterLow::IsFinished() {
-	return IsTimedOut();			// Will be TRUE after 5 seconds from Init
+	return IsTimedOut();			// Will be TRUE after 1 second from Init
 }
 // Called once after isFinished returns true
 void ShifterLow::End() {
