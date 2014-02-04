@@ -53,6 +53,8 @@ void _GLOBAL__I__ZN6CameraC2Ev();
 
 void _GLOBAL__I__ZN12ClockspringsC2Ev();
 
+void _GLOBAL__I__ZN8DistanceC2Ev();
+
 void _GLOBAL__I__ZN10DriveTrainC2Ev();
 
 void _GLOBAL__I__ZN10PickupArmsC2Ev();
@@ -141,6 +143,7 @@ void (*_ctors[])() =
     _GLOBAL__I__ZN13AirCompressorC2Ev,
     _GLOBAL__I__ZN6CameraC2Ev,
     _GLOBAL__I__ZN12ClockspringsC2Ev,
+    _GLOBAL__I__ZN8DistanceC2Ev,
     _GLOBAL__I__ZN10DriveTrainC2Ev,
     _GLOBAL__I__ZN10PickupArmsC2Ev,
     _GLOBAL__I__ZN12PickupWheelsC2Ev,
@@ -221,6 +224,8 @@ void _GLOBAL__D__ZN6CameraC2Ev();
 
 void _GLOBAL__D__ZN12ClockspringsC2Ev();
 
+void _GLOBAL__D__ZN8DistanceC2Ev();
+
 void _GLOBAL__D__ZN10DriveTrainC2Ev();
 
 void _GLOBAL__D__ZN10PickupArmsC2Ev();
@@ -299,6 +304,7 @@ void (*_dtors[])() =
     _GLOBAL__D__ZN13AirCompressorC2Ev,
     _GLOBAL__D__ZN6CameraC2Ev,
     _GLOBAL__D__ZN12ClockspringsC2Ev,
+    _GLOBAL__D__ZN8DistanceC2Ev,
     _GLOBAL__D__ZN10DriveTrainC2Ev,
     _GLOBAL__D__ZN10PickupArmsC2Ev,
     _GLOBAL__D__ZN12PickupWheelsC2Ev,
