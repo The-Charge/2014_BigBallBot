@@ -37,6 +37,12 @@ void _GLOBAL__I__ZN11ShifterHighC2Ev();
 
 void _GLOBAL__I__ZN10ShifterLowC2Ev();
 
+void _GLOBAL__I__ZN12ShowDistanceC2Ev();
+
+void _GLOBAL__I__ZN8ShowTeamC2Ev();
+
+void _GLOBAL__I__ZN8ShowTimeC2Ev();
+
 void _GLOBAL__I__ZN12ThrowerShootC2Ev();
 
 void _GLOBAL__I__ZN9ThrowerUpC2Ev();
@@ -56,6 +62,8 @@ void _GLOBAL__I__ZN12ClockspringsC2Ev();
 void _GLOBAL__I__ZN8DistanceC2Ev();
 
 void _GLOBAL__I__ZN10DriveTrainC2Ev();
+
+void _GLOBAL__I__ZN3LEDC2Ev();
 
 void _GLOBAL__I__ZN10PickupArmsC2Ev();
 
@@ -135,6 +143,9 @@ void (*_ctors[])() =
     _GLOBAL__I__ZN23PickupWheelsReverseSlowC2Ev,
     _GLOBAL__I__ZN11ShifterHighC2Ev,
     _GLOBAL__I__ZN10ShifterLowC2Ev,
+    _GLOBAL__I__ZN12ShowDistanceC2Ev,
+    _GLOBAL__I__ZN8ShowTeamC2Ev,
+    _GLOBAL__I__ZN8ShowTimeC2Ev,
     _GLOBAL__I__ZN12ThrowerShootC2Ev,
     _GLOBAL__I__ZN9ThrowerUpC2Ev,
     _GLOBAL__I__ZN2OIC2Ev,
@@ -145,6 +156,7 @@ void (*_ctors[])() =
     _GLOBAL__I__ZN12ClockspringsC2Ev,
     _GLOBAL__I__ZN8DistanceC2Ev,
     _GLOBAL__I__ZN10DriveTrainC2Ev,
+    _GLOBAL__I__ZN3LEDC2Ev,
     _GLOBAL__I__ZN10PickupArmsC2Ev,
     _GLOBAL__I__ZN12PickupWheelsC2Ev,
     _GLOBAL__I_shifterIsHigh,
@@ -208,6 +220,12 @@ void _GLOBAL__D__ZN11ShifterHighC2Ev();
 
 void _GLOBAL__D__ZN10ShifterLowC2Ev();
 
+void _GLOBAL__D__ZN12ShowDistanceC2Ev();
+
+void _GLOBAL__D__ZN8ShowTeamC2Ev();
+
+void _GLOBAL__D__ZN8ShowTimeC2Ev();
+
 void _GLOBAL__D__ZN12ThrowerShootC2Ev();
 
 void _GLOBAL__D__ZN9ThrowerUpC2Ev();
@@ -227,6 +245,8 @@ void _GLOBAL__D__ZN12ClockspringsC2Ev();
 void _GLOBAL__D__ZN8DistanceC2Ev();
 
 void _GLOBAL__D__ZN10DriveTrainC2Ev();
+
+void _GLOBAL__D__ZN3LEDC2Ev();
 
 void _GLOBAL__D__ZN10PickupArmsC2Ev();
 
@@ -296,6 +316,9 @@ void (*_dtors[])() =
     _GLOBAL__D__ZN23PickupWheelsReverseSlowC2Ev,
     _GLOBAL__D__ZN11ShifterHighC2Ev,
     _GLOBAL__D__ZN10ShifterLowC2Ev,
+    _GLOBAL__D__ZN12ShowDistanceC2Ev,
+    _GLOBAL__D__ZN8ShowTeamC2Ev,
+    _GLOBAL__D__ZN8ShowTimeC2Ev,
     _GLOBAL__D__ZN12ThrowerShootC2Ev,
     _GLOBAL__D__ZN9ThrowerUpC2Ev,
     _GLOBAL__D__ZN2OIC2Ev,
@@ -306,6 +329,7 @@ void (*_dtors[])() =
     _GLOBAL__D__ZN12ClockspringsC2Ev,
     _GLOBAL__D__ZN8DistanceC2Ev,
     _GLOBAL__D__ZN10DriveTrainC2Ev,
+    _GLOBAL__D__ZN3LEDC2Ev,
     _GLOBAL__D__ZN10PickupArmsC2Ev,
     _GLOBAL__D__ZN12PickupWheelsC2Ev,
     _GLOBAL__D_shifterIsHigh,
