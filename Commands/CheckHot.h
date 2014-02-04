@@ -85,9 +85,6 @@ class CheckHot: public Command {
 		double tapeWidthScore;
 		double verticalScore;
 	};
-	
-	RobotDrive myRobot; // robot drive system
-	Joystick stick; // only joystick
 		
 	
 public:
@@ -229,14 +226,6 @@ public:
 	/**
 	 * Runs the motors with arcade steering. 
 	 */
-	void OperatorControl(void)
-	{
-		myRobot.SetSafetyEnabled(true);
-		while (Robot::instance()->IsOperatorControl())
-		{
-			Wait(0.005);				// wait for a motor update time
-		}
-	}
 	
 	/**
 	 * Computes the estimated distance to a target using the height of the particle in the image. For more information and graphics
