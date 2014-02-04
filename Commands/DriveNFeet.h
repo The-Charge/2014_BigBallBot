@@ -31,6 +31,7 @@ public:
 	virtual void Interrupted();
 private:
 	float _distance;
+	PIDController *controller;
 	
 };
 
