@@ -15,6 +15,7 @@
 #include "Commands/ClockspringsTensionLow.h"
 #include "Commands/CompressorRun.h"
 #include "Commands/Drive.h"
+#include "Commands/DriveNFeet.h"
 #include "Commands/PickupArmsExtend.h"
 #include "Commands/PickupArmsMidwayHi.h"
 #include "Commands/PickupArmsMidwayLo.h"
