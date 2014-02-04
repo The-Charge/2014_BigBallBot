@@ -18,6 +18,8 @@ CANJaguar* RobotMap::driveTrainRearLeftMotor = NULL;
 CANJaguar* RobotMap::driveTrainFrontRightMotor = NULL;
 CANJaguar* RobotMap::driveTrainCenterRightMotor = NULL;
 CANJaguar* RobotMap::driveTrainRearRightMotor = NULL;
+Encoder* RobotMap::driveTrainLeftEncoder = NULL;
+Encoder* RobotMap::driveTrainRightEncoder = NULL;
 DoubleSolenoid* RobotMap::shifterShifterLeft = NULL;
 DoubleSolenoid* RobotMap::shifterShifterRight = NULL;
 Relay* RobotMap::airCompressorCompressorSpike = NULL;
@@ -63,6 +65,16 @@ void RobotMap::init() {
 	driveTrainRearRightMotor = new CANJaguar(7);
 	
 	
+	driveTrainLeftEncoder = new Encoder(1, 1, 1, 2, false, Encoder::k4X);
+	lw->AddSensor("DriveTrain", "Left Encoder", driveTrainLeftEncoder);
+	driveTrainLeftEncoder->SetDistancePerPulse(1.0);
+        driveTrainLeftEncoder->SetPIDSourceParameter(Encoder::kRate);
+        driveTrainLeftEncoder->Start();
+	driveTrainRightEncoder = new Encoder(1, 3, 1, 4, false, Encoder::k4X);
+	lw->AddSensor("DriveTrain", "Right Encoder", driveTrainRightEncoder);
+	driveTrainRightEncoder->SetDistancePerPulse(1.0);
+        driveTrainRightEncoder->SetPIDSourceParameter(Encoder::kRate);
+        driveTrainRightEncoder->Start();
 	shifterShifterLeft = new DoubleSolenoid(1, 1, 2);      
 	
 	
