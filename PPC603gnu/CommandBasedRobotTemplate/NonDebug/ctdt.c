@@ -9,13 +9,15 @@
 
 void _GLOBAL__I__ZN17AutonomousCommandC2Ev();
 
-void _GLOBAL__I__ZN23ClockspringsTensionHighC2Ev();
+void _GLOBAL__I__ZN16ClockspringsHighC2Ev();
 
-void _GLOBAL__I__ZN22ClockspringsTensionLowC2Ev();
+void _GLOBAL__I__ZN15ClockspringsLowC2Ev();
 
 void _GLOBAL__I__ZN13CompressorRunC2Ev();
 
 void _GLOBAL__I__ZN5DriveC2Ev();
+
+void _GLOBAL__I__ZN10DriveNFeetC2Ef();
 
 void _GLOBAL__I__ZN16PickupArmsExtendC2Ev();
 
@@ -49,9 +51,9 @@ void _GLOBAL__I__ZN9ThrowerUpC2Ev();
 
 void _GLOBAL__I__ZN2OIC2Ev();
 
-void _GLOBAL__I__ZN5Robot12clockspringsE();
+void _GLOBAL__I__ZN5Robot10driveTrainE();
 
-void _GLOBAL__I__ZN8RobotMap17clockspringsMotorE();
+void _GLOBAL__I__ZN8RobotMap22driveTrainRightEncoderE();
 
 void _GLOBAL__I__ZN13AirCompressorC2Ev();
 
@@ -129,10 +131,11 @@ extern void (*_ctors[])();
 void (*_ctors[])() =
     {
     _GLOBAL__I__ZN17AutonomousCommandC2Ev,
-    _GLOBAL__I__ZN23ClockspringsTensionHighC2Ev,
-    _GLOBAL__I__ZN22ClockspringsTensionLowC2Ev,
+    _GLOBAL__I__ZN16ClockspringsHighC2Ev,
+    _GLOBAL__I__ZN15ClockspringsLowC2Ev,
     _GLOBAL__I__ZN13CompressorRunC2Ev,
     _GLOBAL__I__ZN5DriveC2Ev,
+    _GLOBAL__I__ZN10DriveNFeetC2Ef,
     _GLOBAL__I__ZN16PickupArmsExtendC2Ev,
     _GLOBAL__I__ZN18PickupArmsMidwayHiC2Ev,
     _GLOBAL__I__ZN18PickupArmsMidwayLoC2Ev,
@@ -149,8 +152,8 @@ void (*_ctors[])() =
     _GLOBAL__I__ZN12ThrowerShootC2Ev,
     _GLOBAL__I__ZN9ThrowerUpC2Ev,
     _GLOBAL__I__ZN2OIC2Ev,
-    _GLOBAL__I__ZN5Robot12clockspringsE,
-    _GLOBAL__I__ZN8RobotMap17clockspringsMotorE,
+    _GLOBAL__I__ZN5Robot10driveTrainE,
+    _GLOBAL__I__ZN8RobotMap22driveTrainRightEncoderE,
     _GLOBAL__I__ZN13AirCompressorC2Ev,
     _GLOBAL__I__ZN6CameraC2Ev,
     _GLOBAL__I__ZN12ClockspringsC2Ev,
@@ -192,13 +195,15 @@ void (*_ctors[])() =
 
 void _GLOBAL__D__ZN17AutonomousCommandC2Ev();
 
-void _GLOBAL__D__ZN23ClockspringsTensionHighC2Ev();
+void _GLOBAL__D__ZN16ClockspringsHighC2Ev();
 
-void _GLOBAL__D__ZN22ClockspringsTensionLowC2Ev();
+void _GLOBAL__D__ZN15ClockspringsLowC2Ev();
 
 void _GLOBAL__D__ZN13CompressorRunC2Ev();
 
 void _GLOBAL__D__ZN5DriveC2Ev();
+
+void _GLOBAL__D__ZN10DriveNFeetC2Ef();
 
 void _GLOBAL__D__ZN16PickupArmsExtendC2Ev();
 
@@ -232,9 +237,9 @@ void _GLOBAL__D__ZN9ThrowerUpC2Ev();
 
 void _GLOBAL__D__ZN2OIC2Ev();
 
-void _GLOBAL__D__ZN5Robot12clockspringsE();
+void _GLOBAL__D__ZN5Robot10driveTrainE();
 
-void _GLOBAL__D__ZN8RobotMap17clockspringsMotorE();
+void _GLOBAL__D__ZN8RobotMap22driveTrainRightEncoderE();
 
 void _GLOBAL__D__ZN13AirCompressorC2Ev();
 
@@ -302,10 +307,11 @@ extern void (*_dtors[])();
 void (*_dtors[])() =
     {
     _GLOBAL__D__ZN17AutonomousCommandC2Ev,
-    _GLOBAL__D__ZN23ClockspringsTensionHighC2Ev,
-    _GLOBAL__D__ZN22ClockspringsTensionLowC2Ev,
+    _GLOBAL__D__ZN16ClockspringsHighC2Ev,
+    _GLOBAL__D__ZN15ClockspringsLowC2Ev,
     _GLOBAL__D__ZN13CompressorRunC2Ev,
     _GLOBAL__D__ZN5DriveC2Ev,
+    _GLOBAL__D__ZN10DriveNFeetC2Ef,
     _GLOBAL__D__ZN16PickupArmsExtendC2Ev,
     _GLOBAL__D__ZN18PickupArmsMidwayHiC2Ev,
     _GLOBAL__D__ZN18PickupArmsMidwayLoC2Ev,
@@ -322,8 +328,8 @@ void (*_dtors[])() =
     _GLOBAL__D__ZN12ThrowerShootC2Ev,
     _GLOBAL__D__ZN9ThrowerUpC2Ev,
     _GLOBAL__D__ZN2OIC2Ev,
-    _GLOBAL__D__ZN5Robot12clockspringsE,
-    _GLOBAL__D__ZN8RobotMap17clockspringsMotorE,
+    _GLOBAL__D__ZN5Robot10driveTrainE,
+    _GLOBAL__D__ZN8RobotMap22driveTrainRightEncoderE,
     _GLOBAL__D__ZN13AirCompressorC2Ev,
     _GLOBAL__D__ZN6CameraC2Ev,
     _GLOBAL__D__ZN12ClockspringsC2Ev,

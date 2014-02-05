@@ -9,8 +9,8 @@
 // it from being updated in th future.
 
 
-#ifndef CLOCKSPRINGSTENSIONLOW_H
-#define CLOCKSPRINGSTENSIONLOW_H
+#ifndef CLOCKSPRINGS_HIGH_H
+#define CLOCKSPRINGS_HIGH_H
 
 
 #include "Commands/Subsystem.h"
@@ -21,9 +21,9 @@
  *
  * @author ExampleAuthor
  */
-class ClockspringsTensionLow: public Command {
+class ClockspringsHigh: public Command {
 public:
-	ClockspringsTensionLow();
+	ClockspringsHigh();
 	virtual void Initialize();
 	virtual void Execute();
 	virtual bool IsFinished();
