@@ -335,7 +335,8 @@ public:
 		isHot &= target.tapeWidthScore >= TAPE_WIDTH_LIMIT;
 		isHot &= target.verticalScore >= VERTICAL_SCORE_LIMIT;
 		isHot &= (target.leftScore > LR_SCORE_LIMIT) | (target.rightScore > LR_SCORE_LIMIT);
-		printf("HotGoal\n");
+		if (isHot == true)
+			printf("HotGoal\n");
 		return isHot;
 	}
 	//CheckHot();
