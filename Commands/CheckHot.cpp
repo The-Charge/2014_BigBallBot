@@ -27,16 +27,6 @@ void CheckHot::Initialize() {
 
 // Called repeatedly when this Command is scheduled to run
 void CheckHot::Execute() {
-	
-}
-
-// Make this return true when this Command no longer needs to run execute()
-bool CheckHot::IsFinished() {
-	return false;
-}
-
-// Called once after isFinished returns true
-void CheckHot::End() {
 	Scores *scores;
 	TargetReport target;
 	int verticalTargets[MAX_PARTICLES];
@@ -48,7 +38,7 @@ void CheckHot::End() {
 	};												//Particle filter criteria, used to filter out small particles
 	// AxisCamera &camera = AxisCamera::GetInstance();	//To use the Axis camera uncomment this line
 	
-	while (Robot::instance()->IsAutonomous() && Robot::instance()->IsEnabled()) {
+	while (true/*Robot::instance()->IsAutonomous() && Robot::instance()->IsEnabled()*/) {
 		/**
 		 * Do the image capture with the camera and apply the algorithm described above. This
 		 * sample will either get images from the camera or from an image file stored in the top
@@ -163,6 +153,16 @@ void CheckHot::End() {
 		delete scores;
 		delete reports;
 	}
+}
+
+// Make this return true when this Command no longer needs to run execute()
+bool CheckHot::IsFinished() {
+	return false;
+}
+
+// Called once after isFinished returns true
+void CheckHot::End() {
+	
 }
 
 // Called when another command which requires one or more of the same
