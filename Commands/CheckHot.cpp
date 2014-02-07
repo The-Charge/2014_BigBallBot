@@ -10,7 +10,9 @@
 
 
 #include "CheckHot.h"
-
+#include "../Robot.h"
+const bool IsAutonomous = true;
+const bool IsEnabled = true;
 CheckHot::CheckHot()
 {
 	// Use requires() here to declare subsystem dependencies
@@ -48,7 +50,8 @@ void CheckHot::End() {
 	};												//Particle filter criteria, used to filter out small particles
 	// AxisCamera &camera = AxisCamera::GetInstance();	//To use the Axis camera uncomment this line
 	
-	while (Robot::instance()->IsAutonomous() && Robot::instance()->IsEnabled()) {
+	//while (Robot::instance()->IsAutonomous() && Robot::instance()->IsEnabled()) {
+	while (IsAutonomous == true && IsEnabled == true) {
 		/**
 		 * Do the image capture with the camera and apply the algorithm described above. This
 		 * sample will either get images from the camera or from an image file stored in the top
