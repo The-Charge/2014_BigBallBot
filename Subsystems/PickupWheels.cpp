@@ -35,13 +35,13 @@ void PickupWheels::SetOff()
 }
 void PickupWheels::SetForward()
 {
-	rightPickupWheel->Set(.6);
-	leftPickupWheel->Set(-.6);
+	rightPickupWheel->Set(.4);
+	leftPickupWheel->Set(-.4);
 }
 void PickupWheels::SetReverseSlow()
 {
-	rightPickupWheel->Set(-.3);
-	leftPickupWheel->Set(0.3);
+	rightPickupWheel->Set(-.4);
+	leftPickupWheel->Set(0.4);
 }
 void PickupWheels::SetReverseFast()
 {

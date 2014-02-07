@@ -17,19 +17,19 @@ PickupArmsRetract::PickupArmsRetract() {
 }
 // Called just before this Command runs the first time
 void PickupArmsRetract::Initialize() {
-	
+	SetTimeout(1);
 }
 // Called repeatedly when this Command is scheduled to run
 void PickupArmsRetract::Execute() {
-	
+	Robot::pickupArms->ArmsRetract();
 }
 // Make this return true when this Command no longer needs to run execute()
 bool PickupArmsRetract::IsFinished() {
-	return false;
+	Robot::pickupArms->ArmsOff();
 }
 // Called once after isFinished returns true
 void PickupArmsRetract::End() {
-	
+	End();
 }
 // Called when another command which requires one or more of the same
 // subsystems is scheduled to run
