@@ -25,13 +25,14 @@ void PickupArmsRetract::Execute() {
 }
 // Make this return true when this Command no longer needs to run execute()
 bool PickupArmsRetract::IsFinished() {
-	Robot::pickupArms->ArmsOff();
+	return IsTimedOut();
 }
 // Called once after isFinished returns true
 void PickupArmsRetract::End() {
-	End();
+	return Robot::pickupArms->ArmsOff();
 }
 // Called when another command which requires one or more of the same
 // subsystems is scheduled to run
 void PickupArmsRetract::Interrupted() {
+	End();
 }

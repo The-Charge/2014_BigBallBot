@@ -31,10 +31,10 @@ public:
 	static DoubleSolenoid* shifterShifterLeft;
 	static DoubleSolenoid* shifterShifterRight;
 	static Relay* airCompressorCompressorSpike;
+	static DoubleSolenoid* pickupArmsLeftShortCylinder;
 	static DoubleSolenoid* pickupArmsLeftLongCylinder;
 	static DoubleSolenoid* pickupArmsRightShortCylinder;
-	static DoubleSolenoid* pickupArmsRigthLongCylinder;
-	static DoubleSolenoid* pickupArmsLeftShortCylinder;
+	static DoubleSolenoid* pickupArmsRightLongCylinder;
 	static CANJaguar* throwerThrowerMotor;
 	static AnalogChannel* throwerThrowerEncoder;
 	static Servo* cameraCameraPanServo;

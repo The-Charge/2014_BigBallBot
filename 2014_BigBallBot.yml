@@ -66,7 +66,7 @@ Children:
           default: '2'
           name: CAN ID
           validators: &id002 [CANID]
-          value: '8'
+          value: '2'
     - Name: Center Left Motor
       Base: CAN Jaguar
       Children: []
@@ -86,7 +86,7 @@ Children:
           default: '2'
           name: CAN ID
           validators: *id002
-          value: '16'
+          value: '4'
     - Name: Front Right Motor
       Base: CAN Jaguar
       Children: []
@@ -96,7 +96,7 @@ Children:
           default: '2'
           name: CAN ID
           validators: *id002
-          value: '12'
+          value: '5'
     - Name: Center Right Motor
       Base: CAN Jaguar
       Children: []
@@ -116,7 +116,7 @@ Children:
           default: '2'
           name: CAN ID
           validators: *id002
-          value: '10'
+          value: '7'
     - Name: Left Encoder
       Base: Quadrature Encoder
       Children: []
@@ -204,25 +204,25 @@ Children:
           default: '1'
           name: Forward Channel (Solenoid)
           validators: *id014
-          value: '3'
+          value: '1'
         Forward Module (Solenoid): !!robotbuilder.data.properties.ChoicesProperty
           choices: *id015
           default: '1'
           name: Forward Module (Solenoid)
           validators: *id016
-          value: '1'
+          value: '2'
         Reverse Module (Solenoid): !!robotbuilder.data.properties.ChoicesProperty
           choices: *id017
           default: '1'
           name: Reverse Module (Solenoid)
           validators: *id018
-          value: '1'
+          value: '2'
         Reverse Channel (Solenoid): !!robotbuilder.data.properties.ChoicesProperty
           choices: *id019
           default: '1'
           name: Reverse Channel (Solenoid)
           validators: *id020
-          value: '4'
+          value: '2'
     Properties:
       Default Command: !!robotbuilder.data.properties.TypeSelectionProperty {default: None,
         name: Default Command, type: Command, validators: null, value: None}
@@ -251,6 +251,34 @@ Children:
   - Name: Pickup Arms
     Base: Subsystem
     Children:
+    - Name: Left Short Cylinder
+      Base: Double Solenoid
+      Children: []
+      Properties:
+        Forward Channel (Solenoid): !!robotbuilder.data.properties.ChoicesProperty
+          choices: *id013
+          default: '1'
+          name: Forward Channel (Solenoid)
+          validators: *id014
+          value: '3'
+        Forward Module (Solenoid): !!robotbuilder.data.properties.ChoicesProperty
+          choices: *id015
+          default: '1'
+          name: Forward Module (Solenoid)
+          validators: *id016
+          value: '1'
+        Reverse Module (Solenoid): !!robotbuilder.data.properties.ChoicesProperty
+          choices: *id017
+          default: '1'
+          name: Reverse Module (Solenoid)
+          validators: *id018
+          value: '1'
+        Reverse Channel (Solenoid): !!robotbuilder.data.properties.ChoicesProperty
+          choices: *id019
+          default: '1'
+          name: Reverse Channel (Solenoid)
+          validators: *id020
+          value: '4'
     - Name: Left Long Cylinder
       Base: Double Solenoid
       Children: []
@@ -288,62 +316,6 @@ Children:
           default: '1'
           name: Forward Channel (Solenoid)
           validators: *id014
-          value: '7'
-        Forward Module (Solenoid): !!robotbuilder.data.properties.ChoicesProperty
-          choices: *id015
-          default: '1'
-          name: Forward Module (Solenoid)
-          validators: *id016
-          value: '1'
-        Reverse Module (Solenoid): !!robotbuilder.data.properties.ChoicesProperty
-          choices: *id017
-          default: '1'
-          name: Reverse Module (Solenoid)
-          validators: *id018
-          value: '1'
-        Reverse Channel (Solenoid): !!robotbuilder.data.properties.ChoicesProperty
-          choices: *id019
-          default: '1'
-          name: Reverse Channel (Solenoid)
-          validators: *id020
-          value: '8'
-    - Name: Rigth Long Cylinder
-      Base: Double Solenoid
-      Children: []
-      Properties:
-        Forward Channel (Solenoid): !!robotbuilder.data.properties.ChoicesProperty
-          choices: *id013
-          default: '1'
-          name: Forward Channel (Solenoid)
-          validators: *id014
-          value: '1'
-        Forward Module (Solenoid): !!robotbuilder.data.properties.ChoicesProperty
-          choices: *id015
-          default: '1'
-          name: Forward Module (Solenoid)
-          validators: *id016
-          value: '2'
-        Reverse Module (Solenoid): !!robotbuilder.data.properties.ChoicesProperty
-          choices: *id017
-          default: '1'
-          name: Reverse Module (Solenoid)
-          validators: *id018
-          value: '2'
-        Reverse Channel (Solenoid): !!robotbuilder.data.properties.ChoicesProperty
-          choices: *id019
-          default: '1'
-          name: Reverse Channel (Solenoid)
-          validators: *id020
-          value: '2'
-    - Name: Left Short Cylinder
-      Base: Double Solenoid
-      Children: []
-      Properties:
-        Forward Channel (Solenoid): !!robotbuilder.data.properties.ChoicesProperty
-          choices: *id013
-          default: '1'
-          name: Forward Channel (Solenoid)
-          validators: *id014
           value: '3'
         Forward Module (Solenoid): !!robotbuilder.data.properties.ChoicesProperty
           choices: *id015
@@ -363,6 +335,34 @@ Children:
           name: Reverse Channel (Solenoid)
           validators: *id020
           value: '4'
+    - Name: Right Long Cylinder
+      Base: Double Solenoid
+      Children: []
+      Properties:
+        Forward Channel (Solenoid): !!robotbuilder.data.properties.ChoicesProperty
+          choices: *id013
+          default: '1'
+          name: Forward Channel (Solenoid)
+          validators: *id014
+          value: '5'
+        Forward Module (Solenoid): !!robotbuilder.data.properties.ChoicesProperty
+          choices: *id015
+          default: '1'
+          name: Forward Module (Solenoid)
+          validators: *id016
+          value: '2'
+        Reverse Module (Solenoid): !!robotbuilder.data.properties.ChoicesProperty
+          choices: *id017
+          default: '1'
+          name: Reverse Module (Solenoid)
+          validators: *id018
+          value: '2'
+        Reverse Channel (Solenoid): !!robotbuilder.data.properties.ChoicesProperty
+          choices: *id019
+          default: '1'
+          name: Reverse Channel (Solenoid)
+          validators: *id020
+          value: '6'
     Properties:
       Default Command: !!robotbuilder.data.properties.TypeSelectionProperty {default: None,
         name: Default Command, type: Command, validators: null, value: None}
@@ -448,7 +448,7 @@ Children:
           default: '2'
           name: CAN ID
           validators: *id002
-          value: '2'
+          value: '8'
     - Name: Left Pickup Wheel
       Base: CAN Jaguar
       Children: []
@@ -458,7 +458,7 @@ Children:
           default: '2'
           name: CAN ID
           validators: *id002
-          value: '9'
+          value: '12'
     Properties:
       Default Command: !!robotbuilder.data.properties.TypeSelectionProperty {default: None,
         name: Default Command, type: Command, validators: null, value: None}
@@ -551,7 +551,7 @@ Children:
           default: '2'
           name: CAN ID
           validators: *id002
-          value: '13'
+          value: '9'
     - Name: Pot
       Base: Potentiometer
       Children: []
@@ -634,7 +634,7 @@ Children:
         name: Number
         validators: &id037 [Joystick]
         value: '1'
-  - Name: Shoot Joystick
+  - Name: Shooter Joystick
     Base: Joystick
     Children: []
     Properties:
@@ -827,6 +827,6 @@ Properties:
     validators: null, value: 2619}
   Export Commands: !!robotbuilder.data.properties.BooleanProperty {default: true,
     name: Export Commands, validators: null, value: true}
-  Java Project Directory: !!robotbuilder.data.properties.FileProperty {default: 'C:\Users\Robotics\NetBeansProjects',
+  Java Project Directory: !!robotbuilder.data.properties.FileProperty {default: 'C:\Users\abcurrie\NetBeansProjects',
     extension: null, folder: true, name: Java Project Directory, validators: null,
     value: 'C:\Users\abcurrie\NetBeansProjects'}
