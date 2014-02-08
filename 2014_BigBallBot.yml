@@ -66,7 +66,7 @@ Children:
           default: '2'
           name: CAN ID
           validators: &id002 [CANID]
-          value: '2'
+          value: '8'
     - Name: Center Left Motor
       Base: CAN Jaguar
       Children: []
@@ -86,7 +86,7 @@ Children:
           default: '2'
           name: CAN ID
           validators: *id002
-          value: '4'
+          value: '16'
     - Name: Front Right Motor
       Base: CAN Jaguar
       Children: []
@@ -96,7 +96,7 @@ Children:
           default: '2'
           name: CAN ID
           validators: *id002
-          value: '5'
+          value: '12'
     - Name: Center Right Motor
       Base: CAN Jaguar
       Children: []
@@ -116,7 +116,7 @@ Children:
           default: '2'
           name: CAN ID
           validators: *id002
-          value: '7'
+          value: '10'
     - Name: Left Encoder
       Base: Quadrature Encoder
       Children: []
@@ -448,7 +448,7 @@ Children:
           default: '2'
           name: CAN ID
           validators: *id002
-          value: '8'
+          value: '2'
     - Name: Left Pickup Wheel
       Base: CAN Jaguar
       Children: []
@@ -458,7 +458,7 @@ Children:
           default: '2'
           name: CAN ID
           validators: *id002
-          value: '12'
+          value: '9'
     Properties:
       Default Command: !!robotbuilder.data.properties.TypeSelectionProperty {default: None,
         name: Default Command, type: Command, validators: null, value: None}
@@ -551,7 +551,7 @@ Children:
           default: '2'
           name: CAN ID
           validators: *id002
-          value: '9'
+          value: '13'
     - Name: Pot
       Base: Potentiometer
       Children: []
@@ -827,6 +827,6 @@ Properties:
     validators: null, value: 2619}
   Export Commands: !!robotbuilder.data.properties.BooleanProperty {default: true,
     name: Export Commands, validators: null, value: true}
-  Java Project Directory: !!robotbuilder.data.properties.FileProperty {default: 'C:\Users\abcurrie\NetBeansProjects',
+  Java Project Directory: !!robotbuilder.data.properties.FileProperty {default: 'C:\Users\Robotics\NetBeansProjects',
     extension: null, folder: true, name: Java Project Directory, validators: null,
     value: 'C:\Users\abcurrie\NetBeansProjects'}
