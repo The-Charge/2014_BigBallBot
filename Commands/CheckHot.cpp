@@ -52,13 +52,30 @@ void CheckHot::Execute() {
 	 */
 	ColorImage *image;
 //	image = new RGBImage("/testImage.jpg");		// get the sample image from the cRIO flash
-	AxisCamera &camera = AxisCamera::GetInstance("10.26.19.11");//.GetImage(image);
-	if(camera.IsFreshImage())
+
+	AxisCamera &m_camera = AxisCamera::GetInstance("10.12.51.11");
+	m_camera.WriteResolution(AxisCamera::kResolution_320x240);
+	m_camera.WriteCompression(20);
+	m_camera.WriteBrightness(0);
+	printf("Testing image\n");
+	if (m_camera.IsFreshImage())
 	{
-		image = camera.GetImage();				//To get the images from the camera comment the line above and uncomment this one
-	
-		image->Write("/testImage2.bmp");
+		printf("Fresh image\n");
+		image = m_camera.GetImage();
+
+		Error &err = m_camera.GetError();	
+		if (err.GetLineNumber() != 0)
+		{
+			printf("AxisCamera error number %i \n", err.GetLineNumber());
+			printf(err.GetMessage());
+		}
+		else
+		{
+			printf("Writing image\n");
+			image->Write("/testImage3.bmp");
+		}
 	}
+	
 	return;
 	//	BinaryImage *testImage = image->ThresholdRGB(0,255,0,255,0,255);
 //	testImage->Write("/rgbFiltered.bmp");
