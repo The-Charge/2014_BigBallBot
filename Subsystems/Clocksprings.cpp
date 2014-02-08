@@ -37,7 +37,7 @@ void Clocksprings::SetDestination(float destination)
 }
 bool Clocksprings::AtDestination()
 {
-	float difference = pot->GetVoltage() - _destination;
+	float difference = pot->GetAverageVoltage() - _destination;
 	difference = difference > 0 ? difference : difference * -1;
 	return difference < ERROR_DEADBAND;
 }

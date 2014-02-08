@@ -66,7 +66,7 @@ Children:
           default: '2'
           name: CAN ID
           validators: &id002 [CANID]
-          value: '2'
+          value: '11'
     - Name: Center Left Motor
       Base: CAN Jaguar
       Children: []
@@ -86,7 +86,7 @@ Children:
           default: '2'
           name: CAN ID
           validators: *id002
-          value: '4'
+          value: '16'
     - Name: Front Right Motor
       Base: CAN Jaguar
       Children: []
@@ -96,7 +96,7 @@ Children:
           default: '2'
           name: CAN ID
           validators: *id002
-          value: '5'
+          value: '12'
     - Name: Center Right Motor
       Base: CAN Jaguar
       Children: []
@@ -116,7 +116,7 @@ Children:
           default: '2'
           name: CAN ID
           validators: *id002
-          value: '7'
+          value: '10'
     - Name: Left Encoder
       Base: Quadrature Encoder
       Children: []
@@ -378,7 +378,7 @@ Children:
           default: '2'
           name: CAN ID
           validators: *id002
-          value: '11'
+          value: '13'
     - Name: Thrower Encoder
       Base: Potentiometer
       Children: []
@@ -448,7 +448,7 @@ Children:
           default: '2'
           name: CAN ID
           validators: *id002
-          value: '8'
+          value: '2'
     - Name: Left Pickup Wheel
       Base: CAN Jaguar
       Children: []
@@ -458,7 +458,7 @@ Children:
           default: '2'
           name: CAN ID
           validators: *id002
-          value: '12'
+          value: '9'
     Properties:
       Default Command: !!robotbuilder.data.properties.TypeSelectionProperty {default: None,
         name: Default Command, type: Command, validators: null, value: None}
@@ -551,7 +551,7 @@ Children:
           default: '2'
           name: CAN ID
           validators: *id002
-          value: '9'
+          value: '8'
     - Name: Pot
       Base: Potentiometer
       Children: []
@@ -627,6 +627,102 @@ Children:
           name: When to Run
           validators: null
           value: whenPressed
+    - Name: Arm Extend
+      Base: Joystick Button
+      Children: []
+      Properties:
+        Command: !!robotbuilder.data.properties.TypeSelectionProperty
+          default: None
+          name: Command
+          type: Command
+          validators: *id033
+          value: Pickup Arms Extend
+        Button: !!robotbuilder.data.properties.ChoicesProperty
+          choices: *id034
+          default: '1'
+          name: Button
+          validators: null
+          value: '7'
+        Joystick: !!robotbuilder.data.properties.ParentProperty {default: parent,
+          name: Joystick, validators: null, value: Driver Joystick}
+        When to Run: !!robotbuilder.data.properties.ChoicesProperty
+          choices: *id035
+          default: whileHeld
+          name: When to Run
+          validators: null
+          value: whenPressed
+    - Name: Arm Midway Hi
+      Base: Joystick Button
+      Children: []
+      Properties:
+        Command: !!robotbuilder.data.properties.TypeSelectionProperty
+          default: None
+          name: Command
+          type: Command
+          validators: *id033
+          value: Pickup Arms Midway Hi
+        Button: !!robotbuilder.data.properties.ChoicesProperty
+          choices: *id034
+          default: '1'
+          name: Button
+          validators: null
+          value: '9'
+        Joystick: !!robotbuilder.data.properties.ParentProperty {default: parent,
+          name: Joystick, validators: null, value: Driver Joystick}
+        When to Run: !!robotbuilder.data.properties.ChoicesProperty
+          choices: *id035
+          default: whileHeld
+          name: When to Run
+          validators: null
+          value: whenPressed
+    - Name: Arm Retract
+      Base: Joystick Button
+      Children: []
+      Properties:
+        Command: !!robotbuilder.data.properties.TypeSelectionProperty
+          default: None
+          name: Command
+          type: Command
+          validators: *id033
+          value: Pickup Arms Retract
+        Button: !!robotbuilder.data.properties.ChoicesProperty
+          choices: *id034
+          default: '1'
+          name: Button
+          validators: null
+          value: '11'
+        Joystick: !!robotbuilder.data.properties.ParentProperty {default: parent,
+          name: Joystick, validators: null, value: Driver Joystick}
+        When to Run: !!robotbuilder.data.properties.ChoicesProperty
+          choices: *id035
+          default: whileHeld
+          name: When to Run
+          validators: null
+          value: whenPressed
+    - Name: Arm Midway lo
+      Base: Joystick Button
+      Children: []
+      Properties:
+        Command: !!robotbuilder.data.properties.TypeSelectionProperty
+          default: None
+          name: Command
+          type: Command
+          validators: *id033
+          value: Pickup Arms Midway Lo
+        Button: !!robotbuilder.data.properties.ChoicesProperty
+          choices: *id034
+          default: '1'
+          name: Button
+          validators: null
+          value: '10'
+        Joystick: !!robotbuilder.data.properties.ParentProperty {default: parent,
+          name: Joystick, validators: null, value: Driver Joystick}
+        When to Run: !!robotbuilder.data.properties.ChoicesProperty
+          choices: *id035
+          default: whileHeld
+          name: When to Run
+          validators: null
+          value: whenPressed
     Properties:
       Number: !!robotbuilder.data.properties.ChoicesProperty
         choices: &id036 ['1', '2', '3', '4']
@@ -634,7 +730,7 @@ Children:
         name: Number
         validators: &id037 [Joystick]
         value: '1'
-  - Name: Shooter Joystick
+  - Name: Shoot Joystick
     Base: Joystick
     Children: []
     Properties:
@@ -813,7 +909,7 @@ Properties:
   Autonomous Command: !!robotbuilder.data.properties.TypeSelectionProperty {default: None,
     name: Autonomous Command, type: Command, validators: null, value: Autonomous Command}
   Wiring File: !!robotbuilder.data.properties.FileProperty {default: '', extension: html,
-    folder: false, name: Wiring File, validators: null, value: ..\..\..\Users\abcurrie\Desktop\wiring.html}
+    folder: false, name: Wiring File, validators: null, value: ..\..\..\Users\Robotics\Desktop\wiring.html}
   C++ Windriver Workspace: !!robotbuilder.data.properties.FileProperty {default: 'C:\Windriver\workspace',
     extension: null, folder: true, name: C++ Windriver Workspace, validators: null,
     value: 'C:\Windriver\workspace'}
@@ -827,6 +923,6 @@ Properties:
     validators: null, value: 2619}
   Export Commands: !!robotbuilder.data.properties.BooleanProperty {default: true,
     name: Export Commands, validators: null, value: true}
-  Java Project Directory: !!robotbuilder.data.properties.FileProperty {default: 'C:\Users\abcurrie\NetBeansProjects',
+  Java Project Directory: !!robotbuilder.data.properties.FileProperty {default: 'C:\Users\Robotics\NetBeansProjects',
     extension: null, folder: true, name: Java Project Directory, validators: null,
     value: 'C:\Users\abcurrie\NetBeansProjects'}

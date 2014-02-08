@@ -47,15 +47,15 @@ void PickupArms::ArmsRetract()
 void PickupArms::ArmsMidwayLo()
 {
 	leftShortCylinder->Set(DoubleSolenoid::kReverse);
-	leftLongCylinder->Set(DoubleSolenoid::kReverse);
-	rightShortCylinder->Set(DoubleSolenoid::kForward);
+	leftLongCylinder->Set(DoubleSolenoid::kForward);
+	rightShortCylinder->Set(DoubleSolenoid::kReverse);
 	rightLongCylinder->Set(DoubleSolenoid::kForward);
 }
 void PickupArms::ArmsMidwayHi()
 {
 	leftShortCylinder->Set(DoubleSolenoid::kForward);
-	leftLongCylinder->Set(DoubleSolenoid::kForward);
-	rightShortCylinder->Set(DoubleSolenoid::kReverse);
+	leftLongCylinder->Set(DoubleSolenoid::kReverse);
+	rightShortCylinder->Set(DoubleSolenoid::kForward);
 	rightLongCylinder->Set(DoubleSolenoid::kReverse);
 }
 void PickupArms::ArmsOff()

@@ -17,11 +17,11 @@ ClockspringsHigh::ClockspringsHigh() {
 }
 // Called just before this Command runs the first time
 void ClockspringsHigh::Initialize() {
-	Robot::clocksprings->SetDestination(4.5);
+	Robot::clocksprings->SetDestination(3);
 }
 // Called repeatedly when this Command is scheduled to run
 void ClockspringsHigh::Execute() {
-	
+	Robot::clocksprings->SetDestination(3);
 }
 // Make this return true when this Command no longer needs to run execute()
 bool ClockspringsHigh::IsFinished() {
