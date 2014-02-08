@@ -50,5 +50,7 @@ public:
 	virtual void TeleopInit();
 	virtual void TeleopPeriodic();
 	virtual void TestPeriodic();
+	InternalButton* dpadHigh;
+	InternalButton* dpadLow;
 };
 #endif
