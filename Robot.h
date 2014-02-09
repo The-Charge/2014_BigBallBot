@@ -52,5 +52,6 @@ public:
 	virtual void TestPeriodic();
 	InternalButton* dpadHigh;
 	InternalButton* dpadLow;
+	static NetworkTable* netTable;
 };
 #endif
