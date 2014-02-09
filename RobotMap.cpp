@@ -43,25 +43,25 @@ void RobotMap::init() {
 	LiveWindow* lw = LiveWindow::GetInstance();
 	driveTrainRightEncoder = new Encoder(1, 6, 1, 7, false, Encoder::k4X);
 	lw->AddSensor("DriveTrain", "Right Encoder", driveTrainRightEncoder);
-	driveTrainRightEncoder->SetDistancePerPulse(0.01);
-        driveTrainRightEncoder->SetPIDSourceParameter(Encoder::kDistance);
+	driveTrainRightEncoder->SetDistancePerPulse(1.0);
+        driveTrainRightEncoder->SetPIDSourceParameter(Encoder::kRate);
         driveTrainRightEncoder->Start();
-	driveTrainFrontLeftMotor = new CANJaguar(11);
+	driveTrainFrontLeftMotor = new CANJaguar(2);
 	
 	
 	driveTrainCenterLeftMotor = new CANJaguar(3);
 	
 	
-	driveTrainRearLeftMotor = new CANJaguar(16);
+	driveTrainRearLeftMotor = new CANJaguar(4);
 	
 	
-	driveTrainFrontRightMotor = new CANJaguar(12);
+	driveTrainFrontRightMotor = new CANJaguar(5);
 	
 	
 	driveTrainCenterRightMotor = new CANJaguar(6);
 	
 	
-	driveTrainRearRightMotor = new CANJaguar(10);
+	driveTrainRearRightMotor = new CANJaguar(7);
 	
 	
 	driveTrainLeftEncoder = new Encoder(1, 4, 1, 5, false, Encoder::k4X);
@@ -90,7 +90,7 @@ void RobotMap::init() {
 	pickupArmsRightLongCylinder = new DoubleSolenoid(2, 5, 6);      
 	
 	
-	throwerThrowerMotor = new CANJaguar(13);
+	throwerThrowerMotor = new CANJaguar(11);
 	
 	
 	throwerThrowerEncoder = new AnalogChannel(1, 4);
@@ -102,10 +102,10 @@ void RobotMap::init() {
 	cameraCameraTiltServo = new Servo(1, 2);
 	lw->AddActuator("Camera", "Camera Tilt Servo", cameraCameraTiltServo);
 	
-	pickupWheelsRightPickupWheel = new CANJaguar(2);
+	pickupWheelsRightPickupWheel = new CANJaguar(8);
 	
 	
-	pickupWheelsLeftPickupWheel = new CANJaguar(9);
+	pickupWheelsLeftPickupWheel = new CANJaguar(12);
 	
 	
 	distanceUltrasonic = new AnalogChannel(1, 2);
@@ -120,7 +120,7 @@ void RobotMap::init() {
 	lEDDistance = new DigitalOutput(1, 3);
 	
 	
-	clockspringsMotor = new CANJaguar(8);
+	clockspringsMotor = new CANJaguar(9);
 	
 	
 	clockspringsPot = new AnalogChannel(1, 3);

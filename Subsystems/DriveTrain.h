@@ -41,5 +41,6 @@ public:
 	void ResetEncoders();
 	virtual double PIDGet();
 	virtual void PIDWrite(float);
+	void ResetJags();
 };
 #endif

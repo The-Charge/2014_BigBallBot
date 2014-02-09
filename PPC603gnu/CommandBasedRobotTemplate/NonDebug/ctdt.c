@@ -9,6 +9,8 @@
 
 void _GLOBAL__I__ZN17AutonomousCommandC2Ev();
 
+void _GLOBAL__I__ZN15AutonomousGroupC2Ev();
+
 void _GLOBAL__I__ZN16ClockspringsHighC2Ev();
 
 void _GLOBAL__I__ZN15ClockspringsLowC2Ev();
@@ -34,6 +36,8 @@ void _GLOBAL__I__ZN15PickupWheelsOffC2Ev();
 void _GLOBAL__I__ZN23PickupWheelsReverseFastC2Ev();
 
 void _GLOBAL__I__ZN23PickupWheelsReverseSlowC2Ev();
+
+void _GLOBAL__I__ZN14ResetDriveJagsC2Ev();
 
 void _GLOBAL__I__ZN11ShifterHighC2Ev();
 
@@ -131,6 +135,7 @@ extern void (*_ctors[])();
 void (*_ctors[])() =
     {
     _GLOBAL__I__ZN17AutonomousCommandC2Ev,
+    _GLOBAL__I__ZN15AutonomousGroupC2Ev,
     _GLOBAL__I__ZN16ClockspringsHighC2Ev,
     _GLOBAL__I__ZN15ClockspringsLowC2Ev,
     _GLOBAL__I__ZN13CompressorRunC2Ev,
@@ -144,6 +149,7 @@ void (*_ctors[])() =
     _GLOBAL__I__ZN15PickupWheelsOffC2Ev,
     _GLOBAL__I__ZN23PickupWheelsReverseFastC2Ev,
     _GLOBAL__I__ZN23PickupWheelsReverseSlowC2Ev,
+    _GLOBAL__I__ZN14ResetDriveJagsC2Ev,
     _GLOBAL__I__ZN11ShifterHighC2Ev,
     _GLOBAL__I__ZN10ShifterLowC2Ev,
     _GLOBAL__I__ZN12ShowDistanceC2Ev,
@@ -195,6 +201,8 @@ void (*_ctors[])() =
 
 void _GLOBAL__D__ZN17AutonomousCommandC2Ev();
 
+void _GLOBAL__D__ZN15AutonomousGroupC2Ev();
+
 void _GLOBAL__D__ZN16ClockspringsHighC2Ev();
 
 void _GLOBAL__D__ZN15ClockspringsLowC2Ev();
@@ -220,6 +228,8 @@ void _GLOBAL__D__ZN15PickupWheelsOffC2Ev();
 void _GLOBAL__D__ZN23PickupWheelsReverseFastC2Ev();
 
 void _GLOBAL__D__ZN23PickupWheelsReverseSlowC2Ev();
+
+void _GLOBAL__D__ZN14ResetDriveJagsC2Ev();
 
 void _GLOBAL__D__ZN11ShifterHighC2Ev();
 
@@ -307,6 +317,7 @@ extern void (*_dtors[])();
 void (*_dtors[])() =
     {
     _GLOBAL__D__ZN17AutonomousCommandC2Ev,
+    _GLOBAL__D__ZN15AutonomousGroupC2Ev,
     _GLOBAL__D__ZN16ClockspringsHighC2Ev,
     _GLOBAL__D__ZN15ClockspringsLowC2Ev,
     _GLOBAL__D__ZN13CompressorRunC2Ev,
@@ -320,6 +331,7 @@ void (*_dtors[])() =
     _GLOBAL__D__ZN15PickupWheelsOffC2Ev,
     _GLOBAL__D__ZN23PickupWheelsReverseFastC2Ev,
     _GLOBAL__D__ZN23PickupWheelsReverseSlowC2Ev,
+    _GLOBAL__D__ZN14ResetDriveJagsC2Ev,
     _GLOBAL__D__ZN11ShifterHighC2Ev,
     _GLOBAL__D__ZN10ShifterLowC2Ev,
     _GLOBAL__D__ZN12ShowDistanceC2Ev,
