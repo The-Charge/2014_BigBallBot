@@ -42,10 +42,10 @@
  */
 
 //Camera constants used for distance calculation
-#define Y_IMAGE_RES 480		//X Image resolution in pixels, should be 120, 240 or 480
-#define VIEW_ANGLE 49		//Axis M1013
+#define Y_IMAGE_RES 240		//Y Image resolution in pixels, should be 120, 240 or 480
+//#define VIEW_ANGLE 49		//Axis M1013
 //#define VIEW_ANGLE 41.7		//Axis 206 camera
-//#define VIEW_ANGLE 37.4  //Axis M1011 camera
+#define VIEW_ANGLE 37.4  //Axis M1011 camera
 #define PI 3.141592653
 
 //Score limits used for target identification
