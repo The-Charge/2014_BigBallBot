@@ -22,11 +22,9 @@ void LED::ShowTime() {
 }
 // Put methods for controlling this subsystem
 // here. Call these from Commands.
-
 void LED::ShowDistance() {
 	distance->Set(1);
 }
-
 void LED::InitDefaultCommand() {
 	// Set the default command for a subsystem here.
 	//SetDefaultCommand(new MySpecialCommand());
