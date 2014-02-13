@@ -8,10 +8,8 @@
 // update. Deleting the comments indicating the section will prevent
 // it from being updated in th future.
 #include "ThrowerShoot.h"
-
 const double LEFT_BOUND_COCK = .7;
 const double RIGHT_BOUND_COCK = 1;
-
 ThrowerShoot::ThrowerShoot() {
 	// Use requires() here to declare subsystem dependencies
 	// eg. requires(chassis);

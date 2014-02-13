@@ -11,6 +11,8 @@ void _GLOBAL__I__ZN17AutonomousCommandC2Ev();
 
 void _GLOBAL__I__ZN15AutonomousGroupC2Ev();
 
+void _GLOBAL__I__ZN8CheckHotC2Ev();
+
 void _GLOBAL__I__ZN16ClockspringsHighC2Ev();
 
 void _GLOBAL__I__ZN15ClockspringsLowC2Ev();
@@ -79,6 +81,8 @@ void _GLOBAL__I_shifterIsHigh();
 
 void _GLOBAL__I__ZN7ThrowerC2Ev();
 
+void _GLOBAL__I__ZN6VisionC2Ev();
+
 void _GLOBAL__I__ZN12PrintCommandC2EPKc();
 
 void _GLOBAL__I__ZN9Scheduler9_instanceE();
@@ -136,6 +140,7 @@ void (*_ctors[])() =
     {
     _GLOBAL__I__ZN17AutonomousCommandC2Ev,
     _GLOBAL__I__ZN15AutonomousGroupC2Ev,
+    _GLOBAL__I__ZN8CheckHotC2Ev,
     _GLOBAL__I__ZN16ClockspringsHighC2Ev,
     _GLOBAL__I__ZN15ClockspringsLowC2Ev,
     _GLOBAL__I__ZN13CompressorRunC2Ev,
@@ -170,6 +175,7 @@ void (*_ctors[])() =
     _GLOBAL__I__ZN12PickupWheelsC2Ev,
     _GLOBAL__I_shifterIsHigh,
     _GLOBAL__I__ZN7ThrowerC2Ev,
+    _GLOBAL__I__ZN6VisionC2Ev,
     _GLOBAL__I__ZN12PrintCommandC2EPKc,
     _GLOBAL__I__ZN9Scheduler9_instanceE,
     _GLOBAL__I__ZN11WaitCommandC2Ed,
@@ -202,6 +208,8 @@ void (*_ctors[])() =
 void _GLOBAL__D__ZN17AutonomousCommandC2Ev();
 
 void _GLOBAL__D__ZN15AutonomousGroupC2Ev();
+
+void _GLOBAL__D__ZN8CheckHotC2Ev();
 
 void _GLOBAL__D__ZN16ClockspringsHighC2Ev();
 
@@ -271,6 +279,8 @@ void _GLOBAL__D_shifterIsHigh();
 
 void _GLOBAL__D__ZN7ThrowerC2Ev();
 
+void _GLOBAL__D__ZN6VisionC2Ev();
+
 void _GLOBAL__D__ZN9Scheduler9_instanceE();
 
 void _GLOBAL__D_wpi_error_s_ModuleIndexOutOfRange();
@@ -318,6 +328,7 @@ void (*_dtors[])() =
     {
     _GLOBAL__D__ZN17AutonomousCommandC2Ev,
     _GLOBAL__D__ZN15AutonomousGroupC2Ev,
+    _GLOBAL__D__ZN8CheckHotC2Ev,
     _GLOBAL__D__ZN16ClockspringsHighC2Ev,
     _GLOBAL__D__ZN15ClockspringsLowC2Ev,
     _GLOBAL__D__ZN13CompressorRunC2Ev,
@@ -352,6 +363,7 @@ void (*_dtors[])() =
     _GLOBAL__D__ZN12PickupWheelsC2Ev,
     _GLOBAL__D_shifterIsHigh,
     _GLOBAL__D__ZN7ThrowerC2Ev,
+    _GLOBAL__D__ZN6VisionC2Ev,
     _GLOBAL__D__ZN9Scheduler9_instanceE,
     _GLOBAL__D_wpi_error_s_ModuleIndexOutOfRange,
     _GLOBAL__D__ZN17MotorSafetyHelper12m_headHelperE,

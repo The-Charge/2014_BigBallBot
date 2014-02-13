@@ -40,7 +40,6 @@ void Clocksprings::SetDestination(float destination)
 bool Clocksprings::AtDestination()
 {
 	float volts = pot->GetAverageVoltage();
-
 	Robot::netTable->PutNumber("Clocksprings::Position", volts);
 	SmartDashboard::PutNumber("Clocksprings::Position", volts);
 	float difference = volts - _destination;

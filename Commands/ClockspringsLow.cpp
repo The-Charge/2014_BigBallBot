@@ -8,9 +8,7 @@
 // update. Deleting the comments indicating the section will prevent
 // it from being updated in th future.
 #include "ClockspringsLow.h"
-
 const float DESTINATION = 2.0;
-
 ClockspringsLow::ClockspringsLow() {
 	// Use requires() here to declare subsystem dependencies
 	// eg. requires(chassis);
