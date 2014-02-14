@@ -7,6 +7,10 @@
 /*       -fdollars-in-identifiers flag.                   */
 
 
+void _GLOBAL__I__ZN12AutoPreShootC2Ev();
+
+void _GLOBAL__I__ZN9AutoShootC2Ev();
+
 void _GLOBAL__I__ZN17AutonomousCommandC2Ev();
 
 void _GLOBAL__I__ZN15AutonomousGroupC2Ev();
@@ -138,6 +142,8 @@ void _GLOBAL__I__ZN11StringArray19STRING_ARRAY_RAW_IDE();
 extern void (*_ctors[])();
 void (*_ctors[])() =
     {
+    _GLOBAL__I__ZN12AutoPreShootC2Ev,
+    _GLOBAL__I__ZN9AutoShootC2Ev,
     _GLOBAL__I__ZN17AutonomousCommandC2Ev,
     _GLOBAL__I__ZN15AutonomousGroupC2Ev,
     _GLOBAL__I__ZN8CheckHotC2Ev,
@@ -204,6 +210,10 @@ void (*_ctors[])() =
     _GLOBAL__I__ZN11StringArray19STRING_ARRAY_RAW_IDE,
     0
     };
+
+void _GLOBAL__D__ZN12AutoPreShootC2Ev();
+
+void _GLOBAL__D__ZN9AutoShootC2Ev();
 
 void _GLOBAL__D__ZN17AutonomousCommandC2Ev();
 
@@ -326,6 +336,8 @@ void _GLOBAL__D__ZN11StringArray19STRING_ARRAY_RAW_IDE();
 extern void (*_dtors[])();
 void (*_dtors[])() =
     {
+    _GLOBAL__D__ZN12AutoPreShootC2Ev,
+    _GLOBAL__D__ZN9AutoShootC2Ev,
     _GLOBAL__D__ZN17AutonomousCommandC2Ev,
     _GLOBAL__D__ZN15AutonomousGroupC2Ev,
     _GLOBAL__D__ZN8CheckHotC2Ev,
