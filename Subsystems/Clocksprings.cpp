@@ -42,6 +42,7 @@ bool Clocksprings::AtDestination()
 	float volts = pot->GetAverageVoltage();
 	Robot::netTable->PutNumber("Clocksprings::Position", volts);
 	SmartDashboard::PutNumber("Clocksprings::Position", volts);
+	SmartDashboard::PutNumber("Clocksprings::destination", _destination);
 	float difference = volts - _destination;
 	difference = difference > 0 ? difference : difference * -1;
 	float errorDeadband = Robot::netTable->GetNumber("Clocksprings::errorDeadband",ERROR_DEADBAND);

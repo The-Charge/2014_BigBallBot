@@ -25,6 +25,7 @@ void CheckHot::Initialize() {
 // Called repeatedly when this Command is scheduled to run
 void CheckHot::Execute() {
 	Robot::vision->fetchImage();
+	SmartDashboard::PutBoolean("IsHot",Robot::vision->isHot());
 }
 // Make this return true when this Command no longer needs to run execute()
 bool CheckHot::IsFinished() {
