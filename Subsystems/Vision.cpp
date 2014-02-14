@@ -56,6 +56,7 @@ void Vision::fetchImage()
 		{
 			image->Write("1_InitialImage.bmp");
 		}
+		filterImage();
 	}
 }
 void Vision::filterImage()
@@ -82,6 +83,7 @@ void Vision::filterImage()
 	{
 		thresholdImage->Write("3_ParticleFiltered.bmp");
 	}
+	processImage();
 }
 double computeDistance (BinaryImage *image, ParticleAnalysisReport *report) {
 	double rectLong, height;
