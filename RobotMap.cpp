@@ -43,7 +43,7 @@ void RobotMap::init() {
 	LiveWindow* lw = LiveWindow::GetInstance();
 	driveTrainRightEncoder = new Encoder(1, 6, 1, 7, false, Encoder::k4X);
 	lw->AddSensor("DriveTrain", "Right Encoder", driveTrainRightEncoder);
-	driveTrainRightEncoder->SetDistancePerPulse(1.0);
+	driveTrainRightEncoder->SetDistancePerPulse(0.01);
         driveTrainRightEncoder->SetPIDSourceParameter(Encoder::kRate);
         driveTrainRightEncoder->Start();
 	driveTrainFrontLeftMotor = new CANJaguar(2);
@@ -66,7 +66,7 @@ void RobotMap::init() {
 	
 	driveTrainLeftEncoder = new Encoder(1, 4, 1, 5, false, Encoder::k4X);
 	lw->AddSensor("DriveTrain", "Left Encoder", driveTrainLeftEncoder);
-	driveTrainLeftEncoder->SetDistancePerPulse(1.0);
+	driveTrainLeftEncoder->SetDistancePerPulse(0.1);
         driveTrainLeftEncoder->SetPIDSourceParameter(Encoder::kRate);
         driveTrainLeftEncoder->Start();
 	shifterShifterLeft = new DoubleSolenoid(1, 1, 2);      

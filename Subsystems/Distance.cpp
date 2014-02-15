@@ -31,4 +31,3 @@ double Distance::PIDGet()
 {
 	return GetFeet();
 }
-
