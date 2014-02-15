@@ -42,5 +42,6 @@ public:
 	virtual double PIDGet();
 	virtual void PIDWrite(float);
 	void ResetJags();
+	float Delinearize(float);
 };
 #endif
