@@ -21,6 +21,8 @@ void _GLOBAL__I__ZN16ClockspringsHighC2Ev();
 
 void _GLOBAL__I__ZN15ClockspringsLowC2Ev();
 
+void _GLOBAL__I__ZN15ClockspringsMedC2Ev();
+
 void _GLOBAL__I__ZN13CompressorRunC2Ev();
 
 void _GLOBAL__I__ZN5DriveC2Ev();
@@ -161,6 +163,7 @@ void (*_ctors[])() =
     _GLOBAL__I__ZN8CheckHotC2Ev,
     _GLOBAL__I__ZN16ClockspringsHighC2Ev,
     _GLOBAL__I__ZN15ClockspringsLowC2Ev,
+    _GLOBAL__I__ZN15ClockspringsMedC2Ev,
     _GLOBAL__I__ZN13CompressorRunC2Ev,
     _GLOBAL__I__ZN5DriveC2Ev,
     _GLOBAL__I__ZN10DriveNFeetC2Ef,
@@ -242,6 +245,8 @@ void _GLOBAL__D__ZN8CheckHotC2Ev();
 void _GLOBAL__D__ZN16ClockspringsHighC2Ev();
 
 void _GLOBAL__D__ZN15ClockspringsLowC2Ev();
+
+void _GLOBAL__D__ZN15ClockspringsMedC2Ev();
 
 void _GLOBAL__D__ZN13CompressorRunC2Ev();
 
@@ -373,6 +378,7 @@ void (*_dtors[])() =
     _GLOBAL__D__ZN8CheckHotC2Ev,
     _GLOBAL__D__ZN16ClockspringsHighC2Ev,
     _GLOBAL__D__ZN15ClockspringsLowC2Ev,
+    _GLOBAL__D__ZN15ClockspringsMedC2Ev,
     _GLOBAL__D__ZN13CompressorRunC2Ev,
     _GLOBAL__D__ZN5DriveC2Ev,
     _GLOBAL__D__ZN10DriveNFeetC2Ef,
