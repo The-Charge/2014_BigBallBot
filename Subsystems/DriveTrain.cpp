@@ -88,7 +88,6 @@ void DriveTrain::ResetJags() {
 	rearLeftMotor->EnableControl();
 	printf("RESET JAGS \n");
 }
-
 float DriveTrain::Delinearize(float x) {
 	int sign = 1;
 	if (x < 0) {

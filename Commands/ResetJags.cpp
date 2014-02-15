@@ -11,6 +11,10 @@
 
 
 #include "ResetJags.h"
+#include "ResetDriveJags.h"
+#include "ResetThrowerJags.h"
+#include "ResetClockspringJags.h"
+#include "ResetPickupJags.h"
 
 ResetJags::ResetJags() {
 	// Add Commands here:
@@ -29,4 +33,8 @@ ResetJags::ResetJags() {
 	// e.g. if Command1 requires chassis, and Command2 requires arm,
 	// a CommandGroup containing them would require both the chassis and the
 	// arm.
+	AddParallel(new ResetClockspringJags());
+	AddParallel(new ResetDriveJags());
+	AddParallel(new ResetPickupJags());
+	AddParallel(new ResetThrowerJags());
 }

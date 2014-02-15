@@ -43,7 +43,15 @@ void _GLOBAL__I__ZN23PickupWheelsReverseFastC2Ev();
 
 void _GLOBAL__I__ZN23PickupWheelsReverseSlowC2Ev();
 
+void _GLOBAL__I__ZN20ResetClockspringJagsC2Ev();
+
 void _GLOBAL__I__ZN14ResetDriveJagsC2Ev();
+
+void _GLOBAL__I__ZN9ResetJagsC2Ev();
+
+void _GLOBAL__I__ZN15ResetPickupJagsC2Ev();
+
+void _GLOBAL__I__ZN16ResetThrowerJagsC2Ev();
 
 void _GLOBAL__I__ZN11ShifterHighC2Ev();
 
@@ -160,7 +168,11 @@ void (*_ctors[])() =
     _GLOBAL__I__ZN15PickupWheelsOffC2Ev,
     _GLOBAL__I__ZN23PickupWheelsReverseFastC2Ev,
     _GLOBAL__I__ZN23PickupWheelsReverseSlowC2Ev,
+    _GLOBAL__I__ZN20ResetClockspringJagsC2Ev,
     _GLOBAL__I__ZN14ResetDriveJagsC2Ev,
+    _GLOBAL__I__ZN9ResetJagsC2Ev,
+    _GLOBAL__I__ZN15ResetPickupJagsC2Ev,
+    _GLOBAL__I__ZN16ResetThrowerJagsC2Ev,
     _GLOBAL__I__ZN11ShifterHighC2Ev,
     _GLOBAL__I__ZN10ShifterLowC2Ev,
     _GLOBAL__I__ZN12ShowDistanceC2Ev,
@@ -247,7 +259,15 @@ void _GLOBAL__D__ZN23PickupWheelsReverseFastC2Ev();
 
 void _GLOBAL__D__ZN23PickupWheelsReverseSlowC2Ev();
 
+void _GLOBAL__D__ZN20ResetClockspringJagsC2Ev();
+
 void _GLOBAL__D__ZN14ResetDriveJagsC2Ev();
+
+void _GLOBAL__D__ZN9ResetJagsC2Ev();
+
+void _GLOBAL__D__ZN15ResetPickupJagsC2Ev();
+
+void _GLOBAL__D__ZN16ResetThrowerJagsC2Ev();
 
 void _GLOBAL__D__ZN11ShifterHighC2Ev();
 
@@ -354,7 +374,11 @@ void (*_dtors[])() =
     _GLOBAL__D__ZN15PickupWheelsOffC2Ev,
     _GLOBAL__D__ZN23PickupWheelsReverseFastC2Ev,
     _GLOBAL__D__ZN23PickupWheelsReverseSlowC2Ev,
+    _GLOBAL__D__ZN20ResetClockspringJagsC2Ev,
     _GLOBAL__D__ZN14ResetDriveJagsC2Ev,
+    _GLOBAL__D__ZN9ResetJagsC2Ev,
+    _GLOBAL__D__ZN15ResetPickupJagsC2Ev,
+    _GLOBAL__D__ZN16ResetThrowerJagsC2Ev,
     _GLOBAL__D__ZN11ShifterHighC2Ev,
     _GLOBAL__D__ZN10ShifterLowC2Ev,
     _GLOBAL__D__ZN12ShowDistanceC2Ev,
