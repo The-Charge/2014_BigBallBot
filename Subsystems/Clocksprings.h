@@ -31,5 +31,6 @@ public:
 	void SetDestination(float);
 	bool AtDestination();
 	void Stop();
+	void ResetJags();
 };
 #endif

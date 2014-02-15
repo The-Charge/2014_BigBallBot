@@ -30,5 +30,6 @@ public:
 	void Shoot();
 	void Stop();
 	float GetPosition();
+	void ResetJags();
 };
 #endif

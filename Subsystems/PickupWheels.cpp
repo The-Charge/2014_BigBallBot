@@ -53,3 +53,9 @@ void PickupWheels::SetSpeed(float speed)
 	rightPickupWheel->Set(speed);
 	leftPickupWheel->Set(-speed);
 }
+void PickupWheels::ResetJags() {
+	rightPickupWheel->ConfigNeutralMode(CANJaguar::kNeutralMode_Brake);
+	leftPickupWheel->ConfigNeutralMode(CANJaguar::kNeutralMode_Brake);
+	rightPickupWheel->EnableControl();
+	leftPickupWheel->EnableControl();	printf("RESET pickup JAGS \n");
+}

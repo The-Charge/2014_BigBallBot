@@ -32,6 +32,7 @@ public:
 	void SetReverseSlow();
 	void SetReverseFast();
 	void SetSpeed(float);
+	void ResetJags();
 		
 };
 #endif

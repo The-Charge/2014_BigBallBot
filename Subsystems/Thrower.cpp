@@ -41,3 +41,8 @@ float Thrower::GetPosition()
 	return throwerVoltage;
 	
 }
+void Thrower::ResetJags() {
+	throwerMotor->ConfigNeutralMode(CANJaguar::kNeutralMode_Brake);
+	throwerMotor->EnableControl();
+	printf("RESET thrower JAGS \n");
+}
