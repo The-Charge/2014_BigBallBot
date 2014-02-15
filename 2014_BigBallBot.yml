@@ -642,7 +642,31 @@ Children:
         value: '1'
   - Name: Shooter Joystick
     Base: Joystick
-    Children: []
+    Children:
+    - Name: Reset Jags Btn
+      Base: Joystick Button
+      Children: []
+      Properties:
+        Command: !!robotbuilder.data.properties.TypeSelectionProperty
+          default: None
+          name: Command
+          type: Command
+          validators: *id033
+          value: Reset Jags
+        Button: !!robotbuilder.data.properties.ChoicesProperty
+          choices: *id034
+          default: '1'
+          name: Button
+          validators: null
+          value: '11'
+        Joystick: !!robotbuilder.data.properties.ParentProperty {default: parent,
+          name: Joystick, validators: null, value: Shooter Joystick}
+        When to Run: !!robotbuilder.data.properties.ChoicesProperty
+          choices: *id035
+          default: whileHeld
+          name: When to Run
+          validators: null
+          value: whenPressed
     Properties:
       Number: !!robotbuilder.data.properties.ChoicesProperty
         choices: *id036
@@ -650,336 +674,6 @@ Children:
         name: Number
         validators: *id037
         value: '2'
-  - Name: Pickup Wheels Off Btn
-    Base: Digital Button
-    Children: []
-    Properties:
-      Command: !!robotbuilder.data.properties.TypeSelectionProperty
-        default: None
-        name: Command
-        type: Command
-        validators: &id038 [TypeDropdownSelected]
-        value: Pickup Wheels Off
-      When to Run: !!robotbuilder.data.properties.ChoicesProperty
-        choices: &id039 [whileHeld, whenPressed, whenReleased]
-        default: whileHeld
-        name: When to Run
-        validators: null
-        value: whenPressed
-      Digital Pin: !!robotbuilder.data.properties.ChoicesProperty
-        choices: &id040 ['1', '2', '3', '4', '5', '6', '7', '8']
-        default: '1'
-        name: Digital Pin
-        validators: null
-        value: '1'
-  - Name: Pickup Wheels Forward Btn
-    Base: Digital Button
-    Children: []
-    Properties:
-      Command: !!robotbuilder.data.properties.TypeSelectionProperty
-        default: None
-        name: Command
-        type: Command
-        validators: *id038
-        value: Pickup Wheels Forward
-      When to Run: !!robotbuilder.data.properties.ChoicesProperty
-        choices: *id039
-        default: whileHeld
-        name: When to Run
-        validators: null
-        value: whenPressed
-      Digital Pin: !!robotbuilder.data.properties.ChoicesProperty
-        choices: *id040
-        default: '1'
-        name: Digital Pin
-        validators: null
-        value: '2'
-  - Name: Pickup Wheels Reverse Slow Btn
-    Base: Digital Button
-    Children: []
-    Properties:
-      Command: !!robotbuilder.data.properties.TypeSelectionProperty
-        default: None
-        name: Command
-        type: Command
-        validators: *id038
-        value: Pickup Wheels Reverse Slow
-      When to Run: !!robotbuilder.data.properties.ChoicesProperty
-        choices: *id039
-        default: whileHeld
-        name: When to Run
-        validators: null
-        value: whenPressed
-      Digital Pin: !!robotbuilder.data.properties.ChoicesProperty
-        choices: *id040
-        default: '1'
-        name: Digital Pin
-        validators: null
-        value: '3'
-  - Name: Pickup Wheels Reverse Fast Btn
-    Base: Digital Button
-    Children: []
-    Properties:
-      Command: !!robotbuilder.data.properties.TypeSelectionProperty
-        default: None
-        name: Command
-        type: Command
-        validators: *id038
-        value: Pickup Wheels Reverse Fast
-      When to Run: !!robotbuilder.data.properties.ChoicesProperty
-        choices: *id039
-        default: whileHeld
-        name: When to Run
-        validators: null
-        value: whenPressed
-      Digital Pin: !!robotbuilder.data.properties.ChoicesProperty
-        choices: *id040
-        default: '1'
-        name: Digital Pin
-        validators: null
-        value: '4'
-  - Name: Pickup Arms Extend Btn
-    Base: Digital Button
-    Children: []
-    Properties:
-      Command: !!robotbuilder.data.properties.TypeSelectionProperty
-        default: None
-        name: Command
-        type: Command
-        validators: *id038
-        value: Pickup Arms Midway Lo
-      When to Run: !!robotbuilder.data.properties.ChoicesProperty
-        choices: *id039
-        default: whileHeld
-        name: When to Run
-        validators: null
-        value: whenPressed
-      Digital Pin: !!robotbuilder.data.properties.ChoicesProperty
-        choices: *id040
-        default: '1'
-        name: Digital Pin
-        validators: null
-        value: '5'
-  - Name: Pickup Arms Mid Btn
-    Base: Digital Button
-    Children: []
-    Properties:
-      Command: !!robotbuilder.data.properties.TypeSelectionProperty
-        default: None
-        name: Command
-        type: Command
-        validators: *id038
-        value: Pickup Arms Midway Hi
-      When to Run: !!robotbuilder.data.properties.ChoicesProperty
-        choices: *id039
-        default: whileHeld
-        name: When to Run
-        validators: null
-        value: whenPressed
-      Digital Pin: !!robotbuilder.data.properties.ChoicesProperty
-        choices: *id040
-        default: '1'
-        name: Digital Pin
-        validators: null
-        value: '6'
-  - Name: Pickup Arms Retract Btn
-    Base: Digital Button
-    Children: []
-    Properties:
-      Command: !!robotbuilder.data.properties.TypeSelectionProperty
-        default: None
-        name: Command
-        type: Command
-        validators: *id038
-        value: Pickup Arms Retract
-      When to Run: !!robotbuilder.data.properties.ChoicesProperty
-        choices: *id039
-        default: whileHeld
-        name: When to Run
-        validators: null
-        value: whenPressed
-      Digital Pin: !!robotbuilder.data.properties.ChoicesProperty
-        choices: *id040
-        default: '1'
-        name: Digital Pin
-        validators: null
-        value: '7'
-  - Name: Clocksprings High Btn
-    Base: Digital Button
-    Children: []
-    Properties:
-      Command: !!robotbuilder.data.properties.TypeSelectionProperty
-        default: None
-        name: Command
-        type: Command
-        validators: *id038
-        value: Clocksprings High
-      When to Run: !!robotbuilder.data.properties.ChoicesProperty
-        choices: *id039
-        default: whileHeld
-        name: When to Run
-        validators: null
-        value: whenPressed
-      Digital Pin: !!robotbuilder.data.properties.ChoicesProperty
-        choices: *id040
-        default: '1'
-        name: Digital Pin
-        validators: null
-        value: '1'
-  - Name: Clocksprings Med Btn
-    Base: Digital Button
-    Children: []
-    Properties:
-      Command: !!robotbuilder.data.properties.TypeSelectionProperty
-        default: None
-        name: Command
-        type: Command
-        validators: *id038
-        value: Clocksprings Med
-      When to Run: !!robotbuilder.data.properties.ChoicesProperty
-        choices: *id039
-        default: whileHeld
-        name: When to Run
-        validators: null
-        value: whenPressed
-      Digital Pin: !!robotbuilder.data.properties.ChoicesProperty
-        choices: *id040
-        default: '1'
-        name: Digital Pin
-        validators: null
-        value: '2'
-  - Name: Clocksprings Low Btn
-    Base: Digital Button
-    Children: []
-    Properties:
-      Command: !!robotbuilder.data.properties.TypeSelectionProperty
-        default: None
-        name: Command
-        type: Command
-        validators: *id038
-        value: Clocksprings Low
-      When to Run: !!robotbuilder.data.properties.ChoicesProperty
-        choices: *id039
-        default: whileHeld
-        name: When to Run
-        validators: null
-        value: whenPressed
-      Digital Pin: !!robotbuilder.data.properties.ChoicesProperty
-        choices: *id040
-        default: '1'
-        name: Digital Pin
-        validators: null
-        value: '3'
-  - Name: Shoot
-    Base: Digital Button
-    Children: []
-    Properties:
-      Command: !!robotbuilder.data.properties.TypeSelectionProperty
-        default: None
-        name: Command
-        type: Command
-        validators: *id038
-        value: Thrower Shoot
-      When to Run: !!robotbuilder.data.properties.ChoicesProperty
-        choices: *id039
-        default: whileHeld
-        name: When to Run
-        validators: null
-        value: whenPressed
-      Digital Pin: !!robotbuilder.data.properties.ChoicesProperty
-        choices: *id040
-        default: '1'
-        name: Digital Pin
-        validators: null
-        value: '4'
-  - Name: Shooter Up
-    Base: Digital Button
-    Children: []
-    Properties:
-      Command: !!robotbuilder.data.properties.TypeSelectionProperty
-        default: None
-        name: Command
-        type: Command
-        validators: *id038
-        value: Thrower Up
-      When to Run: !!robotbuilder.data.properties.ChoicesProperty
-        choices: *id039
-        default: whileHeld
-        name: When to Run
-        validators: null
-        value: whenPressed
-      Digital Pin: !!robotbuilder.data.properties.ChoicesProperty
-        choices: *id040
-        default: '1'
-        name: Digital Pin
-        validators: null
-        value: '5'
-  - Name: Show Time Btn
-    Base: Digital Button
-    Children: []
-    Properties:
-      Command: !!robotbuilder.data.properties.TypeSelectionProperty
-        default: None
-        name: Command
-        type: Command
-        validators: *id038
-        value: Show Time
-      When to Run: !!robotbuilder.data.properties.ChoicesProperty
-        choices: *id039
-        default: whileHeld
-        name: When to Run
-        validators: null
-        value: whenPressed
-      Digital Pin: !!robotbuilder.data.properties.ChoicesProperty
-        choices: *id040
-        default: '1'
-        name: Digital Pin
-        validators: null
-        value: '7'
-  - Name: Show Distance Btn
-    Base: Digital Button
-    Children: []
-    Properties:
-      Command: !!robotbuilder.data.properties.TypeSelectionProperty
-        default: None
-        name: Command
-        type: Command
-        validators: *id038
-        value: Show Distance
-      When to Run: !!robotbuilder.data.properties.ChoicesProperty
-        choices: *id039
-        default: whileHeld
-        name: When to Run
-        validators: null
-        value: whenPressed
-      Digital Pin: !!robotbuilder.data.properties.ChoicesProperty
-        choices: *id040
-        default: '1'
-        name: Digital Pin
-        validators: null
-        value: '8'
-  - Name: Show Team Btn
-    Base: Digital Button
-    Children: []
-    Properties:
-      Command: !!robotbuilder.data.properties.TypeSelectionProperty
-        default: None
-        name: Command
-        type: Command
-        validators: *id038
-        value: Show Team
-      When to Run: !!robotbuilder.data.properties.ChoicesProperty
-        choices: *id039
-        default: whileHeld
-        name: When to Run
-        validators: null
-        value: whenPressed
-      Digital Pin: !!robotbuilder.data.properties.ChoicesProperty
-        choices: *id040
-        default: '1'
-        name: Digital Pin
-        validators: null
-        value: '6'
   Properties: {}
 - Name: Commands
   Base: Commands
@@ -1129,14 +823,6 @@ Children:
       Button on SmartDashboard: !!robotbuilder.data.properties.BooleanProperty {default: true,
         name: Button on SmartDashboard, validators: null, value: true}
   - Name: Clocksprings High
-    Base: Command
-    Children: []
-    Properties:
-      Requires: !!robotbuilder.data.properties.TypeSelectionProperty {default: None,
-        name: Requires, type: Subsystem, validators: null, value: Clocksprings}
-      Button on SmartDashboard: !!robotbuilder.data.properties.BooleanProperty {default: true,
-        name: Button on SmartDashboard, validators: null, value: true}
-  - Name: Clocksprings Med
     Base: Command
     Children: []
     Properties:
