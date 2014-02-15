@@ -23,11 +23,12 @@ void Distance::InitDefaultCommand() {
 }
 // Put methods for controlling this subsystem
 // here. Call these from Commands.
-float Distance::getFeet()
+float Distance::GetFeet()
 {
 	return ultrasonic->GetAverageVoltage()/5*1024/12;
 }
 double Distance::PIDGet()
 {
-	return getFeet();
+	return GetFeet();
 }
+

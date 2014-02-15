@@ -27,6 +27,10 @@ void _GLOBAL__I__ZN5DriveC2Ev();
 
 void _GLOBAL__I__ZN10DriveNFeetC2Ef();
 
+void _GLOBAL__I__ZN15DriveUntilXFeetC2Ef();
+
+void _GLOBAL__I__ZN7GetFeetC2Ev();
+
 void _GLOBAL__I__ZN16PickupArmsExtendC2Ev();
 
 void _GLOBAL__I__ZN18PickupArmsMidwayHiC2Ev();
@@ -160,6 +164,8 @@ void (*_ctors[])() =
     _GLOBAL__I__ZN13CompressorRunC2Ev,
     _GLOBAL__I__ZN5DriveC2Ev,
     _GLOBAL__I__ZN10DriveNFeetC2Ef,
+    _GLOBAL__I__ZN15DriveUntilXFeetC2Ef,
+    _GLOBAL__I__ZN7GetFeetC2Ev,
     _GLOBAL__I__ZN16PickupArmsExtendC2Ev,
     _GLOBAL__I__ZN18PickupArmsMidwayHiC2Ev,
     _GLOBAL__I__ZN18PickupArmsMidwayLoC2Ev,
@@ -242,6 +248,10 @@ void _GLOBAL__D__ZN13CompressorRunC2Ev();
 void _GLOBAL__D__ZN5DriveC2Ev();
 
 void _GLOBAL__D__ZN10DriveNFeetC2Ef();
+
+void _GLOBAL__D__ZN15DriveUntilXFeetC2Ef();
+
+void _GLOBAL__D__ZN7GetFeetC2Ev();
 
 void _GLOBAL__D__ZN16PickupArmsExtendC2Ev();
 
@@ -366,6 +376,8 @@ void (*_dtors[])() =
     _GLOBAL__D__ZN13CompressorRunC2Ev,
     _GLOBAL__D__ZN5DriveC2Ev,
     _GLOBAL__D__ZN10DriveNFeetC2Ef,
+    _GLOBAL__D__ZN15DriveUntilXFeetC2Ef,
+    _GLOBAL__D__ZN7GetFeetC2Ev,
     _GLOBAL__D__ZN16PickupArmsExtendC2Ev,
     _GLOBAL__D__ZN18PickupArmsMidwayHiC2Ev,
     _GLOBAL__D__ZN18PickupArmsMidwayLoC2Ev,
