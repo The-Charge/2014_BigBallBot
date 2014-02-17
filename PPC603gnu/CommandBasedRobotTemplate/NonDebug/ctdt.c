@@ -63,6 +63,10 @@ void _GLOBAL__I__ZN11ShifterHighC2Ev();
 
 void _GLOBAL__I__ZN10ShifterLowC2Ev();
 
+void _GLOBAL__I__ZN5ShootC2Ev();
+
+void _GLOBAL__I__ZN12ShooterBlockC2Ev();
+
 void _GLOBAL__I__ZN12ShowDistanceC2Ev();
 
 void _GLOBAL__I__ZN8ShowTeamC2Ev();
@@ -184,6 +188,8 @@ void (*_ctors[])() =
     _GLOBAL__I__ZN16ResetThrowerJagsC2Ev,
     _GLOBAL__I__ZN11ShifterHighC2Ev,
     _GLOBAL__I__ZN10ShifterLowC2Ev,
+    _GLOBAL__I__ZN5ShootC2Ev,
+    _GLOBAL__I__ZN12ShooterBlockC2Ev,
     _GLOBAL__I__ZN12ShowDistanceC2Ev,
     _GLOBAL__I__ZN8ShowTeamC2Ev,
     _GLOBAL__I__ZN8ShowTimeC2Ev,
@@ -287,6 +293,10 @@ void _GLOBAL__D__ZN16ResetThrowerJagsC2Ev();
 void _GLOBAL__D__ZN11ShifterHighC2Ev();
 
 void _GLOBAL__D__ZN10ShifterLowC2Ev();
+
+void _GLOBAL__D__ZN5ShootC2Ev();
+
+void _GLOBAL__D__ZN12ShooterBlockC2Ev();
 
 void _GLOBAL__D__ZN12ShowDistanceC2Ev();
 
@@ -399,6 +409,8 @@ void (*_dtors[])() =
     _GLOBAL__D__ZN16ResetThrowerJagsC2Ev,
     _GLOBAL__D__ZN11ShifterHighC2Ev,
     _GLOBAL__D__ZN10ShifterLowC2Ev,
+    _GLOBAL__D__ZN5ShootC2Ev,
+    _GLOBAL__D__ZN12ShooterBlockC2Ev,
     _GLOBAL__D__ZN12ShowDistanceC2Ev,
     _GLOBAL__D__ZN8ShowTeamC2Ev,
     _GLOBAL__D__ZN8ShowTimeC2Ev,

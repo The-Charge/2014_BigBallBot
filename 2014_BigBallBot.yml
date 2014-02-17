@@ -783,8 +783,8 @@ Children:
         default: '1'
         name: Digital Pin
         validators: null
-        value: '5'
-  - Name: Pickup Arms Midway Hi Btn
+        value: '6'
+  - Name: Pickup Arms Extend Btn
     Base: Digital Button
     Children: []
     Properties:
@@ -793,7 +793,7 @@ Children:
         name: Command
         type: Command
         validators: *id038
-        value: Pickup Arms Midway Hi
+        value: Pickup Arms Extend
       When to Run: !!robotbuilder.data.properties.ChoicesProperty
         choices: *id039
         default: whileHeld
@@ -805,7 +805,7 @@ Children:
         default: '1'
         name: Digital Pin
         validators: null
-        value: '6'
+        value: '5'
   - Name: Pickup Arms Retract Btn
     Base: Digital Button
     Children: []
@@ -903,7 +903,7 @@ Children:
         name: Command
         type: Command
         validators: *id038
-        value: Thrower Shoot
+        value: Shoot
       When to Run: !!robotbuilder.data.properties.ChoicesProperty
         choices: *id039
         default: whileHeld
@@ -916,7 +916,7 @@ Children:
         name: Digital Pin
         validators: null
         value: '4'
-  - Name: Shooter Up Btn
+  - Name: Shooter Block Btn
     Base: Digital Button
     Children: []
     Properties:
@@ -925,7 +925,7 @@ Children:
         name: Command
         type: Command
         validators: *id038
-        value: Thrower Up
+        value: Shooter Block
       When to Run: !!robotbuilder.data.properties.ChoicesProperty
         choices: *id039
         default: whileHeld
@@ -1240,6 +1240,18 @@ Children:
     Properties:
       Requires: !!robotbuilder.data.properties.TypeSelectionProperty {default: None,
         name: Requires, type: Subsystem, validators: null, value: Clocksprings}
+      Button on SmartDashboard: !!robotbuilder.data.properties.BooleanProperty {default: true,
+        name: Button on SmartDashboard, validators: null, value: true}
+  - Name: Shoot
+    Base: Command Group
+    Children: []
+    Properties:
+      Button on SmartDashboard: !!robotbuilder.data.properties.BooleanProperty {default: true,
+        name: Button on SmartDashboard, validators: null, value: true}
+  - Name: Shooter Block
+    Base: Command Group
+    Children: []
+    Properties:
       Button on SmartDashboard: !!robotbuilder.data.properties.BooleanProperty {default: true,
         name: Button on SmartDashboard, validators: null, value: true}
   Properties: {}

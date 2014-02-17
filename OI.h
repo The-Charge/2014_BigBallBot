@@ -16,13 +16,13 @@ private:
 	DigitalIOButton* showDistanceBtn;
 	DigitalIOButton* showTimeBtn;
 	DigitalIOButton* showTeamBtn;
-	DigitalIOButton* shooterUpBtn;
+	DigitalIOButton* shooterBlockBtn;
 	DigitalIOButton* shootBtn;
 	DigitalIOButton* clockspringsHiBtn;
 	DigitalIOButton* clockspringsMedBtn;
 	DigitalIOButton* clockspringsLowBtn;
 	DigitalIOButton* pickupArmsRetractBtn;
-	DigitalIOButton* pickupArmsMidwayHiBtn;
+	DigitalIOButton* pickupArmsExtendBtn;
 	DigitalIOButton* pickupArmsMidwayLoBtn;
 	DigitalIOButton* pickupWheelsReverseFastBtn;
 	DigitalIOButton* pickupWheelsReverseSlowBtn;
