@@ -40,16 +40,19 @@ void Drive::Execute()
 	float rightSpeed = 0;
 	if(selected->compare(*cDrive) == 0)
 	{
+		printf("======Clayton drive======");
 		leftSpeed   = (Robot::oi->getDriverJoystick()->GetY()) + (Robot::oi->getDriverJoystick()->GetThrottle());
 		rightSpeed  = (Robot::oi->getDriverJoystick()->GetY()) - (Robot::oi->getDriverJoystick()->GetThrottle());
 	}
-	else if(selected->compare(*tDrive))
+	else if(selected->compare(*tDrive)==0)
 	{
+		printf("======Tank drive======");
 		leftSpeed = Robot::oi->getDriverJoystick()->GetY();
 		rightSpeed = Robot::oi->getShooterJoystick()->GetY();
 	}
 	else
 	{
+		printf("======XBox drive======");
 		leftSpeed = Robot::oi->getDriverJoystick()->GetY();
 		rightSpeed = Robot::oi->getDriverJoystick()->GetRawAxis(5);
 	}
