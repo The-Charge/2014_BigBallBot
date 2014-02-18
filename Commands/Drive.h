@@ -32,6 +32,7 @@ public:
 private:
 	SendableChooser *sc;
 	std::string *cDrive;
+	std::string *aDrive;
 	std::string *tDrive;
 	std::string *xDrive;
 };
