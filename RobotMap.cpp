@@ -26,7 +26,7 @@ DoubleSolenoid* RobotMap::pickupArmsLeftLongCylinder = NULL;
 DoubleSolenoid* RobotMap::pickupArmsRightShortCylinder = NULL;
 DoubleSolenoid* RobotMap::pickupArmsRightLongCylinder = NULL;
 CANJaguar* RobotMap::throwerThrowerMotor = NULL;
-AnalogChannel* RobotMap::throwerThrowerEncoder = NULL;
+DigitalInput* RobotMap::throwerThrowerLimit = NULL;
 Servo* RobotMap::cameraCameraPanServo = NULL;
 Servo* RobotMap::cameraCameraTiltServo = NULL;
 CANJaguar* RobotMap::pickupWheelsRightPickupWheel = NULL;
@@ -93,8 +93,8 @@ void RobotMap::init() {
 	throwerThrowerMotor = new CANJaguar(11);
 	
 	
-	throwerThrowerEncoder = new AnalogChannel(1, 4);
-	lw->AddSensor("Thrower", "Thrower Encoder", throwerThrowerEncoder);
+	throwerThrowerLimit = new DigitalInput(1, 8);
+	lw->AddSensor("Thrower", "Thrower Limit", throwerThrowerLimit);
 	
 	cameraCameraPanServo = new Servo(1, 1);
 	lw->AddActuator("Camera", "Camera Pan Servo", cameraCameraPanServo);
