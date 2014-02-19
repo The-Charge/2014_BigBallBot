@@ -66,7 +66,7 @@ Children:
           default: '2'
           name: CAN ID
           validators: &id002 [CANID]
-          value: '2'
+          value: '6'
     - Name: Center Left Motor
       Base: CAN Jaguar
       Children: []
@@ -76,7 +76,7 @@ Children:
           default: '2'
           name: CAN ID
           validators: *id002
-          value: '3'
+          value: '14'
     - Name: Rear Left Motor
       Base: CAN Jaguar
       Children: []
@@ -86,7 +86,7 @@ Children:
           default: '2'
           name: CAN ID
           validators: *id002
-          value: '4'
+          value: '5'
     - Name: Front Right Motor
       Base: CAN Jaguar
       Children: []
@@ -96,7 +96,7 @@ Children:
           default: '2'
           name: CAN ID
           validators: *id002
-          value: '5'
+          value: '4'
     - Name: Center Right Motor
       Base: CAN Jaguar
       Children: []
@@ -106,7 +106,7 @@ Children:
           default: '2'
           name: CAN ID
           validators: *id002
-          value: '6'
+          value: '13'
     - Name: Rear Right Motor
       Base: CAN Jaguar
       Children: []
@@ -116,7 +116,7 @@ Children:
           default: '2'
           name: CAN ID
           validators: *id002
-          value: '7'
+          value: '3'
     - Name: Left Encoder
       Base: Quadrature Encoder
       Children: []
@@ -449,7 +449,7 @@ Children:
           default: '2'
           name: CAN ID
           validators: *id002
-          value: '8'
+          value: '7'
     - Name: Left Pickup Wheel
       Base: CAN Jaguar
       Children: []
@@ -459,7 +459,7 @@ Children:
           default: '2'
           name: CAN ID
           validators: *id002
-          value: '12'
+          value: '15'
     Properties:
       Default Command: !!robotbuilder.data.properties.TypeSelectionProperty {default: None,
         name: Default Command, type: Command, validators: null, value: None}
@@ -552,7 +552,7 @@ Children:
           default: '2'
           name: CAN ID
           validators: *id002
-          value: '9'
+          value: '8'
     - Name: Pot
       Base: Potentiometer
       Children: []

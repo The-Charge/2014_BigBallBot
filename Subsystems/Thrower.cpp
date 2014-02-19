@@ -33,12 +33,10 @@ void Thrower::Stop()
 {
 	throwerMotor->Set(0);
 }
-
 bool Thrower::isLimitDown()
 {
 	return throwerLimit->Get() == 0;
 }
-
 void Thrower::ResetJags() {
 	throwerMotor->ConfigNeutralMode(CANJaguar::kNeutralMode_Brake);
 	throwerMotor->EnableControl();
