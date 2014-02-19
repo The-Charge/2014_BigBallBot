@@ -17,7 +17,8 @@ ThrowerShoot::ThrowerShoot() {
 }
 // Called just before this Command runs the first time
 void ThrowerShoot::Initialize() {
-	SetTimeout(.2);
+	SetTimeout(1);
+	Robot::thrower->Shoot();
 }
 // Called repeatedly when this Command is scheduled to run
 void ThrowerShoot::Execute() {
@@ -25,6 +26,8 @@ void ThrowerShoot::Execute() {
 }
 // Make this return true when this Command no longer needs to run execute()
 bool ThrowerShoot::IsFinished() {
+	printf("IsTimedOut %b", IsTimedOut());
+	printf("IsLimitDown %b", Robot::thrower->isLimitDown());
 	return (IsTimedOut() && Robot::thrower->isLimitDown());
 }
 // Called once after isFinished returns true

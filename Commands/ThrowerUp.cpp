@@ -17,7 +17,7 @@ ThrowerUp::ThrowerUp() {
 }
 // Called just before this Command runs the first time
 void ThrowerUp::Initialize() {
-	SetTimeout(.2);
+	SetTimeout(1);
 }
 // Called repeatedly when this Command is scheduled to run
 void ThrowerUp::Execute() {

@@ -27,7 +27,7 @@ void Thrower::InitDefaultCommand() {
 // here. Call these from Commands.
 void Thrower::Shoot()
 {
-	throwerMotor->Set(-1);
+	throwerMotor->Set(1);
 }
 void Thrower::Stop()
 {
@@ -36,7 +36,7 @@ void Thrower::Stop()
 
 bool Thrower::isLimitDown()
 {
-	return throwerLimit->Get() == 1;
+	return throwerLimit->Get() == 0;
 }
 
 void Thrower::ResetJags() {
