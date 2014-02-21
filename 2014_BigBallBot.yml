@@ -46,14 +46,14 @@ Children:
           default: '1'
           name: Channel B Channel (Digital)
           validators: &id010 [DigitalChannel]
-          value: '7'
+          value: '3'
         Channel A Channel (Digital): !!robotbuilder.data.properties.ChoicesProperty
           choices: &id011 ['1', '2', '3', '4', '5', '6', '7', '8', '9', '10', '11',
             '12', '13', '14']
           default: '1'
           name: Channel A Channel (Digital)
           validators: &id012 [DigitalChannel]
-          value: '6'
+          value: '2'
         Reverse Direction: !!robotbuilder.data.properties.BooleanProperty {default: false,
           name: Reverse Direction, validators: null, value: false}
     - Name: Front Left Motor
@@ -76,7 +76,7 @@ Children:
           default: '2'
           name: CAN ID
           validators: *id002
-          value: '14'
+          value: '4'
     - Name: Rear Left Motor
       Base: CAN Jaguar
       Children: []
@@ -86,7 +86,7 @@ Children:
           default: '2'
           name: CAN ID
           validators: *id002
-          value: '5'
+          value: '18'
     - Name: Front Right Motor
       Base: CAN Jaguar
       Children: []
@@ -96,7 +96,7 @@ Children:
           default: '2'
           name: CAN ID
           validators: *id002
-          value: '4'
+          value: '11'
     - Name: Center Right Motor
       Base: CAN Jaguar
       Children: []
@@ -106,7 +106,7 @@ Children:
           default: '2'
           name: CAN ID
           validators: *id002
-          value: '13'
+          value: '8'
     - Name: Rear Right Motor
       Base: CAN Jaguar
       Children: []
@@ -116,7 +116,7 @@ Children:
           default: '2'
           name: CAN ID
           validators: *id002
-          value: '3'
+          value: '5'
     - Name: Left Encoder
       Base: Quadrature Encoder
       Children: []
@@ -140,7 +140,7 @@ Children:
           validators: null
           value: kRate
         Distance Per Pulse: !!robotbuilder.data.properties.DoubleProperty {default: 1,
-          name: Distance Per Pulse, validators: null, value: 0.1}
+          name: Distance Per Pulse, validators: null, value: 0.01}
         Encoding Type: !!robotbuilder.data.properties.ChoicesProperty
           choices: *id008
           default: k4X
@@ -378,7 +378,7 @@ Children:
           default: '2'
           name: CAN ID
           validators: *id002
-          value: '11'
+          value: '3'
     - Name: Thrower Limit
       Base: Digital Input
       Children: []
@@ -459,7 +459,7 @@ Children:
           default: '2'
           name: CAN ID
           validators: *id002
-          value: '15'
+          value: '20'
     Properties:
       Default Command: !!robotbuilder.data.properties.TypeSelectionProperty {default: None,
         name: Default Command, type: Command, validators: null, value: None}
@@ -520,7 +520,7 @@ Children:
           default: '1'
           name: Output Channel (Digital)
           validators: *id028
-          value: '2'
+          value: '14'
     - Name: Distance
       Base: Digital Output
       Children: []
@@ -536,7 +536,7 @@ Children:
           default: '1'
           name: Output Channel (Digital)
           validators: *id028
-          value: '3'
+          value: '13'
     Properties:
       Default Command: !!robotbuilder.data.properties.TypeSelectionProperty {default: None,
         name: Default Command, type: Command, validators: null, value: None}
@@ -552,7 +552,7 @@ Children:
           default: '2'
           name: CAN ID
           validators: *id002
-          value: '8'
+          value: '19'
     - Name: Pot
       Base: Potentiometer
       Children: []
@@ -1274,6 +1274,6 @@ Properties:
     validators: null, value: 2619}
   Export Commands: !!robotbuilder.data.properties.BooleanProperty {default: true,
     name: Export Commands, validators: null, value: true}
-  Java Project Directory: !!robotbuilder.data.properties.FileProperty {default: 'C:\Users\Robotics\NetBeansProjects',
+  Java Project Directory: !!robotbuilder.data.properties.FileProperty {default: 'C:\Users\abcurrie\NetBeansProjects',
     extension: null, folder: true, name: Java Project Directory, validators: null,
     value: 'C:\Users\abcurrie\NetBeansProjects'}
