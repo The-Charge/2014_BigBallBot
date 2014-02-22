@@ -53,14 +53,20 @@ void DriveTrain::SetRight(float speed) {
 float DriveTrain::GetFeet() {
 	return (leftEncoder->GetDistance() + rightEncoder->GetDistance()) / 2;
 }
+
 void DriveTrain::ResetEncoders() {
 	leftEncoder->Reset();
 	rightEncoder->Reset();
 }
 double DriveTrain::PIDGet() {
-	return GetFeet();
+	double feet = GetFeet();
+	Robot::table->PutNumber("DriveTrain::PIDGet", feet);
+	SmartDashboard::PutNumber("DriveTrain::PIDGet", feet);
+	return feet;
 }
 void DriveTrain::PIDWrite(float value) {
+	value = value * .5;
+	Robot::table->PutNumber("DriveTrain::PIDWrite", value);
 	Set(value);
 }
 void DriveTrain::ResetJags() {
