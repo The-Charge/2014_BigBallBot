@@ -43,14 +43,14 @@ void Drive::Execute()
 	if(selected->compare(*cDrive) == 0)
 	{
 		printf("======Clayton drive======");
-		leftSpeed   = (Robot::oi->getDriverJoystick()->GetY()) + (Robot::oi->getDriverJoystick()->GetThrottle());
-		rightSpeed  = (Robot::oi->getDriverJoystick()->GetY()) - (Robot::oi->getDriverJoystick()->GetThrottle());
+		leftSpeed   = (Robot::oi->getDriverJoystick()->GetY()) - (Robot::oi->getDriverJoystick()->GetThrottle());
+		rightSpeed  = (Robot::oi->getDriverJoystick()->GetY()) + (Robot::oi->getDriverJoystick()->GetThrottle());
 	}
 	else if(selected->compare(*aDrive) == 0)
 	{
 		printf("======Arcade drive======");
-		leftSpeed   = (Robot::oi->getDriverJoystick()->GetY()) + (Robot::oi->getDriverJoystick()->GetX());
-		rightSpeed  = (Robot::oi->getDriverJoystick()->GetY()) - (Robot::oi->getDriverJoystick()->GetX());
+		leftSpeed   = (Robot::oi->getDriverJoystick()->GetY()) - (Robot::oi->getDriverJoystick()->GetX());
+		rightSpeed  = (Robot::oi->getDriverJoystick()->GetY()) + (Robot::oi->getDriverJoystick()->GetX());
 	}
 	else if(selected->compare(*tDrive) == 0)
 	{
