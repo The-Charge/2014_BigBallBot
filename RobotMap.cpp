@@ -136,4 +136,16 @@ void RobotMap::init() {
 	driveTrainCenterRightMotor->ConfigNeutralMode(CANJaguar::kNeutralMode_Coast);		// set Jag to "coast" when output = 0.0
 	driveTrainRearRightMotor->ConfigNeutralMode(CANJaguar::kNeutralMode_Coast);		// set Jag to "coast" when output = 0.0
 	
+	driveTrainFrontLeftMotor->SetVoltageRampRate(9);
+	driveTrainCenterLeftMotor->SetVoltageRampRate(9);
+	driveTrainRearLeftMotor->SetVoltageRampRate(9);
+	driveTrainFrontRightMotor->SetVoltageRampRate(9);
+	driveTrainCenterRightMotor->SetVoltageRampRate(9);
+	driveTrainRearRightMotor->SetVoltageRampRate(9);
+	
+
+
+	
+	
+	
 }
