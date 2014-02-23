@@ -25,7 +25,9 @@ void Distance::InitDefaultCommand() {
 // here. Call these from Commands.
 float Distance::GetFeet()
 {
-	return ultrasonic->GetAverageVoltage()/5*1024/12/(17.9/9.33);
+	
+	return ultrasonic->GetAverageVoltage()/5*1024/12/(17.9/9.33)*(4.0/5.26);
+	//return ultrasonic->GetAverageVoltage()/ .15;
 }
 double Distance::PIDGet()
 {

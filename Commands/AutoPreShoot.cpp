@@ -32,6 +32,6 @@ AutoPreShoot::AutoPreShoot() {
 	// a CommandGroup containing them would require both the chassis and the
 	// arm.
 	
-	AddParallel(new DriveNFeet(5));
+	AddParallel(new DriveNFeet(20));
 	AddParallel(new CheckHot());
 }
