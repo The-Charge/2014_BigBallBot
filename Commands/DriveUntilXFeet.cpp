@@ -8,7 +8,6 @@
 // update. Deleting the comments indicating the section will prevent
 // it from being updated in th future.
 //
-//TODO: Add a timer (5 seconds)
 //
 #include "DriveUntilXFeet.h"
 DriveUntilXFeet::DriveUntilXFeet(float distance) {
@@ -24,10 +23,10 @@ DriveUntilXFeet::DriveUntilXFeet(float distance) {
 // Called just before this Command runs the first time
 void DriveUntilXFeet::Initialize() 
 {
-	//Robot::driveTrain->ResetEncoders();
 	Robot::driveTrain->Set(0);
 	controller->SetSetpoint(_distance);
 	controller->Enable();
+	SetTimeout(5);
 }
 // Called repeatedly when this Command is scheduled to run
 void DriveUntilXFeet::Execute() {
@@ -35,7 +34,7 @@ void DriveUntilXFeet::Execute() {
 }
 // Make this return true when this Command no longer needs to run execute()
 bool DriveUntilXFeet::IsFinished() {
-	return controller->OnTarget();
+	return controller->OnTarget()||IsTimedOut();
 }
 // Called once after isFinished returns true
 void DriveUntilXFeet::End() {
