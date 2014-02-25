@@ -27,8 +27,6 @@ DoubleSolenoid* RobotMap::pickupArmsRightShortCylinder = NULL;
 DoubleSolenoid* RobotMap::pickupArmsRightLongCylinder = NULL;
 CANJaguar* RobotMap::throwerThrowerMotor = NULL;
 DigitalInput* RobotMap::throwerThrowerLimit = NULL;
-Servo* RobotMap::cameraCameraPanServo = NULL;
-Servo* RobotMap::cameraCameraTiltServo = NULL;
 CANJaguar* RobotMap::pickupWheelsRightPickupWheel = NULL;
 CANJaguar* RobotMap::pickupWheelsLeftPickupWheel = NULL;
 AnalogChannel* RobotMap::distanceUltrasonic = NULL;
@@ -49,7 +47,7 @@ void RobotMap::init() {
 	driveTrainFrontLeftMotor = new CANJaguar(6);
 	
 	
-	driveTrainCenterLeftMotor = new CANJaguar(6);
+	driveTrainCenterLeftMotor = new CANJaguar(4);
 	
 	
 	driveTrainRearLeftMotor = new CANJaguar(18);
@@ -58,7 +56,7 @@ void RobotMap::init() {
 	driveTrainFrontRightMotor = new CANJaguar(11);
 	
 	
-	driveTrainCenterRightMotor = new CANJaguar(11);
+	driveTrainCenterRightMotor = new CANJaguar(8);
 	
 	
 	driveTrainRearRightMotor = new CANJaguar(5);
@@ -90,22 +88,16 @@ void RobotMap::init() {
 	pickupArmsRightLongCylinder = new DoubleSolenoid(2, 5, 6);      
 	
 	
-	throwerThrowerMotor = new CANJaguar(4);
+	throwerThrowerMotor = new CANJaguar(3);
 	
 	
 	throwerThrowerLimit = new DigitalInput(1, 8);
 	lw->AddSensor("Thrower", "Thrower Limit", throwerThrowerLimit);
 	
-	cameraCameraPanServo = new Servo(1, 1);
-	lw->AddActuator("Camera", "Camera Pan Servo", cameraCameraPanServo);
-	
-	cameraCameraTiltServo = new Servo(1, 2);
-	lw->AddActuator("Camera", "Camera Tilt Servo", cameraCameraTiltServo);
-	
-	pickupWheelsRightPickupWheel = new CANJaguar(4);
+	pickupWheelsRightPickupWheel = new CANJaguar(7);
 	
 	
-	pickupWheelsLeftPickupWheel = new CANJaguar(4);
+	pickupWheelsLeftPickupWheel = new CANJaguar(20);
 	
 	
 	distanceUltrasonic = new AnalogChannel(1, 2);
@@ -143,8 +135,6 @@ void RobotMap::init() {
 	driveTrainCenterRightMotor->SetVoltageRampRate(9);
 	driveTrainRearRightMotor->SetVoltageRampRate(9);
 	
-
-
 	
 	
 	

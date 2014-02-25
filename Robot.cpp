@@ -16,7 +16,6 @@ Shifter* Robot::shifter = 0;
 AirCompressor* Robot::airCompressor = 0;
 PickupArms* Robot::pickupArms = 0;
 Thrower* Robot::thrower = 0;
-Camera* Robot::camera = 0;
 PickupWheels* Robot::pickupWheels = 0;
 Distance* Robot::distance = 0;
 LED* Robot::lED = 0;
@@ -36,7 +35,6 @@ void Robot::RobotInit() {
 	airCompressor = new AirCompressor();
 	pickupArms = new PickupArms();
 	thrower = new Thrower();
-	camera = new Camera();
 	pickupWheels = new PickupWheels();
 	distance = new Distance();
 	lED = new LED();

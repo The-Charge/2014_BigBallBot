@@ -37,8 +37,6 @@ public:
 	static DoubleSolenoid* pickupArmsRightLongCylinder;
 	static CANJaguar* throwerThrowerMotor;
 	static DigitalInput* throwerThrowerLimit;
-	static Servo* cameraCameraPanServo;
-	static Servo* cameraCameraTiltServo;
 	static CANJaguar* pickupWheelsRightPickupWheel;
 	static CANJaguar* pickupWheelsLeftPickupWheel;
 	static AnalogChannel* distanceUltrasonic;
