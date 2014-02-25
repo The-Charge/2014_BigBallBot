@@ -167,7 +167,7 @@ Children:
   - Name: Shifter
     Base: Subsystem
     Children:
-    - Name: ShifterLeft
+    - Name: Shifter
       Base: Double Solenoid
       Children: []
       Properties:
@@ -194,34 +194,6 @@ Children:
           default: '1'
           name: Reverse Channel (Solenoid)
           validators: &id020 [Solenoid]
-          value: '2'
-    - Name: ShifterRight
-      Base: Double Solenoid
-      Children: []
-      Properties:
-        Forward Channel (Solenoid): !!robotbuilder.data.properties.ChoicesProperty
-          choices: *id013
-          default: '1'
-          name: Forward Channel (Solenoid)
-          validators: *id014
-          value: '1'
-        Forward Module (Solenoid): !!robotbuilder.data.properties.ChoicesProperty
-          choices: *id015
-          default: '1'
-          name: Forward Module (Solenoid)
-          validators: *id016
-          value: '2'
-        Reverse Module (Solenoid): !!robotbuilder.data.properties.ChoicesProperty
-          choices: *id017
-          default: '1'
-          name: Reverse Module (Solenoid)
-          validators: *id018
-          value: '2'
-        Reverse Channel (Solenoid): !!robotbuilder.data.properties.ChoicesProperty
-          choices: *id019
-          default: '1'
-          name: Reverse Channel (Solenoid)
-          validators: *id020
           value: '2'
     Properties:
       Default Command: !!robotbuilder.data.properties.TypeSelectionProperty {default: None,

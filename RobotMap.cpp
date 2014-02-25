@@ -18,8 +18,7 @@ CANJaguar* RobotMap::driveTrainFrontRightMotor = NULL;
 CANJaguar* RobotMap::driveTrainCenterRightMotor = NULL;
 CANJaguar* RobotMap::driveTrainRearRightMotor = NULL;
 Encoder* RobotMap::driveTrainLeftEncoder = NULL;
-DoubleSolenoid* RobotMap::shifterShifterLeft = NULL;
-DoubleSolenoid* RobotMap::shifterShifterRight = NULL;
+DoubleSolenoid* RobotMap::shifterShifter = NULL;
 Relay* RobotMap::airCompressorCompressorSpike = NULL;
 DoubleSolenoid* RobotMap::pickupArmsLeftShortCylinder = NULL;
 DoubleSolenoid* RobotMap::pickupArmsLeftLongCylinder = NULL;
@@ -67,10 +66,7 @@ void RobotMap::init() {
 	driveTrainLeftEncoder->SetDistancePerPulse(0.01);
         driveTrainLeftEncoder->SetPIDSourceParameter(Encoder::kRate);
         driveTrainLeftEncoder->Start();
-	shifterShifterLeft = new DoubleSolenoid(1, 1, 2);      
-	
-	
-	shifterShifterRight = new DoubleSolenoid(2, 1, 2);      
+	shifterShifter = new DoubleSolenoid(1, 1, 2);      
 	
 	
 	airCompressorCompressorSpike = new Relay(1, 1);
