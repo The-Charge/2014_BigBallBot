@@ -12,6 +12,7 @@
 #include "Commands/Subsystem.h"
 #include "WPILib.h"
 #include "Vision/AxisCamera.h"
+//TODO: Update this for the M1013 Camera on BigBallBot
 //Camera constants used for distance calculation
 #define Y_IMAGE_RES 240		//Y Image resolution in pixels, should be 120, 240 or 480
 //#define VIEW_ANGLE 49		//Axis M1013
