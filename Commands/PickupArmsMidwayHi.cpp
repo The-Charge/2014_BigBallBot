@@ -8,7 +8,6 @@
 // update. Deleting the comments indicating the section will prevent
 // it from being updated in th future.
 //
-//TODO: Probably need to remove this possition (no button for it)
 //
 #include "PickupArmsMidwayHi.h"
 PickupArmsMidwayHi::PickupArmsMidwayHi() {

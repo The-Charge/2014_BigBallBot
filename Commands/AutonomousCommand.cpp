@@ -8,7 +8,6 @@
 // update. Deleting the comments indicating the section will prevent
 // it from being updated in th future.
 //
-//TODO: Needs to be build based on work from FrisbeeBot testing
 //
 #include "AutonomousCommand.h"
 AutonomousCommand::AutonomousCommand() {

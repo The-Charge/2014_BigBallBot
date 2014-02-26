@@ -9,9 +9,7 @@
 // it from being updated in th future.
 //
 //TODO: Calculate actual Distance Per Pulse on BigBallBot and set in RobotBuilder
-//TODO: Add command to "Drive to X Feet"
 //TODO: Add ability to switch between Coast and Break mode on Drive Train Jags
-//TODO: Add check and set to limit speed to Jags to -1 to +1.
 //
 #include "DriveTrain.h"
 #include "../Robotmap.h"
@@ -45,22 +43,30 @@ void DriveTrain::InitDefaultCommand() {
 // Put methods for controlling this subsystem
 // here. Call these from Commands.
 //
-//TODO: Change this to work for all joystick drive types
 void DriveTrain::Set(float speed) {
-	speed = Delinearize(speed);
 	SetLeft(speed);
 	SetRight(speed);
 }
 void DriveTrain::SetLeft(float speed) {
+	speed = Delinearize(speed);
+	//cap the speed
+	speed = speed < -1 ? -1 : speed;
+	speed = speed > 1 ? 1 : speed;
 	frontLeftMotor->Set(speed);
 	centerLeftMotor->Set(speed);
 	rearLeftMotor->Set(speed);
 }
 void DriveTrain::SetRight(float speed) {
-	frontRightMotor->Set(-speed);
-	centerRightMotor->Set(-speed);
-	rearRightMotor->Set(-speed);
+	speed = Delinearize(speed);
+	speed = speed * -1;	//right side is inverted
+	//cap the speed
+	speed = speed < -1 ? -1 : speed;
+	speed = speed > 1 ? 1 : speed;
+	frontRightMotor->Set(speed);
+	centerRightMotor->Set(speed);
+	rearRightMotor->Set(speed);
 }
+
 float DriveTrain::GetFeet() {
 	return (leftEncoder->GetDistance() + rightEncoder->GetDistance()) / 2;
 }

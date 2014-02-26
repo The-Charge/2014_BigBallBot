@@ -8,7 +8,6 @@
 // update. Deleting the comments indicating the section will prevent
 // it from being updated in th future.
 //
-//TODO:  Add to NetTables so easy to adjust
 //
 #include "ClockspringsMed.h"
 const float DESTINATION = 2.5;

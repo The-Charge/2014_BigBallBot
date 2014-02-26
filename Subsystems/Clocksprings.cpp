@@ -8,7 +8,6 @@
 // update. Deleting the comments indicating the section will prevent
 // it from being updated in th future.
 //
-//TODO: Set Default Command to Low Tension
 //
 #include "Clocksprings.h"
 #include "../Robotmap.h"

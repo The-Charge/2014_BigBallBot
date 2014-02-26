@@ -53,6 +53,5 @@ public:
 	InternalButton* dpadHigh;
 	InternalButton* dpadLow;
 	static NetworkTable* netTable;
-	static NetworkTable *table;
 };
 #endif
