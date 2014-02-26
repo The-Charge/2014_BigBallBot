@@ -30,6 +30,7 @@ void DriveNFeet::Initialize()
 	controller->SetSetpoint(_distance);
 	controller->Enable();
 	SetTimeout(5);
+	Robot::driveTrain->SetBreakMode();
 }
 // Called repeatedly when this Command is scheduled to run
 void DriveNFeet::Execute() {
@@ -43,6 +44,7 @@ bool DriveNFeet::IsFinished() {
 void DriveNFeet::End() {
 	Robot::driveTrain->Set(0);
 	controller->Disable();
+	Robot::driveTrain->SetCoastMode();
 }
 // Called when another command which requires one or more of the same
 // subsystems is scheduled to run
