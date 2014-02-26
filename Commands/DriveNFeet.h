@@ -17,7 +17,7 @@
 #include "../Robot.h"
 
 
-const float DRIVENFEET_PID_P = -.075;
+const float DRIVENFEET_PID_P = .075;
 const float DRIVENFEET_PID_I = .0;
 const float DRIVENFEET_PID_D = .1;
 const float DRIVENFEET_PID_TOLERANCE = .1;

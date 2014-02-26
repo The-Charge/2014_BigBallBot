@@ -21,6 +21,7 @@ DriveNFeet::DriveNFeet(float distance) {
 	float tolerance = Robot::netTable->GetNumber("DriveNFeet::PID_Tolerance", DRIVENFEET_PID_TOLERANCE);
 	controller = new PIDController(p,i,d, Robot::driveTrain, Robot::driveTrain);
 	controller->SetTolerance(tolerance);
+	Robot::driveTrain->setMotorsInverted(true);
 }
 // Called just before this Command runs the first time
 void DriveNFeet::Initialize() 
@@ -44,7 +45,9 @@ bool DriveNFeet::IsFinished() {
 void DriveNFeet::End() {
 	Robot::driveTrain->Set(0);
 	controller->Disable();
+
 	Robot::driveTrain->SetCoastMode();
+	Robot::driveTrain->setMotorsInverted(true);
 }
 // Called when another command which requires one or more of the same
 // subsystems is scheduled to run
