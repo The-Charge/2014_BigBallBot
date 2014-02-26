@@ -16,6 +16,10 @@
 #include "Commands/Subsystem.h"
 #include "../Robot.h"
 
+const float DRIVEUNTILXFEET_PID_P = .33;
+const float DRIVEUNTILXFEET_PID_I = .0;
+const float DRIVEUNTILXFEET_PID_D = .0008;
+const float DRIVEUNTILXFEET_PID_TOLERANCE = .05;
 /**
  *
  *
