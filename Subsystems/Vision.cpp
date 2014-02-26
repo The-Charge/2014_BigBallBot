@@ -35,12 +35,12 @@ void Vision::InitDefaultCommand() {
 void Vision::setupNetTable()
 {
 	//65,145,10,249,15,235
-	Robot::table->PutNumber("RedLow", 200); 
-	Robot::table->PutNumber("RedHigh", 255); 
-	Robot::table->PutNumber("GreenLow", 200); 
-	Robot::table->PutNumber("GreenHigh", 255); 
-	Robot::table->PutNumber("BlueLow", 200); 
-	Robot::table->PutNumber("BlueHigh", 255); 
+	Robot::netTable->PutNumber("RedLow", 200); 
+	Robot::netTable->PutNumber("RedHigh", 255); 
+	Robot::netTable->PutNumber("GreenLow", 200); 
+	Robot::netTable->PutNumber("GreenHigh", 255); 
+	Robot::netTable->PutNumber("BlueLow", 200); 
+	Robot::netTable->PutNumber("BlueHigh", 255); 
 }
 bool Vision::isHot()
 {
@@ -62,12 +62,12 @@ void Vision::fetchImage()
 void Vision::filterImage()
 {
 	//Get the filter values from the net table
-	int RedLow = Robot::table->GetNumber("RedLow", 200);
-	int RedHigh = Robot::table->GetNumber("RedHigh", 255); 
-	int GreenLow = Robot::table->GetNumber("GreenLow", 200); 
-	int GreenHigh = Robot::table->GetNumber("GreenHigh", 255); 
-	int BlueLow = Robot::table->GetNumber("BlueLow", 200); 
-	int BlueHigh = Robot::table->GetNumber("BlueHigh", 255); 
+	int RedLow = Robot::netTable->GetNumber("RedLow", 200);
+	int RedHigh = Robot::netTable->GetNumber("RedHigh", 255); 
+	int GreenLow = Robot::netTable->GetNumber("GreenLow", 200); 
+	int GreenHigh = Robot::netTable->GetNumber("GreenHigh", 255); 
+	int BlueLow = Robot::netTable->GetNumber("BlueLow", 200); 
+	int BlueHigh = Robot::netTable->GetNumber("BlueHigh", 255); 
 	//Apply the RGB filter
 	thresholdImage = image->ThresholdRGB(RedLow, RedHigh, GreenLow, GreenHigh, BlueLow, BlueHigh);
 	if(WRITE_IMAGES_TO_FILE)
