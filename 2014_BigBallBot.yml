@@ -568,16 +568,6 @@ Children:
           name: When to Run
           validators: null
           value: whenPressed
-    Properties:
-      Number: !!robotbuilder.data.properties.ChoicesProperty
-        choices: &id028 ['1', '2', '3', '4']
-        default: 1
-        name: Number
-        validators: &id029 [Joystick]
-        value: '1'
-  - Name: Shooter Joystick
-    Base: Joystick
-    Children:
     - Name: Reset Jags Btn
       Base: Joystick Button
       Children: []
@@ -595,13 +585,23 @@ Children:
           validators: null
           value: '11'
         Joystick: !!robotbuilder.data.properties.ParentProperty {default: parent,
-          name: Joystick, validators: null, value: Shooter Joystick}
+          name: Joystick, validators: null, value: Driver Joystick}
         When to Run: !!robotbuilder.data.properties.ChoicesProperty
           choices: *id027
           default: whileHeld
           name: When to Run
           validators: null
           value: whenPressed
+    Properties:
+      Number: !!robotbuilder.data.properties.ChoicesProperty
+        choices: &id028 ['1', '2', '3', '4']
+        default: 1
+        name: Number
+        validators: &id029 [Joystick]
+        value: '1'
+  - Name: Shooter Joystick
+    Base: Joystick
+    Children: []
     Properties:
       Number: !!robotbuilder.data.properties.ChoicesProperty
         choices: *id028
