@@ -8,7 +8,6 @@
 // update. Deleting the comments indicating the section will prevent
 // it from being updated in th future.
 //
-//TODO: Need to start timer at the begining of Autonomous mode
 //
 #include "LED.h"
 #include "../Robotmap.h"

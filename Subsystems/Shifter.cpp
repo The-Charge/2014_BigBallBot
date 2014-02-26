@@ -8,7 +8,6 @@
 // update. Deleting the comments indicating the section will prevent
 // it from being updated in th future.
 //
-//TODO: Consolidate to a single Shifter Instance Vs. Left and Right
 //
 #include "Shifter.h"
 #include "../Robotmap.h"

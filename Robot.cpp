@@ -62,6 +62,7 @@ void Robot::RobotInit() {
 void Robot::AutonomousInit() {
 	if (autonomousCommand != NULL)
 		autonomousCommand->Start();
+	Robot::lED->ShowTime();
 }
 	
 void Robot::AutonomousPeriodic() {
