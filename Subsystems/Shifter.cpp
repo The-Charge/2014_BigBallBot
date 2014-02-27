@@ -34,15 +34,12 @@ void Shifter::InitDefaultCommand() {
 void Shifter::ShiftHigh()
 {
 		shifter->Set(DoubleSolenoid::kReverse);
-
 }
 void Shifter::ShiftLow()
 {
 		shifter->Set(DoubleSolenoid::kForward);
-
 }
 void Shifter::ShiftOff()
 {
 	shifter->Set(DoubleSolenoid::kOff);
-
 }

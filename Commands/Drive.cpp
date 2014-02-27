@@ -29,6 +29,7 @@ Drive::Drive() {
 }
 // Called just before this Command runs the first time
 void Drive::Initialize() {
+	Robot::driveTrain->setMotorsInverted(false);
 	Robot::driveTrain->SetLeft(0);
 	Robot::driveTrain->SetRight(0);	
 }

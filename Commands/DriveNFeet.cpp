@@ -32,6 +32,7 @@ void DriveNFeet::Initialize()
 	controller->Enable();
 	SetTimeout(5);
 	Robot::driveTrain->SetBreakMode();
+	Robot::driveTrain->setMotorsInverted(true);
 }
 // Called repeatedly when this Command is scheduled to run
 void DriveNFeet::Execute() {

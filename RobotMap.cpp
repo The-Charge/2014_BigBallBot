@@ -46,7 +46,7 @@ void RobotMap::init() {
 	driveTrainFrontLeftMotor = new CANJaguar(6);
 	
 	
-	driveTrainCenterLeftMotor = new CANJaguar(4);
+	driveTrainCenterLeftMotor = new CANJaguar(6);
 	
 	
 	driveTrainRearLeftMotor = new CANJaguar(18);
@@ -55,7 +55,7 @@ void RobotMap::init() {
 	driveTrainFrontRightMotor = new CANJaguar(11);
 	
 	
-	driveTrainCenterRightMotor = new CANJaguar(8);
+	driveTrainCenterRightMotor = new CANJaguar(11);
 	
 	
 	driveTrainRearRightMotor = new CANJaguar(5);
@@ -84,16 +84,16 @@ void RobotMap::init() {
 	pickupArmsRightLongCylinder = new DoubleSolenoid(2, 5, 6);      
 	
 	
-	throwerThrowerMotor = new CANJaguar(3);
+	throwerThrowerMotor = new CANJaguar(4);
 	
 	
 	throwerThrowerLimit = new DigitalInput(1, 8);
 	lw->AddSensor("Thrower", "Thrower Limit", throwerThrowerLimit);
 	
-	pickupWheelsRightPickupWheel = new CANJaguar(7);
+	pickupWheelsRightPickupWheel = new CANJaguar(4);
 	
 	
-	pickupWheelsLeftPickupWheel = new CANJaguar(20);
+	pickupWheelsLeftPickupWheel = new CANJaguar(4);
 	
 	
 	distanceUltrasonic = new AnalogChannel(1, 2);
@@ -108,7 +108,7 @@ void RobotMap::init() {
 	lEDDistance = new DigitalOutput(1, 13);
 	
 	
-	clockspringsMotor = new CANJaguar(19);
+	clockspringsMotor = new CANJaguar(4);
 	
 	
 	clockspringsPot = new AnalogChannel(1, 3);
@@ -123,13 +123,6 @@ void RobotMap::init() {
 	driveTrainFrontRightMotor->ConfigNeutralMode(CANJaguar::kNeutralMode_Coast);		// set Jag to "coast" when output = 0.0
 	driveTrainCenterRightMotor->ConfigNeutralMode(CANJaguar::kNeutralMode_Coast);		// set Jag to "coast" when output = 0.0
 	driveTrainRearRightMotor->ConfigNeutralMode(CANJaguar::kNeutralMode_Coast);		// set Jag to "coast" when output = 0.0
-	
-	driveTrainFrontLeftMotor->SetVoltageRampRate(9);
-	driveTrainCenterLeftMotor->SetVoltageRampRate(9);
-	driveTrainRearLeftMotor->SetVoltageRampRate(9);
-	driveTrainFrontRightMotor->SetVoltageRampRate(9);
-	driveTrainCenterRightMotor->SetVoltageRampRate(9);
-	driveTrainRearRightMotor->SetVoltageRampRate(9);
 	
 	
 	
