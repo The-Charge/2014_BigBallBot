@@ -81,10 +81,10 @@ OI::OI() {
 	pickupWheelsOffBtn->WhenPressed(new PickupWheelsOff());
 	shooterJoystick = new Joystick(2);
 	
-	resetJagsBtn = new JoystickButton(shooterJoystick, 11);
-	resetJagsBtn->WhenPressed(new ResetJags());
 	driverJoystick = new Joystick(1);
 	
+	resetJagsBtn = new JoystickButton(driverJoystick, 11);
+	resetJagsBtn->WhenPressed(new ResetJags());
 	shiftHighButton = new JoystickButton(driverJoystick, 1);
 	shiftHighButton->WhenPressed(new ShifterHigh());
 	shiftLowButton = new JoystickButton(driverJoystick, 2);
