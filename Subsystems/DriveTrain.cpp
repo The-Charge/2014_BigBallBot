@@ -14,7 +14,7 @@
 #include "DriveTrain.h"
 #include "../Robotmap.h"
 #include "../Commands/Drive.h"
-#include "Math.h"
+#include "cmath"
 const float SENSITIVITY = 3;
 const float BRAKEMODEVOLTAGE = 8;
 const float BRAKEMODERAMP = 9;
@@ -118,10 +118,10 @@ void DriveTrain::SetBreakMode() {
 void DriveTrain::SetCoastMode() {
 		frontLeftMotor->ConfigNeutralMode(CANJaguar::kNeutralMode_Coast);
 		centerLeftMotor->ConfigNeutralMode(CANJaguar::kNeutralMode_Coast);
-		rearLeftMotor->ConfigNeutralMode(CANJaguar::kNeutralMode_Coast);
+		rearLeftMotor->ConfigNeutralMode(CANJaguar::kNeutralMode_Brake);
 		frontRightMotor->ConfigNeutralMode(CANJaguar::kNeutralMode_Coast);
 		centerRightMotor->ConfigNeutralMode(CANJaguar::kNeutralMode_Coast);
-		rearRightMotor->ConfigNeutralMode(CANJaguar::kNeutralMode_Coast);
+		rearRightMotor->ConfigNeutralMode(CANJaguar::kNeutralMode_Brake);
 		
 		frontLeftMotor->SetVoltageRampRate(0);
 		centerLeftMotor->SetVoltageRampRate(0);
@@ -148,16 +148,16 @@ void DriveTrain::ResetJags() {
 	SetCoastMode();
 	printf("RESET JAGS \n");
 }
+
 float DriveTrain::Delinearize(float x) {
-/*	int sign = 1;
+	int sign = 1;
 	if (x < 0) {
 		sign = -1;
 	}
 	float _sensitivity = Robot::netTable->GetNumber("DriveTrain::Sensitivity",3);
-	return sign * (atan((2 * abs(x) - 1) * (_sensitivity)) / atan(_sensitivity) + 1) / 2;
-*/
-	return x;
-
+	float result = sign * (atan((2 * abs(x) - 1) * (_sensitivity)) / atan(_sensitivity) + 1) / 2;  
+	printf("Delinearize: %f->%f", x, result);
+	return result;
 }
 
 	void DriveTrain::setMotorsInverted(bool motorInvert)
