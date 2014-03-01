@@ -65,12 +65,17 @@ void Robot::RobotInit() {
 	dpadLow = new InternalButton();
 	dpadHigh->WhenPressed(new ShifterHigh());
 	dpadLow->WhenPressed(new ShifterLow());
+	Robot::clocksprings->ResetJags();
+	Robot::pickupWheels->ResetJags();
+	Robot::thrower->ResetJags();
 }
 	
 void Robot::AutonomousInit() {
 	if (autonomousCommand != NULL)
 		autonomousCommand->Start();
 	Robot::lED->ShowTime();
+
+	Robot::driveTrain->SetBrakeMode();
 }
 	
 void Robot::AutonomousPeriodic() {
@@ -83,6 +88,7 @@ void Robot::TeleopInit() {
 	// continue until interrupted by another command, remove
 	// this line or comment it out.
 	autonomousCommand->Cancel();
+	Robot::driveTrain->SetCoastMode();
 }
 	
 void Robot::TeleopPeriodic() {

@@ -57,5 +57,5 @@ void Clocksprings::Stop()
 void Clocksprings::ResetJags() {
 	motor->ConfigNeutralMode(CANJaguar::kNeutralMode_Brake);
 	motor->EnableControl();
-	printf("RESET clockspring JAGS \n");
+	//printf("RESET clockspring JAGS \n");
 }

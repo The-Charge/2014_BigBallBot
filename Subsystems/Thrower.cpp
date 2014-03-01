@@ -40,5 +40,5 @@ bool Thrower::isLimitDown()
 void Thrower::ResetJags() {
 	throwerMotor->ConfigNeutralMode(CANJaguar::kNeutralMode_Brake);
 	throwerMotor->EnableControl();
-	printf("RESET thrower JAGS \n");
+	//printf("RESET thrower JAGS \n");
 }

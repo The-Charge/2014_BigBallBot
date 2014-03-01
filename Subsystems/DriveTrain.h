@@ -42,7 +42,7 @@ public:
 	void ResetEncoders();
 	virtual double PIDGet();
 	virtual void PIDWrite(float);
-	void SetBreakMode();
+	void SetBrakeMode();
 	void SetCoastMode();
 	void ResetJags();
 	float Delinearize(float);

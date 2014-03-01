@@ -30,7 +30,7 @@ bool PickupArmsExtend::IsFinished() {
 }
 // Called once after isFinished returns true
 void PickupArmsExtend::End() {
-	Robot::pickupArms->ArmsOff();
+	Robot::pickupArms->ArmsRetract();
 }
 // Called when another command which requires one or more of the same
 // subsystems is scheduled to run

@@ -32,7 +32,7 @@ void DriveUntilXFeet::Initialize()
 	controller->SetSetpoint(_distance);
 	controller->Enable();
 	SetTimeout(5);
-	Robot::driveTrain->SetBreakMode();
+	Robot::driveTrain->SetBrakeMode();
 	Robot::driveTrain->setMotorsInverted(false);
 }
 // Called repeatedly when this Command is scheduled to run

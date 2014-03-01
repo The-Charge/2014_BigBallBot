@@ -26,8 +26,8 @@ void ThrowerShoot::Execute() {
 }
 // Make this return true when this Command no longer needs to run execute()
 bool ThrowerShoot::IsFinished() {
-	printf("IsTimedOut %b", IsTimedOut());
-	printf("IsLimitDown %b", Robot::thrower->isLimitDown());
+	//printf("IsTimedOut %b", IsTimedOut());
+	//printf("IsLimitDown %b", Robot::thrower->isLimitDown());
 	return (IsTimedOut() && Robot::thrower->isLimitDown());
 }
 // Called once after isFinished returns true

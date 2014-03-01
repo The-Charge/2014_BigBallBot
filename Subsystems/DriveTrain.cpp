@@ -83,7 +83,7 @@ double DriveTrain::PIDGet() {
 void DriveTrain::PIDWrite(float value) {
 	Set(value);
 }
-void DriveTrain::SetBreakMode() {
+void DriveTrain::SetBrakeMode() {
 		frontLeftMotor->ConfigNeutralMode(CANJaguar::kNeutralMode_Brake);
 		centerLeftMotor->ConfigNeutralMode(CANJaguar::kNeutralMode_Brake);
 		rearLeftMotor->ConfigNeutralMode(CANJaguar::kNeutralMode_Brake);
@@ -146,9 +146,8 @@ void DriveTrain::SetCoastMode() {
 }
 void DriveTrain::ResetJags() {
 	SetCoastMode();
-	printf("RESET JAGS \n");
+	//printf("RESET JAGS \n");
 }
-
 float DriveTrain::Delinearize(float x) {
 	int sign = 1;
 	if (x < 0) {
@@ -156,10 +155,9 @@ float DriveTrain::Delinearize(float x) {
 	}
 	float _sensitivity = Robot::netTable->GetNumber("DriveTrain::Sensitivity",3);
 	float result = sign * (atan((2 * abs(x) - 1) * (_sensitivity)) / atan(_sensitivity) + 1) / 2;  
-	printf("Delinearize: %f->%f", x, result);
+	//printf("Delinearize: %f->%f", x, result);
 	return result;
 }
-
 	void DriveTrain::setMotorsInverted(bool motorInvert)
 {
 	motorsInverted = motorInvert;

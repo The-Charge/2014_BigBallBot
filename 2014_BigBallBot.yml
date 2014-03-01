@@ -734,7 +734,7 @@ Children:
         default: whileHeld
         name: When to Run
         validators: null
-        value: whenPressed
+        value: whileHeld
       Digital Pin: !!robotbuilder.data.properties.ChoicesProperty
         choices: *id032
         default: '1'
@@ -806,7 +806,7 @@ Children:
         default: '1'
         name: Digital Pin
         validators: null
-        value: '2'
+        value: '1'
   - Name: Clocksprings Hi Btn
     Base: Digital Button
     Children: []
@@ -828,7 +828,7 @@ Children:
         default: '1'
         name: Digital Pin
         validators: null
-        value: '3'
+        value: '1'
   - Name: Shoot Btn
     Base: Digital Button
     Children: []
@@ -850,7 +850,7 @@ Children:
         default: '1'
         name: Digital Pin
         validators: null
-        value: '4'
+        value: '8'
   - Name: Shooter Block Btn
     Base: Digital Button
     Children: []
@@ -872,7 +872,7 @@ Children:
         default: '1'
         name: Digital Pin
         validators: null
-        value: '5'
+        value: '1'
   - Name: Show Team Btn
     Base: Digital Button
     Children: []
@@ -894,7 +894,7 @@ Children:
         default: '1'
         name: Digital Pin
         validators: null
-        value: '6'
+        value: '1'
   - Name: Show Time Btn
     Base: Digital Button
     Children: []
@@ -916,7 +916,7 @@ Children:
         default: '1'
         name: Digital Pin
         validators: null
-        value: '7'
+        value: '1'
   - Name: Show Distance Btn
     Base: Digital Button
     Children: []
@@ -938,7 +938,7 @@ Children:
         default: '1'
         name: Digital Pin
         validators: null
-        value: '8'
+        value: '1'
   Properties: {}
 - Name: Commands
   Base: Commands
