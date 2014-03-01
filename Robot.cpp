@@ -74,7 +74,6 @@ void Robot::AutonomousInit() {
 	if (autonomousCommand != NULL)
 		autonomousCommand->Start();
 	Robot::lED->ShowTime();
-
 	Robot::driveTrain->SetBrakeMode();
 }
 	

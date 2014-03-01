@@ -76,7 +76,7 @@ Children:
           default: '2'
           name: CAN ID
           validators: *id002
-          value: '4'
+          value: '14'
     - Name: Rear Left Motor
       Base: CAN Jaguar
       Children: []
@@ -86,7 +86,7 @@ Children:
           default: '2'
           name: CAN ID
           validators: *id002
-          value: '18'
+          value: '5'
     - Name: Front Right Motor
       Base: CAN Jaguar
       Children: []
@@ -96,7 +96,7 @@ Children:
           default: '2'
           name: CAN ID
           validators: *id002
-          value: '11'
+          value: '4'
     - Name: Center Right Motor
       Base: CAN Jaguar
       Children: []
@@ -106,7 +106,7 @@ Children:
           default: '2'
           name: CAN ID
           validators: *id002
-          value: '8'
+          value: '13'
     - Name: Rear Right Motor
       Base: CAN Jaguar
       Children: []
@@ -116,7 +116,7 @@ Children:
           default: '2'
           name: CAN ID
           validators: *id002
-          value: '5'
+          value: '3'
     - Name: Left Encoder
       Base: Quadrature Encoder
       Children: []
@@ -350,7 +350,7 @@ Children:
           default: '2'
           name: CAN ID
           validators: *id002
-          value: '3'
+          value: '11'
     - Name: Thrower Limit
       Base: Digital Input
       Children: []
@@ -393,7 +393,7 @@ Children:
           default: '2'
           name: CAN ID
           validators: *id002
-          value: '20'
+          value: '15'
     Properties:
       Default Command: !!robotbuilder.data.properties.TypeSelectionProperty {default: None,
         name: Default Command, type: Command, validators: null, value: None}
@@ -486,7 +486,7 @@ Children:
           default: '2'
           name: CAN ID
           validators: *id002
-          value: '19'
+          value: '8'
     - Name: Pot
       Base: Potentiometer
       Children: []
