@@ -31,7 +31,7 @@ AutoPreShoot::AutoPreShoot() {
 	// e.g. if Command1 requires chassis, and Command2 requires arm,
 	// a CommandGroup containing them would require both the chassis and the
 	// arm.
-	
-	AddParallel(new DriveNFeet(40));
+	float distance = Robot::netTable->GetNumber("AutoPreShoot::Distance",AUTO_PRE_SHOOT_DISTANCE);
+	AddParallel(new DriveNFeet(distance));
 	AddParallel(new CheckHot());
 }
