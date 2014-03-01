@@ -62,12 +62,12 @@ void Vision::fetchImage()
 void Vision::filterImage()
 {
 	//Get the filter values from the net table
-	int RedLow = Robot::netTable->GetNumber("RedLow", 200);
-	int RedHigh = Robot::netTable->GetNumber("RedHigh", 255); 
-	int GreenLow = Robot::netTable->GetNumber("GreenLow", 200); 
-	int GreenHigh = Robot::netTable->GetNumber("GreenHigh", 255); 
-	int BlueLow = Robot::netTable->GetNumber("BlueLow", 200); 
-	int BlueHigh = Robot::netTable->GetNumber("BlueHigh", 255); 
+	int RedLow = (int)(Robot::netTable->GetNumber("RedLow", 200));
+	int RedHigh = (int)(Robot::netTable->GetNumber("RedHigh", 255)); 
+	int GreenLow = (int)(Robot::netTable->GetNumber("GreenLow", 200)); 
+	int GreenHigh = (int)(Robot::netTable->GetNumber("GreenHigh", 255)); 
+	int BlueLow = (int)(Robot::netTable->GetNumber("BlueLow", 200)); 
+	int BlueHigh = (int)(Robot::netTable->GetNumber("BlueHigh", 255)); 
 	//Apply the RGB filter
 	thresholdImage = image->ThresholdRGB(RedLow, RedHigh, GreenLow, GreenHigh, BlueLow, BlueHigh);
 	if(WRITE_IMAGES_TO_FILE)
@@ -214,8 +214,8 @@ void Vision::processImage()
 			//Information about the target is contained in the "target" structure
 			//To get measurement information such as sizes or locations use the
 			//horizontal or vertical index to get the particle report as shown below
-			ParticleAnalysisReport *distanceReport = &(reports->at(target.verticalIndex));
-			double distance = computeDistance(filteredImage, distanceReport);
+			//ParticleAnalysisReport *distanceReport = &(reports->at(target.verticalIndex));
+			//double distance = computeDistance(filteredImage, distanceReport);
 			if(target.Hot)
 			{
 				this->hot = true;
