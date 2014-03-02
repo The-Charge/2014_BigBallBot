@@ -30,7 +30,7 @@ void DriveNFeet::Initialize()
 	Robot::driveTrain->Set(0);
 	controller->SetSetpoint(_distance);
 	controller->Enable();
-	SetTimeout(5);
+	SetTimeout(3.5);
 	Robot::driveTrain->SetBrakeMode();
 	Robot::driveTrain->setMotorsInverted(true);
 }
