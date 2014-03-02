@@ -19,7 +19,7 @@ CANJaguar* RobotMap::driveTrainCenterRightMotor = NULL;
 CANJaguar* RobotMap::driveTrainRearRightMotor = NULL;
 Encoder* RobotMap::driveTrainLeftEncoder = NULL;
 DoubleSolenoid* RobotMap::shifterShifter = NULL;
-Relay* RobotMap::airCompressorCompressorSpike = NULL;
+Compressor* RobotMap::airCompressorAirCompressor = NULL;
 DoubleSolenoid* RobotMap::pickupArmsLeftShortCylinder = NULL;
 DoubleSolenoid* RobotMap::pickupArmsLeftLongCylinder = NULL;
 DoubleSolenoid* RobotMap::pickupArmsRightShortCylinder = NULL;
@@ -69,8 +69,8 @@ void RobotMap::init() {
 	shifterShifter = new DoubleSolenoid(1, 1, 2);      
 	
 	
-	airCompressorCompressorSpike = new Relay(1, 1);
-	lw->AddActuator("AirCompressor", "CompressorSpike", airCompressorCompressorSpike);
+	airCompressorAirCompressor = new Compressor(1, 1, 1, 1);
+	
 	
 	pickupArmsLeftShortCylinder = new DoubleSolenoid(1, 3, 4);      
 	
@@ -99,7 +99,7 @@ void RobotMap::init() {
 	distanceUltrasonic = new AnalogChannel(1, 2);
 	lw->AddSensor("Distance", "Ultrasonic", distanceUltrasonic);
 	
-	lEDTeamNumber = new DigitalOutput(1, 1);
+	lEDTeamNumber = new DigitalOutput(1, 12);
 	
 	
 	lEDTimer = new DigitalOutput(1, 14);
