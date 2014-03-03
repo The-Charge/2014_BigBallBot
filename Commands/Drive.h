@@ -29,6 +29,12 @@ public:
 	virtual bool IsFinished();
 	virtual void End();
 	virtual void Interrupted();
+private:
+	SendableChooser *sc;
+	std::string *cDrive;
+	std::string *aDrive;
+	std::string *tDrive;
+	std::string *xDrive;
 };
 
 #endif
