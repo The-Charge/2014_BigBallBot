@@ -54,6 +54,10 @@ void Clocksprings::Stop()
 {
 	motor->Set(0);
 }
+float Clocksprings::GetPosition()
+{
+	return pot->GetAverageVoltage();
+}
 void Clocksprings::ResetJags() {
 	motor->ConfigNeutralMode(CANJaguar::kNeutralMode_Brake);
 	motor->EnableControl();

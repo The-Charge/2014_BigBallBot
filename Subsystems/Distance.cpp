@@ -25,9 +25,7 @@ void Distance::InitDefaultCommand() {
 // here. Call these from Commands.
 float Distance::GetFeet()
 {
-	//TODO: Last scale factor is for test sensor.  Remove when BigBallBot
-	return ultrasonic->GetAverageVoltage()/5*1024/12/(17.9/9.33)*(4.0/5.26);
-	//return ultrasonic->GetAverageVoltage()/ .15;
+	return ultrasonic->GetAverageVoltage()/5*1024/12/(17.9/9.33);
 }
 double Distance::PIDGet()
 {
