@@ -30,6 +30,7 @@ public:
 	void InitDefaultCommand();
 	void ShowTime() ;	
 	void ShowDistance() ;
+	void ShowTeam() ;
 		
 };
 		#endif
