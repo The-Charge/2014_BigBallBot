@@ -61,7 +61,7 @@ void RobotMap::init() {
 	driveTrainRearRightMotor = new CANJaguar(3);
 	
 	
-	driveTrainLeftEncoder = new Encoder(1, 4, 1, 5, false, Encoder::k4X);
+	driveTrainLeftEncoder = new Encoder(1, 6, 1, 5, false, Encoder::k4X);
 	lw->AddSensor("DriveTrain", "Left Encoder", driveTrainLeftEncoder);
 	driveTrainLeftEncoder->SetDistancePerPulse(0.01);
         driveTrainLeftEncoder->SetPIDSourceParameter(Encoder::kRate);
@@ -69,7 +69,7 @@ void RobotMap::init() {
 	shifterShifter = new DoubleSolenoid(1, 1, 2);      
 	
 	
-	airCompressorAirCompressor = new Compressor(1, 1, 1, 1);
+	airCompressorAirCompressor = new Compressor(1, 4, 1, 1);
 	
 	
 	pickupArmsLeftShortCylinder = new DoubleSolenoid(1, 3, 4);      

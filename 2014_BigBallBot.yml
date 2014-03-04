@@ -158,7 +158,7 @@ Children:
           default: '1'
           name: Channel A Channel (Digital)
           validators: *id012
-          value: '4'
+          value: '6'
         Reverse Direction: !!robotbuilder.data.properties.BooleanProperty {default: false,
           name: Reverse Direction, validators: null, value: false}
     Properties:
@@ -229,7 +229,7 @@ Children:
           default: '1'
           name: Pressure Switch Channel (Digital)
           validators: [DigitalChannel]
-          value: '1'
+          value: '4'
     Properties:
       Default Command: !!robotbuilder.data.properties.TypeSelectionProperty {default: None,
         name: Default Command, type: Command, validators: null, value: CompressorRun}
@@ -1251,6 +1251,6 @@ Properties:
     validators: null, value: 2619}
   Export Commands: !!robotbuilder.data.properties.BooleanProperty {default: true,
     name: Export Commands, validators: null, value: true}
-  Java Project Directory: !!robotbuilder.data.properties.FileProperty {default: 'C:\Users\Robotics\NetBeansProjects',
+  Java Project Directory: !!robotbuilder.data.properties.FileProperty {default: 'C:\Users\Mike\NetBeansProjects',
     extension: null, folder: true, name: Java Project Directory, validators: null,
     value: 'C:\Users\abcurrie\NetBeansProjects'}

@@ -22,11 +22,9 @@ LED::LED() : Subsystem("LED") {
 void LED::ShowTime() {
 	timer->Set(1);
 }
-
 void LED::ShowDistance() {
 	distance->Set(1);
 }
-
 void LED::ShowTeam() {
 	teamNumber->Set(1);
 }
