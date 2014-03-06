@@ -20,9 +20,9 @@ Drive::Drive() {
 	aDrive = new std::string("a");
 	tDrive = new std::string("t");
 	xDrive = new std::string("x");
-	sc->AddDefault("Clayton Drive", cDrive);
+	sc->AddDefault("Tank Drive (2 Joy)", tDrive);
+	sc->AddObject("Clayton Drive", cDrive);
 	sc->AddObject("Arcade Drive", aDrive);
-	sc->AddObject("Tank Drive (2 Joy)", tDrive);
 	sc->AddObject("Tank Drive(XBox)", xDrive);
 	SmartDashboard::PutData("Drive mode chooser", sc);
     //SmartDashboard::putData("Drive mode chooser", sc);
