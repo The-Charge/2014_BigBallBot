@@ -13,6 +13,7 @@
 #include "AutoPreShoot2.h"
 #include "DriveUntilXFeet.h"
 #include "CheckHot.h"
+#include "PickupArmsMidwayLo.h"
 
 AutoPreShoot2::AutoPreShoot2() {
 	// Add Commands here:
@@ -34,4 +35,5 @@ AutoPreShoot2::AutoPreShoot2() {
 	float distance = Robot::netTable->GetNumber("AutoPreShoot2::Distance",AUTO_PRE_SHOOT2_DISTANCE);
 	AddParallel(new DriveUntilXFeet(distance));
 	AddParallel(new CheckHot());
+	AddParallel(new PickupArmsMidwayLo());
 }
