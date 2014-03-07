@@ -16,7 +16,7 @@
 #include "../Commands/Drive.h"
 #include "cmath"
 const float SENSITIVITY = 3;
-const float BRAKEMODEVOLTAGE = 13;
+const float BRAKEMODEVOLTAGE = 9;
 const float BRAKEMODERAMP = 9;
 DriveTrain::DriveTrain() :
 	Subsystem("DriveTrain") {
@@ -71,7 +71,7 @@ void DriveTrain::SetRight(float speed) {
 	rearRightMotor->Set(speed);
 }
 float DriveTrain::GetFeet() {
-	return (leftEncoder->GetDistance() + rightEncoder->GetDistance()) / 2;
+	return (rightEncoder->GetDistance());
 }
 void DriveTrain::ResetEncoders() {
 	leftEncoder->Reset();

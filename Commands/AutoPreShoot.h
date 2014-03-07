@@ -15,7 +15,7 @@
 
 #include "Commands/CommandGroup.h"
 
-const float AUTO_PRE_SHOOT_DISTANCE=4;
+const float AUTO_PRE_SHOOT_DISTANCE=3;
 /**
  *
  *
