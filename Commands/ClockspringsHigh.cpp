@@ -10,7 +10,7 @@
 //
 //
 #include "ClockspringsHigh.h"
-const float DESTINATION = 1.87;
+const float DESTINATION = 1.70;
 ClockspringsHigh::ClockspringsHigh() {
 	// Use requires() here to declare subsystem dependencies
 	// eg. requires(chassis);
