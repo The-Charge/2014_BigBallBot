@@ -20,7 +20,6 @@ Drive::Drive() {
 	aDrive = new std::string("a");
 	tDrive = new std::string("t");
 	xDrive = new std::string("x");
-
 	sc->AddDefault("Tank Drive (2 Joy)", tDrive);
 	sc->AddObject("Clayton Drive", cDrive);
 	sc->AddObject("Arcade Drive", aDrive);

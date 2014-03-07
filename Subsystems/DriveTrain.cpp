@@ -16,7 +16,7 @@
 #include "../Commands/Drive.h"
 #include "cmath"
 const float SENSITIVITY = 3;
-const float BRAKEMODEVOLTAGE = 8;
+const float BRAKEMODEVOLTAGE = 13;
 const float BRAKEMODERAMP = 9;
 DriveTrain::DriveTrain() :
 	Subsystem("DriveTrain") {

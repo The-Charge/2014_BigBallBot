@@ -956,6 +956,12 @@ Children:
 - Name: Commands
   Base: Commands
   Children:
+  - Name: Command Group 1
+    Base: Command Group
+    Children: []
+    Properties:
+      Button on SmartDashboard: !!robotbuilder.data.properties.BooleanProperty {default: true,
+        name: Button on SmartDashboard, validators: null, value: true}
   - Name: Show Time
     Base: Command
     Children: []
