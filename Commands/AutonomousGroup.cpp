@@ -12,6 +12,7 @@
 
 #include "AutonomousGroup.h"
 #include "DriveNFeet.h"
+#include "AutoShoot.h"
 
 AutonomousGroup::AutonomousGroup() {
 	// Add Commands here:
@@ -30,5 +31,5 @@ AutonomousGroup::AutonomousGroup() {
 	// e.g. if Command1 requires chassis, and Command2 requires arm,
 	// a CommandGroup containing them would require both the chassis and the
 	// arm.
-	AddSequential(new DriveNFeet(5));
+	AddSequential(new AutoShoot);
 }

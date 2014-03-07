@@ -81,7 +81,7 @@ void RobotMap::init() {
 	pickupArmsRightShortCylinder = new DoubleSolenoid(2, 3, 4);      
 	
 	
-	pickupArmsRightLongCylinder = new DoubleSolenoid(2, 5, 6);      
+	pickupArmsRightLongCylinder = new DoubleSolenoid(1, 7, 8);      
 	
 	
 	throwerThrowerMotor = new CANJaguar(11);
