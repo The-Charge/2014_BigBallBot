@@ -67,9 +67,9 @@ OI::OI() {
 	clockspringsMedBtn->WhenPressed(new ClockspringsMed());
 	clockspringsLowBtn = new DigitalIOButton(1);
 	clockspringsLowBtn->WhenPressed(new ClockspringsLow());
-	pickupArmsRetractBtn = new DigitalIOButton(7);
+	pickupArmsRetractBtn = new DigitalIOButton(5);
 	pickupArmsRetractBtn->WhenPressed(new PickupArmsRetract());
-	pickupArmsExtendBtn = new DigitalIOButton(5);
+	pickupArmsExtendBtn = new DigitalIOButton(7);
 	pickupArmsExtendBtn->WhileHeld(new PickupArmsExtend());
 	pickupArmsMidwayLoBtn = new DigitalIOButton(6);
 	pickupArmsMidwayLoBtn->WhenPressed(new PickupArmsMidwayLo());

@@ -753,7 +753,7 @@ Children:
         default: '1'
         name: Digital Pin
         validators: null
-        value: '5'
+        value: '7'
   - Name: Pickup Arms Retract Btn
     Base: Digital Button
     Children: []
@@ -775,7 +775,7 @@ Children:
         default: '1'
         name: Digital Pin
         validators: null
-        value: '7'
+        value: '5'
   - Name: Clocksprings Low Btn
     Base: Digital Button
     Children: []
