@@ -956,7 +956,7 @@ Children:
 - Name: Commands
   Base: Commands
   Children:
-  - Name: Command Group 1
+  - Name: AutonomousGroup
     Base: Command Group
     Children: []
     Properties:
@@ -1241,7 +1241,7 @@ Children:
   Properties: {}
 Properties:
   Autonomous Command: !!robotbuilder.data.properties.TypeSelectionProperty {default: None,
-    name: Autonomous Command, type: Command, validators: null, value: Autonomous Command}
+    name: Autonomous Command, type: Command, validators: null, value: AutonomousGroup}
   Wiring File: !!robotbuilder.data.properties.FileProperty {default: '', extension: html,
     folder: false, name: Wiring File, validators: null, value: ..\..\..\Users\abcurrie\Desktop\wiring.html}
   C++ Windriver Workspace: !!robotbuilder.data.properties.FileProperty {default: 'C:\Windriver\workspace',

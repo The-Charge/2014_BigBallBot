@@ -14,11 +14,11 @@
 #include "Commands/AutoPreShoot2.h"
 #include "Commands/AutoShoot.h"
 #include "Commands/AutonomousCommand.h"
+#include "Commands/AutonomousGroup.h"
 #include "Commands/CheckHot.h"
 #include "Commands/ClockspringsHigh.h"
 #include "Commands/ClockspringsLow.h"
 #include "Commands/ClockspringsMed.h"
-#include "Commands/CommandGroup1.h"
 #include "Commands/CompressorRun.h"
 #include "Commands/Drive.h"
 #include "Commands/GetFeet.h"
@@ -93,7 +93,7 @@ OI::OI() {
 	shiftLowButton->WhenPressed(new ShifterLow());
      
         // SmartDashboard Buttons
-	SmartDashboard::PutData("Command Group 1", new CommandGroup1());
+	SmartDashboard::PutData("AutonomousGroup", new AutonomousGroup());
 	SmartDashboard::PutData("Show Time", new ShowTime());
 	SmartDashboard::PutData("Show Distance", new ShowDistance());
 	SmartDashboard::PutData("Show Team", new ShowTeam());
