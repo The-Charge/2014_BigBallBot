@@ -28,7 +28,7 @@ void DriveNFeet::Initialize()
 {
 	Robot::driveTrain->ResetEncoders();
 	Robot::driveTrain->Set(0);
-	controller->SetSetpoint(_distance);
+	controller->SetSetpoint(-_distance);
 	controller->Enable();
 	SetTimeout(2.05);
 	Robot::driveTrain->SetBrakeMode();

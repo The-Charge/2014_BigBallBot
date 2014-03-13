@@ -46,19 +46,19 @@ void RobotMap::init() {
 	driveTrainFrontLeftMotor = new CANJaguar(6);
 	
 	
-	driveTrainCenterLeftMotor = new CANJaguar(14);
+	driveTrainCenterLeftMotor = new CANJaguar(7);
 	
 	
-	driveTrainRearLeftMotor = new CANJaguar(5);
+	driveTrainRearLeftMotor = new CANJaguar(18);
 	
 	
-	driveTrainFrontRightMotor = new CANJaguar(4);
+	driveTrainFrontRightMotor = new CANJaguar(11);
 	
 	
-	driveTrainCenterRightMotor = new CANJaguar(13);
+	driveTrainCenterRightMotor = new CANJaguar(7);
 	
 	
-	driveTrainRearRightMotor = new CANJaguar(3);
+	driveTrainRearRightMotor = new CANJaguar(5);
 	
 	
 	driveTrainLeftEncoder = new Encoder(1, 4, 1, 5, false, Encoder::k4X);
@@ -84,7 +84,7 @@ void RobotMap::init() {
 	pickupArmsRightLongCylinder = new DoubleSolenoid(1, 7, 8);      
 	
 	
-	throwerThrowerMotor = new CANJaguar(11);
+	throwerThrowerMotor = new CANJaguar(3);
 	
 	
 	throwerThrowerLimit = new DigitalInput(1, 8);
@@ -93,7 +93,7 @@ void RobotMap::init() {
 	pickupWheelsRightPickupWheel = new CANJaguar(7);
 	
 	
-	pickupWheelsLeftPickupWheel = new CANJaguar(15);
+	pickupWheelsLeftPickupWheel = new CANJaguar(7);
 	
 	
 	distanceUltrasonic = new AnalogChannel(1, 2);
@@ -108,7 +108,7 @@ void RobotMap::init() {
 	lEDDistance = new DigitalOutput(1, 13);
 	
 	
-	clockspringsMotor = new CANJaguar(8);
+	clockspringsMotor = new CANJaguar(7);
 	
 	
 	clockspringsPot = new AnalogChannel(1, 3);
