@@ -17,7 +17,7 @@ ThrowerShoot::ThrowerShoot() {
 }
 // Called just before this Command runs the first time
 void ThrowerShoot::Initialize() {
-	SetTimeout(1);
+	SetTimeout(5);
 	Robot::thrower->Shoot();
 }
 // Called repeatedly when this Command is scheduled to run

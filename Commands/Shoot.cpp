@@ -13,6 +13,8 @@
 #include "Shoot.h"
 #include "PickupArmsMidwayLo.h"
 #include "ThrowerShoot.h"
+#include "PickupArmsRetract.h"
+
 Shoot::Shoot() {
 	// Add Commands here:
 	// e.g. AddSequential(new Command1());
@@ -30,8 +32,8 @@ Shoot::Shoot() {
 	// e.g. if Command1 requires chassis, and Command2 requires arm,
 	// a CommandGroup containing them would require both the chassis and the
 	// arm.
-	
-	      AddSequential(new PickupArmsMidwayLo());
-	      AddSequential(new ThrowerShoot());
-	
+
+	      AddParallel(new PickupArmsMidwayLo());
+	      AddParallel(new ThrowerShoot());
+	      AddSequential(new PickupArmsRetract());
 }

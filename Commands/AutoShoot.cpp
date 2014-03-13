@@ -11,6 +11,7 @@
 #include "AutoShoot.h"
 #include "AutoPreShoot.h"
 #include "ThrowerShoot.h"
+#include "PickupArmsRetract.h"
 
 AutoShoot::AutoShoot() {
 	// Add Commands here:
@@ -31,4 +32,5 @@ AutoShoot::AutoShoot() {
 	// arm.
 	AddSequential(new AutoPreShoot());
 	AddSequential(new ThrowerShoot());
+	AddSequential(new PickupArmsRetract());
 	}
