@@ -10,6 +10,7 @@
 #include "CheckHot.h"
 #include "Vision/AxisCamera.h"
 #include "WPILib.h"
+#include <Timer.h>
 CheckHot::CheckHot()
 {
 	// Use requires() here to declare subsystem dependencies
@@ -20,16 +21,23 @@ CheckHot::CheckHot()
 }
 // Called just before this Command runs the first time
 void CheckHot::Initialize() {
+	printf("begin checkhot: %f\n",Timer::GetFPGATimestamp());
 	SetTimeout(6.0);
 }
 // Called repeatedly when this Command is scheduled to run
 void CheckHot::Execute() {
+	printf("exe: %f\n",Timer::GetFPGATimestamp());
 	Robot::vision->fetchImage();
 	SmartDashboard::PutBoolean("IsHot",Robot::vision->isHot());
 }
 // Make this return true when this Command no longer needs to run execute()
 bool CheckHot::IsFinished() {
-	return Robot::vision->isHot() || IsTimedOut();
+	if (Robot::vision->isHot() || IsTimedOut()){
+		printf("finish checkhot: %f\n",Timer::GetFPGATimestamp());
+		return true;
+	} else {
+		return false;
+	}
 }
 // Called once after isFinished returns true
 void CheckHot::End() {

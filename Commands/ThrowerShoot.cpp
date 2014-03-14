@@ -8,6 +8,7 @@
 // update. Deleting the comments indicating the section will prevent
 // it from being updated in th future.
 #include "ThrowerShoot.h"
+#include <Timer.h>
 ThrowerShoot::ThrowerShoot() {
 	// Use requires() here to declare subsystem dependencies
 	// eg. requires(chassis);
@@ -17,6 +18,7 @@ ThrowerShoot::ThrowerShoot() {
 }
 // Called just before this Command runs the first time
 void ThrowerShoot::Initialize() {
+	printf("Thowershoot Starts: %f\n",Timer::GetFPGATimestamp());
 	SetTimeout(1);
 	Robot::thrower->Shoot();
 }
