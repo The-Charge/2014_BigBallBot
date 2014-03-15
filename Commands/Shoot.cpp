@@ -33,7 +33,7 @@ Shoot::Shoot() {
 	// a CommandGroup containing them would require both the chassis and the
 	// arm.
 
-	      AddParallel(new PickupArmsMidwayLo());
-	      AddParallel(new ThrowerShoot());
+	      AddSequential(new PickupArmsMidwayLo());
+	      AddSequential(new ThrowerShoot());
 	      AddSequential(new PickupArmsRetract());
 }

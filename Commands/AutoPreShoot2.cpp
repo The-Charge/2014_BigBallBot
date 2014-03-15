@@ -14,7 +14,7 @@
 #include "DriveUntilXFeet.h"
 #include "CheckHot.h"
 #include "PickupArmsMidwayLo.h"
-#include "ShifterHigh.h"
+#include "ShifterLow.h"
 
 AutoPreShoot2::AutoPreShoot2() {
 	// Add Commands here:
@@ -34,7 +34,7 @@ AutoPreShoot2::AutoPreShoot2() {
 	// a CommandGroup containing them would require both the chassis and the
 	// arm.
 	float distance = Robot::netTable->GetNumber("AutoPreShoot2::Distance",AUTO_PRE_SHOOT2_DISTANCE);
-	AddParallel(new ShifterHigh());
+	AddParallel(new ShifterLow());
 	AddParallel(new DriveUntilXFeet(distance));
 	AddParallel(new CheckHot());
 	AddParallel(new PickupArmsMidwayLo());
