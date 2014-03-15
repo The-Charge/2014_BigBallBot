@@ -33,7 +33,7 @@ DriveTrain::DriveTrain() :
 	Robot::netTable->PutNumber("DriveTrain::Sensitivity", SENSITIVITY); 
 	Robot::netTable->PutNumber("DriveTrain::BrakeModeVoltage", BRAKEMODEVOLTAGE); 
 	Robot::netTable->PutNumber("DriveTrain::BrakeModeRamp", BRAKEMODERAMP); 
-	motorsInverted = false;
+	motorsInverted = true;
 }
 void DriveTrain::InitDefaultCommand() {
 	// Set the default command for a subsystem here.

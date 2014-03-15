@@ -21,6 +21,8 @@ Vision::Vision() : Subsystem("Vision") {
 	hot = false;
 	setupNetTable();
 	m_camera = &AxisCamera::GetInstance();
+	m_camera->WriteCompression(50);
+	m_camera->WriteResolution(AxisCamera::kResolution_320x240);
 	
 	//m_camera = AxisCamera::GetInstance();
 	//this.m_camera = AxisCamera::GetInstance();
@@ -50,9 +52,6 @@ bool Vision::isHot()
 }
 void Vision::fetchImage()
 {
-	printf("ln51: %f\n",Timer::GetFPGATimestamp());
-
-	printf("ln53: %f\n",Timer::GetFPGATimestamp());
 	if (m_camera->IsFreshImage())
 	{
 		image = m_camera->GetImage();
@@ -66,7 +65,6 @@ void Vision::fetchImage()
 void Vision::filterImage()
 {
 	//Get the filter values from the net table
-	printf("ln65: %f\n",Timer::GetFPGATimestamp());
 	int RedLow = (int)(Robot::netTable->GetNumber("RedLow", 200));
 	int RedHigh = (int)(Robot::netTable->GetNumber("RedHigh", 255)); 
 	int GreenLow = (int)(Robot::netTable->GetNumber("GreenLow", 200)); 
@@ -143,7 +141,6 @@ double scoreAspectRatio(BinaryImage *image, ParticleAnalysisReport *report, bool
 }
 void Vision::processImage()
 {
-	printf("ln141: %f\n",Timer::GetFPGATimestamp());
 	reports = filteredImage->GetOrderedParticleAnalysisReports();
 	verticalTargetCount = horizontalTargetCount = 0;
 	if(reports->size() > 0)
@@ -176,7 +173,6 @@ void Vision::processImage()
 		//Zero out scores and set verticalIndex to first target in case there are no horizontal targets
 		target.totalScore = target.leftScore = target.rightScore = target.tapeWidthScore = target.verticalScore = 0;
 		target.verticalIndex = verticalTargets[0];
-		printf("ln 173: %f\n",Timer::GetFPGATimestamp());
 		for (int i = 0; i < verticalTargetCount; i++)
 		{
 			ParticleAnalysisReport *verticalReport = &(reports->at(verticalTargets[i]));
@@ -214,7 +210,6 @@ void Vision::processImage()
 			}
 			//Determine if the best target is a Hot target
 			target.Hot = checkTargetHot(target);
-			printf("ln 210: %f\n",Timer::GetFPGATimestamp());
 		}
 		
 		if(verticalTargetCount > 0)
@@ -227,22 +222,18 @@ void Vision::processImage()
 			if(target.Hot)
 			{
 				this->hot = true;
-				printf("Hot: %f\n",Timer::GetFPGATimestamp()); //printf("Hot target located \n");
+				printf("Hot\n"); //printf("Hot target located \n");
 //				printf("Distance: %f\n", distance*1.125); //added the *1.125 to make the distance correct, check with M1013
 			} else {
 				this->hot = false;
 				printf("Not Hot\n"); //printf("No hot target present \n");
 //				printf("Distance: %f \n", distance*1.125); //added the *1.125 to make the distance correct, check with M1013
 			}
-		} else {
-			printf("no targets found %f\n", Timer::GetFPGATimestamp());
 		}
 		delete image;
 		delete thresholdImage;
 		delete filteredImage;
 		delete scores;
-	} else {
-		printf("no targets at all: %f\n",Timer::GetFPGATimestamp());
 	}
 }
 bool Vision::checkTargetHot(TargetReport target)
