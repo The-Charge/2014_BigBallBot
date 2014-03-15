@@ -33,6 +33,7 @@ AutoPreShoot2::AutoPreShoot2() {
 	// a CommandGroup containing them would require both the chassis and the
 	// arm.
 	float distance = Robot::netTable->GetNumber("AutoPreShoot2::Distance",AUTO_PRE_SHOOT2_DISTANCE);
+	AddParallel(new ShifterHigh());
 	AddParallel(new DriveUntilXFeet(distance));
 	AddParallel(new CheckHot());
 	AddParallel(new PickupArmsMidwayLo());
