@@ -14,6 +14,7 @@
 #include "DriveUntilXFeet.h"
 #include "CheckHot.h"
 #include "PickupArmsMidwayLo.h"
+#include "ShifterHigh.h"
 
 AutoPreShoot2::AutoPreShoot2() {
 	// Add Commands here:
