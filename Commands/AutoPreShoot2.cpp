@@ -15,6 +15,7 @@
 #include "CheckHot.h"
 #include "PickupArmsMidwayLo.h"
 #include "ShifterLow.h"
+#include "AutoPickArmsMidway.h"
 
 AutoPreShoot2::AutoPreShoot2() {
 	// Add Commands here:
@@ -37,5 +38,5 @@ AutoPreShoot2::AutoPreShoot2() {
 	AddParallel(new ShifterLow());
 	AddParallel(new DriveUntilXFeet(distance));
 	AddParallel(new CheckHot());
-	AddParallel(new PickupArmsMidwayLo());
+	AddParallel(new AutoPickArmsMidway());
 }

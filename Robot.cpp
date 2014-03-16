@@ -70,6 +70,12 @@ void Robot::RobotInit() {
 	dpadLow = new InternalButton();
 	dpadHigh->WhenPressed(new ShifterHigh());
 	dpadLow->WhenPressed(new ShifterLow());
+	
+	dpadHigh2 = new InternalButton();
+	dpadLow2 = new InternalButton();
+	dpadHigh2->WhenPressed(new ShifterHigh());
+	dpadLow2->WhenPressed(new ShifterLow());
+	
 	Robot::clocksprings->ResetJags();
 	Robot::pickupWheels->ResetJags();
 	Robot::thrower->ResetJags();
@@ -93,6 +99,7 @@ void Robot::TeleopInit() {
 	// this line or comment it out.
 	autonomousCommand->Cancel();
 	Robot::driveTrain->SetCoastMode();
+	Robot::shifter->ShiftHigh();
 }
 	
 void Robot::TeleopPeriodic() {
@@ -100,6 +107,9 @@ void Robot::TeleopPeriodic() {
 		Scheduler::GetInstance()->Run();
 	dpadHigh->SetPressed(oi->getDriverJoystick()->GetRawAxis(6)==-1);
 	dpadLow->SetPressed(oi->getDriverJoystick()->GetRawAxis(6)==1);
+	
+	dpadHigh2->SetPressed(oi->getShooterJoystick()->GetRawAxis(6)==-1);
+	dpadLow2->SetPressed(oi->getShooterJoystick()->GetRawAxis(6)==1);
 }
 void Robot::TestPeriodic() {
 	lw->Run();

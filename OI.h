@@ -29,6 +29,9 @@ private:
 	DigitalIOButton* pickupWheelsForwardBtn;
 	DigitalIOButton* pickupWheelsOffBtn;
 	Joystick* shooterJoystick;
+	JoystickButton* shiftHighButton2;
+	JoystickButton* shiftLowButton2;
+	JoystickButton* resetJagsBtn2;
 	Joystick* driverJoystick;
 	JoystickButton* resetJagsBtn;
 	JoystickButton* shiftHighButton;

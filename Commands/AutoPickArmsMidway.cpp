@@ -10,14 +10,11 @@
 
 
 
-#include "AutoPreShoot.h"
-#include "DriveNFeet.h"
-#include "CheckHot.h"
-#include "PickupArmsMidwayLo.h"
-#include "ShifterHigh.h"
 #include "AutoPickArmsMidway.h"
+#include "WaitForXSecs.h"
+#include "PickupArmsMidwayLo.h"
 
-AutoPreShoot::AutoPreShoot() {
+AutoPickArmsMidway::AutoPickArmsMidway() {
 	// Add Commands here:
 	// e.g. AddSequential(new Command1());
 	//      AddSequential(new Command2());
@@ -34,10 +31,6 @@ AutoPreShoot::AutoPreShoot() {
 	// e.g. if Command1 requires chassis, and Command2 requires arm,
 	// a CommandGroup containing them would require both the chassis and the
 	// arm.
-	float distance = Robot::netTable->GetNumber("AutoPreShoot::Distance",AUTO_PRE_SHOOT_DISTANCE);
-	AddParallel(new ShifterHigh());
-	AddParallel(new DriveNFeet(distance));
-	AddParallel(new CheckHot());
-	AddParallel(new AutoPickArmsMidway());
-	
+	AddSequential(new WaitForXSecs(1.0));
+	AddSequential(new PickupArmsMidwayLo());
 }
