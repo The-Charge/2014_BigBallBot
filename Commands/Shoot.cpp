@@ -14,6 +14,8 @@
 #include "PickupArmsMidwayLo.h"
 #include "ThrowerShoot.h"
 #include "PickupArmsRetract.h"
+#include "PickupWheelsForward.h"
+#include "PickupWheelsOff.h"
 
 Shoot::Shoot() {
 	// Add Commands here:

@@ -36,21 +36,8 @@ void Thrower::Stop()
 bool Thrower::isLimitDown()
 {
 
-	_counter=0;	
-	for (int J = 0; J < 10; ++J) 
-	{
-		if (throwerLimit->Get()) 
-		{
-			++_counter;
-		}
-	}
-	if(_counter>=9)
-	{
-		return true;
-	}
-	else return false;
 
-	//return throwerLimit->Get() == 0;
+	return throwerLimit->Get() == 0;
 }
 void Thrower::ResetJags() {
 	throwerMotor->ConfigNeutralMode(CANJaguar::kNeutralMode_Brake);
