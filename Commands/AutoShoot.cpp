@@ -12,6 +12,7 @@
 #include "AutoPreShoot.h"
 #include "ThrowerShoot.h"
 #include "PickupArmsRetract.h"
+#include "WaitForXSecs.h"
 
 AutoShoot::AutoShoot() {
 	// Add Commands here:
@@ -31,6 +32,7 @@ AutoShoot::AutoShoot() {
 	// a CommandGroup containing them would require both the chassis and the
 	// arm.
 	AddSequential(new AutoPreShoot());
+	AddSequential(new WaitForXSecs(1.0));
 	AddSequential(new ThrowerShoot());
 	AddSequential(new PickupArmsRetract());
 	}
