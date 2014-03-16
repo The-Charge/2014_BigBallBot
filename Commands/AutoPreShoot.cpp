@@ -38,7 +38,6 @@ AutoPreShoot::AutoPreShoot() {
 	AddParallel(new ShifterHigh());
 	AddParallel(new DriveNFeet(distance));
 	AddParallel(new CheckHot());
-//	AddSequential(new WaitForXSecs(1.0));
 	AddParallel(new AutoPickArmsMidway());
 	
 }
