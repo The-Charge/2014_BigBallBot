@@ -7,15 +7,17 @@
 /*       -fdollars-in-identifiers flag.                   */
 
 
+void _GLOBAL__I__ZN18AutoPickArmsMidwayC2Ev();
+
 void _GLOBAL__I__ZN12AutoPreShootC2Ev();
 
 void _GLOBAL__I__ZN13AutoPreShoot2C2Ev();
 
 void _GLOBAL__I__ZN9AutoShootC2Ev();
 
-void _GLOBAL__I__ZN17AutonomousCommandC2Ev();
+void _GLOBAL__I__ZN10AutoShoot2C2Ev();
 
-void _GLOBAL__I__ZN15AutonomousGroupC2Ev();
+void _GLOBAL__I__ZN17AutonomousCommandC2Ev();
 
 void _GLOBAL__I__ZN8CheckHotC2Ev();
 
@@ -73,6 +75,8 @@ void _GLOBAL__I__ZN10ShifterLowC2Ev();
 
 void _GLOBAL__I__ZN5ShootC2Ev();
 
+void _GLOBAL__I__ZN16ShootArmsRetractC2Ev();
+
 void _GLOBAL__I__ZN12ShooterBlockC2Ev();
 
 void _GLOBAL__I__ZN12ShowDistanceC2Ev();
@@ -84,6 +88,10 @@ void _GLOBAL__I__ZN8ShowTimeC2Ev();
 void _GLOBAL__I__ZN12ThrowerShootC2Ev();
 
 void _GLOBAL__I__ZN9ThrowerUpC2Ev();
+
+void _GLOBAL__I__ZN12WaitFor1SecsC2Ev();
+
+void _GLOBAL__I__ZN12WaitForXSecsC2Ef();
 
 void _GLOBAL__I__ZN2OIC2Ev();
 
@@ -166,11 +174,12 @@ void _GLOBAL__I__ZN11StringArray19STRING_ARRAY_RAW_IDE();
 extern void (*_ctors[])();
 void (*_ctors[])() =
     {
+    _GLOBAL__I__ZN18AutoPickArmsMidwayC2Ev,
     _GLOBAL__I__ZN12AutoPreShootC2Ev,
     _GLOBAL__I__ZN13AutoPreShoot2C2Ev,
     _GLOBAL__I__ZN9AutoShootC2Ev,
+    _GLOBAL__I__ZN10AutoShoot2C2Ev,
     _GLOBAL__I__ZN17AutonomousCommandC2Ev,
-    _GLOBAL__I__ZN15AutonomousGroupC2Ev,
     _GLOBAL__I__ZN8CheckHotC2Ev,
     _GLOBAL__I__ZN16ClockspringsHighC2Ev,
     _GLOBAL__I__ZN15ClockspringsLowC2Ev,
@@ -199,12 +208,15 @@ void (*_ctors[])() =
     _GLOBAL__I__ZN11ShifterHighC2Ev,
     _GLOBAL__I__ZN10ShifterLowC2Ev,
     _GLOBAL__I__ZN5ShootC2Ev,
+    _GLOBAL__I__ZN16ShootArmsRetractC2Ev,
     _GLOBAL__I__ZN12ShooterBlockC2Ev,
     _GLOBAL__I__ZN12ShowDistanceC2Ev,
     _GLOBAL__I__ZN8ShowTeamC2Ev,
     _GLOBAL__I__ZN8ShowTimeC2Ev,
     _GLOBAL__I__ZN12ThrowerShootC2Ev,
     _GLOBAL__I__ZN9ThrowerUpC2Ev,
+    _GLOBAL__I__ZN12WaitFor1SecsC2Ev,
+    _GLOBAL__I__ZN12WaitForXSecsC2Ef,
     _GLOBAL__I__ZN2OIC2Ev,
     _GLOBAL__I__ZN5Robot10driveTrainE,
     _GLOBAL__I__ZN8RobotMap22driveTrainRightEncoderE,
@@ -247,15 +259,17 @@ void (*_ctors[])() =
     0
     };
 
+void _GLOBAL__D__ZN18AutoPickArmsMidwayC2Ev();
+
 void _GLOBAL__D__ZN12AutoPreShootC2Ev();
 
 void _GLOBAL__D__ZN13AutoPreShoot2C2Ev();
 
 void _GLOBAL__D__ZN9AutoShootC2Ev();
 
-void _GLOBAL__D__ZN17AutonomousCommandC2Ev();
+void _GLOBAL__D__ZN10AutoShoot2C2Ev();
 
-void _GLOBAL__D__ZN15AutonomousGroupC2Ev();
+void _GLOBAL__D__ZN17AutonomousCommandC2Ev();
 
 void _GLOBAL__D__ZN8CheckHotC2Ev();
 
@@ -313,6 +327,8 @@ void _GLOBAL__D__ZN10ShifterLowC2Ev();
 
 void _GLOBAL__D__ZN5ShootC2Ev();
 
+void _GLOBAL__D__ZN16ShootArmsRetractC2Ev();
+
 void _GLOBAL__D__ZN12ShooterBlockC2Ev();
 
 void _GLOBAL__D__ZN12ShowDistanceC2Ev();
@@ -324,6 +340,10 @@ void _GLOBAL__D__ZN8ShowTimeC2Ev();
 void _GLOBAL__D__ZN12ThrowerShootC2Ev();
 
 void _GLOBAL__D__ZN9ThrowerUpC2Ev();
+
+void _GLOBAL__D__ZN12WaitFor1SecsC2Ev();
+
+void _GLOBAL__D__ZN12WaitForXSecsC2Ef();
 
 void _GLOBAL__D__ZN2OIC2Ev();
 
@@ -396,11 +416,12 @@ void _GLOBAL__D__ZN11StringArray19STRING_ARRAY_RAW_IDE();
 extern void (*_dtors[])();
 void (*_dtors[])() =
     {
+    _GLOBAL__D__ZN18AutoPickArmsMidwayC2Ev,
     _GLOBAL__D__ZN12AutoPreShootC2Ev,
     _GLOBAL__D__ZN13AutoPreShoot2C2Ev,
     _GLOBAL__D__ZN9AutoShootC2Ev,
+    _GLOBAL__D__ZN10AutoShoot2C2Ev,
     _GLOBAL__D__ZN17AutonomousCommandC2Ev,
-    _GLOBAL__D__ZN15AutonomousGroupC2Ev,
     _GLOBAL__D__ZN8CheckHotC2Ev,
     _GLOBAL__D__ZN16ClockspringsHighC2Ev,
     _GLOBAL__D__ZN15ClockspringsLowC2Ev,
@@ -429,12 +450,15 @@ void (*_dtors[])() =
     _GLOBAL__D__ZN11ShifterHighC2Ev,
     _GLOBAL__D__ZN10ShifterLowC2Ev,
     _GLOBAL__D__ZN5ShootC2Ev,
+    _GLOBAL__D__ZN16ShootArmsRetractC2Ev,
     _GLOBAL__D__ZN12ShooterBlockC2Ev,
     _GLOBAL__D__ZN12ShowDistanceC2Ev,
     _GLOBAL__D__ZN8ShowTeamC2Ev,
     _GLOBAL__D__ZN8ShowTimeC2Ev,
     _GLOBAL__D__ZN12ThrowerShootC2Ev,
     _GLOBAL__D__ZN9ThrowerUpC2Ev,
+    _GLOBAL__D__ZN12WaitFor1SecsC2Ev,
+    _GLOBAL__D__ZN12WaitForXSecsC2Ef,
     _GLOBAL__D__ZN2OIC2Ev,
     _GLOBAL__D__ZN5Robot10driveTrainE,
     _GLOBAL__D__ZN8RobotMap22driveTrainRightEncoderE,

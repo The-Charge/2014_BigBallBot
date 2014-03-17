@@ -12,7 +12,6 @@
 #include "ThrowerShoot.h"
 #include "PickupArmsRetract.h"
 #include "WaitForXSecs.h"
-
 AutoShoot2::AutoShoot2() {
 	// Add Commands here:
 	// e.g. AddSequential(new Command1());
