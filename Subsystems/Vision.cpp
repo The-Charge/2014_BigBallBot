@@ -219,15 +219,20 @@ void Vision::processImage()
 			if(target.Hot)
 			{
 				this->hot = true;
-				//printf("Hot\n"); //printf("Hot target located \n");
-				//printf("Distance: %f\n", distance*1.125); //added the *1.125 to make the distance correct, check with M1013
+				printf("Hot\n"); //printf("Hot target located \n");
+//				printf("Distance: %f\n", distance*1.125); //added the *1.125 to make the distance correct, check with M1013
 			} else {
 				this->hot = false;
-				//printf("Not Hot\n"); //printf("No hot target present \n");
-				//printf("Distance: %f \n", distance*1.125); //added the *1.125 to make the distance correct, check with M1013
+				printf("Not Hot\n"); //printf("No hot target present \n");
+//				printf("Distance: %f \n", distance*1.125); //added the *1.125 to make the distance correct, check with M1013
 			}
 		}
+		delete scores;
 	}
+	//delete image;
+	delete thresholdImage;
+	delete filteredImage;
+	
 }
 bool Vision::checkTargetHot(TargetReport target)
 {
