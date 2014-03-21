@@ -54,7 +54,7 @@ private:
 	ColorImage *image;
 	BinaryImage *thresholdImage;
 	BinaryImage *filteredImage;
-	//AxisCamera &m_camera;
+	AxisCamera *m_camera;
 	Scores *scores;
 	vector<ParticleAnalysisReport> *reports;
 	TargetReport target;

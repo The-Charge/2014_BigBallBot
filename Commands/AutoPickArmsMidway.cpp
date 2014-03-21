@@ -31,6 +31,6 @@ AutoPickArmsMidway::AutoPickArmsMidway() {
 	// e.g. if Command1 requires chassis, and Command2 requires arm,
 	// a CommandGroup containing them would require both the chassis and the
 	// arm.
-	AddSequential(new WaitForXSecs(1.0));
+	AddSequential(new WaitForXSecs(2.0));
 	AddSequential(new PickupArmsMidwayLo());
 }
