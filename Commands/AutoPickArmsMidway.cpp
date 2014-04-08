@@ -13,6 +13,7 @@
 #include "AutoPickArmsMidway.h"
 #include "WaitForXSecs.h"
 #include "PickupArmsMidwayLo.h"
+#include "PickupWheelsShort.h"
 
 AutoPickArmsMidway::AutoPickArmsMidway() {
 	// Add Commands here:
@@ -32,5 +33,6 @@ AutoPickArmsMidway::AutoPickArmsMidway() {
 	// a CommandGroup containing them would require both the chassis and the
 	// arm.
 	AddSequential(new WaitForXSecs(2.0));
+	AddParallel(new PickupWheelsShort);
 	AddSequential(new PickupArmsMidwayLo());
 }
