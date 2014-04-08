@@ -10,12 +10,11 @@
 
 
 
-#include "PickupArmsExtend2.h"
-#include "PickupWheelsSetSpeed.h"
-#include "WaitForXSecs.h"
-#include "PickupWheelsOff.h"
+#include "PickupArmsMidwayLo2.h"
+#include "PickupArmsMidwayLo.h"
+#include "PickupWheelsShort.h"
 
-PickupArmsExtend2::PickupArmsExtend2() {
+PickupArmsMidwayLo2::PickupArmsMidwayLo2() {
 	// Add Commands here:
 	// e.g. AddSequential(new Command1());
 	//      AddSequential(new Command2());
@@ -32,8 +31,6 @@ PickupArmsExtend2::PickupArmsExtend2() {
 	// e.g. if Command1 requires chassis, and Command2 requires arm,
 	// a CommandGroup containing them would require both the chassis and the
 	// arm.
-	
-	AddSequential(new PickupWheelsSetSpeed(.2));
-	AddSequential(new WaitForXSecs(2));
-	AddSequential(new PickupWheelsOff);
+	AddParallel(new PickupArmsMidwayLo);
+	AddSequential(new PickupWheelsShort);
 }

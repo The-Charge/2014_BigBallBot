@@ -10,8 +10,8 @@
 
 
 
-#ifndef PICKUPARMSEXTEND2_H
-#define PICKUPARMSEXTEND2_H
+#ifndef SHOOT2_H
+#define SHOOT2_H
 
 #include "Commands/CommandGroup.h"
 
@@ -20,12 +20,9 @@
  *
  * @author ExampleAuthor
  */
-class PickupArmsExtend2: public CommandGroup {
+class Shoot2: public CommandGroup {
 public:	
-	PickupArmsExtend2();
-	
-private:
-	float _speed;
+	Shoot2();
 };
 
 #endif
