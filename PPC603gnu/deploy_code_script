@@ -1,0 +1,4 @@
+cd /
+cd ni-rt
+cd system
+put 2014_BigBallBot/Debug/2014_BigBallBot.out FRC_UserProgram.out
