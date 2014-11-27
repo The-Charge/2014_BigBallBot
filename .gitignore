@@ -2,3 +2,7 @@
 .wrmakefile
 Makefile
 PPC603gnu/deploy_code_script
+*.out
+*.o
+*.d
+PPC603gnu/2014_BigBallBot/Debug/ctdt.c
