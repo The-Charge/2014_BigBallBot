@@ -7,3 +7,4 @@
 *.d
 PPC603gnu/Makefile
 PPC603gnu/CommandBasedRobotTemplate/Debug/ctdt.c
+/cRIODebug/
